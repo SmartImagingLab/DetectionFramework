@@ -393,9 +393,6 @@ class generate_multi_size_data(object):
         num = len(evtlist)
         train_evtlist = evtlist[: int(0.8 * num)]
         test_evtlist = evtlist[int(0.8 * num + 1):]
-        # imglist = sorted(evtlist,
-        #                  key=lambda x: int(
-        #                      re.findall("[0-9]+", x.split('wxt')[-1].split('po_cl.evt')[0])[0]))  # 按照数字大小排序！  [0]:取列表的第一个值，int:转为整数类型
 
         train_num = len(train_evtlist)
         test_num = len(test_evtlist)
