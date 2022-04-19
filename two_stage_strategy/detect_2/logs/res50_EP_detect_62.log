@@ -1,0 +1,2332 @@
+INFO:root:2021-11-01 22:33:13.822666
+INFO:root:{'TRAIN': {'LEARNING_RATE': 0.0001, 'MOMENTUM': 0.9, 'WEIGHT_DECAY': 0.0001, 'GAMMA': 0.1, 'STEPSIZE': [30000], 'DISPLAY': 20, 'DOUBLE_BIAS': False, 'TRUNCATED': False, 'BIAS_DECAY': False, 'USE_GT': False, 'ASPECT_GROUPING': False, 'SNAPSHOT_KEPT': 3, 'SUMMARY_INTERVAL': 180, 'SCALES': [600], 'MAX_SIZE': 1000, 'TRIM_HEIGHT': 600, 'TRIM_WIDTH': 600, 'IMS_PER_BATCH': 1, 'FG_FRACTION': 0.25, 'FG_THRESH': 0.5, 'BG_THRESH_HI': 0.5, 'BG_THRESH_LO': 0.0, 'USE_FLIPPED': True, 'BBOX_REG': True, 'BBOX_THRESH': 0.5, 'SNAPSHOT_ITERS': 5000, 'SNAPSHOT_PREFIX': 'res50_faster_rcnn', 'BBOX_NORMALIZE_TARGETS': True, 'BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'BBOX_NORMALIZE_TARGETS_PRECOMPUTED': True, 'BBOX_NORMALIZE_MEANS': [0.0, 0.0, 0.0, 0.0], 'BBOX_NORMALIZE_STDS': [0.1, 0.1, 0.2, 0.2], 'PROPOSAL_METHOD': 'gt', 'HAS_RPN': True, 'RPN_POSITIVE_OVERLAP': 0.7, 'RPN_NEGATIVE_OVERLAP': 0.3, 'RPN_CLOBBER_POSITIVES': False, 'RPN_FG_FRACTION': 0.5, 'BATCH_SIZE': 128, 'RPN_BATCHSIZE': 256, 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 12000, 'RPN_POST_NMS_TOP_N': 2000, 'RPN_MIN_SIZE': 4, 'RPN_BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'RPN_POSITIVE_WEIGHT': -1.0, 'USE_ALL_GT': True, 'BN_TRAIN': False}, 'TEST': {'SCALES': [600], 'MAX_SIZE': 1000, 'NMS': 0.3, 'SVM': False, 'BBOX_REG': True, 'HAS_RPN': True, 'PROPOSAL_METHOD': 'gt', 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 6000, 'RPN_POST_NMS_TOP_N': 300, 'RPN_MIN_SIZE': 6, 'MODE': 'nms', 'RPN_TOP_N': 5000}, 'RESNET': {'MAX_POOL': False, 'FIXED_BLOCKS': 1}, 'MOBILENET': {'REGU_DEPTH': False, 'FIXED_LAYERS': 5, 'WEIGHT_DECAY': 4e-05, 'DEPTH_MULTIPLIER': 1.0}, 'DEDUP_BOXES': 0.0625, 'PIXEL_MEANS': array([[[102.9801, 115.9465, 122.7717]]]), 'RNG_SEED': 3, 'EPS': 1e-14, 'ROOT_DIR': '/home/lab30202/lwb/EP/single_detect/single_telescope/fpn_star_single_torch_1_2', 'DATA_DIR': '/home/lab30202/lwb/EP/single_detect/single_telescope/fpn_star_single_torch_1_2/data', 'MATLAB': 'matlab', 'EXP_DIR': 'res50', 'USE_GPU_NMS': True, 'GPU_ID': '0', 'POOLING_MODE': 'align', 'POOLING_SIZE': 7, 'MAX_NUM_GT_BOXES': 100, 'ANCHOR_SCALES': [2, 4, 6], 'ANCHOR_RATIOS': [0.5, 1, 2], 'FEAT_STRIDE': [2], 'FPN_ANCHOR_SCALES': [1, 2, 4, 8, 16], 'FPN_FEAT_STRIDES': [1, 2, 4, 8, 16], 'FPN_ANCHOR_STRIDE': 1, 'CUDA': False, 'CROP_RESIZE_WITH_MAX_POOL': False, 'HAS_MASK': True}
+INFO:root:Train: 240 roidb entries
+INFO:root:[session 62][epoch  1][iter    0/ 240] loss: 9.9998, lr: 5.00e-05
+INFO:root:			fg/bg=(7/121), time cost: 0.437340
+INFO:root:			rpn_cls: 0.6936, rpn_box: 0.0268, rcnn_cls: 4.1514, rcnn_box 0.0000,reg_loss 5.1280, 
+INFO:root:[session 62][epoch  1][iter   10/ 240] loss: 9.9659, lr: 5.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.808220
+INFO:root:			rpn_cls: 0.6920, rpn_box: 0.0277, rcnn_cls: 4.1102, rcnn_box 0.0423,reg_loss 5.0715, 
+INFO:root:[session 62][epoch  1][iter   20/ 240] loss: 9.7904, lr: 5.00e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.731144
+INFO:root:			rpn_cls: 0.6781, rpn_box: 0.0356, rcnn_cls: 4.1520, rcnn_box 0.0002,reg_loss 5.0243, 
+INFO:root:[session 62][epoch  1][iter   30/ 240] loss: 9.1622, lr: 5.00e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.829144
+INFO:root:			rpn_cls: 0.5882, rpn_box: 0.0158, rcnn_cls: 3.6133, rcnn_box 0.0010,reg_loss 4.9926, 
+INFO:root:[session 62][epoch  1][iter   40/ 240] loss: 7.5651, lr: 5.00e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.802985
+INFO:root:			rpn_cls: 0.3510, rpn_box: 0.0319, rcnn_cls: 0.5287, rcnn_box 0.0302,reg_loss 4.9724, 
+INFO:root:[session 62][epoch  1][iter   50/ 240] loss: 6.7500, lr: 5.00e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.764325
+INFO:root:			rpn_cls: 0.3025, rpn_box: 0.0181, rcnn_cls: 1.2993, rcnn_box 0.0203,reg_loss 4.9559, 
+INFO:root:[session 62][epoch  1][iter   60/ 240] loss: 6.1413, lr: 5.00e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.762723
+INFO:root:			rpn_cls: 0.1990, rpn_box: 0.0259, rcnn_cls: 1.1265, rcnn_box 0.0013,reg_loss 4.9411, 
+INFO:root:[session 62][epoch  1][iter   70/ 240] loss: 5.7818, lr: 5.00e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.787690
+INFO:root:			rpn_cls: 0.1246, rpn_box: 0.0136, rcnn_cls: 0.4684, rcnn_box 0.0067,reg_loss 4.9266, 
+INFO:root:[session 62][epoch  1][iter   80/ 240] loss: 5.8985, lr: 5.00e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.757474
+INFO:root:			rpn_cls: 0.0853, rpn_box: 0.0090, rcnn_cls: 0.6181, rcnn_box 0.0311,reg_loss 4.9115, 
+INFO:root:[session 62][epoch  1][iter   90/ 240] loss: 5.5920, lr: 5.00e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.716440
+INFO:root:			rpn_cls: 0.0812, rpn_box: 0.0127, rcnn_cls: 0.2389, rcnn_box 0.0002,reg_loss 4.8962, 
+INFO:root:[session 62][epoch  1][iter  100/ 240] loss: 5.5370, lr: 5.00e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.701787
+INFO:root:			rpn_cls: 0.0680, rpn_box: 0.0198, rcnn_cls: 0.2263, rcnn_box 0.0001,reg_loss 4.8809, 
+INFO:root:[session 62][epoch  1][iter  110/ 240] loss: 5.2778, lr: 5.00e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.683895
+INFO:root:			rpn_cls: 0.0698, rpn_box: 0.0121, rcnn_cls: 0.2376, rcnn_box 0.0197,reg_loss 4.8654, 
+INFO:root:[session 62][epoch  1][iter  120/ 240] loss: 5.2526, lr: 5.00e-05
+INFO:root:			fg/bg=(20/108), time cost: 3.638316
+INFO:root:			rpn_cls: 0.1060, rpn_box: 0.0612, rcnn_cls: 0.5523, rcnn_box 0.0020,reg_loss 4.8498, 
+INFO:root:[session 62][epoch  1][iter  130/ 240] loss: 5.5270, lr: 5.00e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.856921
+INFO:root:			rpn_cls: 0.0888, rpn_box: 0.0356, rcnn_cls: 0.3738, rcnn_box 0.0260,reg_loss 4.8341, 
+INFO:root:[session 62][epoch  1][iter  140/ 240] loss: 5.4803, lr: 5.00e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.938761
+INFO:root:			rpn_cls: 0.0632, rpn_box: 0.0248, rcnn_cls: 0.3703, rcnn_box 0.0154,reg_loss 4.8185, 
+INFO:root:[session 62][epoch  1][iter  150/ 240] loss: 5.5294, lr: 5.00e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.866968
+INFO:root:			rpn_cls: 0.0465, rpn_box: 0.0114, rcnn_cls: 2.5491, rcnn_box 0.0373,reg_loss 4.8031, 
+INFO:root:[session 62][epoch  1][iter  160/ 240] loss: 5.2616, lr: 5.00e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.727385
+INFO:root:			rpn_cls: 0.0591, rpn_box: 0.0248, rcnn_cls: 0.3043, rcnn_box 0.0400,reg_loss 4.7876, 
+INFO:root:[session 62][epoch  1][iter  170/ 240] loss: 5.1642, lr: 5.00e-05
+INFO:root:			fg/bg=(2/126), time cost: 3.887095
+INFO:root:			rpn_cls: 0.0410, rpn_box: 0.0051, rcnn_cls: 0.1077, rcnn_box 0.0001,reg_loss 4.7721, 
+INFO:root:[session 62][epoch  1][iter  180/ 240] loss: 5.0650, lr: 5.00e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.873681
+INFO:root:			rpn_cls: 0.0466, rpn_box: 0.0130, rcnn_cls: 0.1432, rcnn_box 0.0005,reg_loss 4.7565, 
+INFO:root:[session 62][epoch  1][iter  190/ 240] loss: 5.0918, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.781008
+INFO:root:			rpn_cls: 0.0651, rpn_box: 0.0259, rcnn_cls: 0.3160, rcnn_box 0.0502,reg_loss 4.7406, 
+INFO:root:[session 62][epoch  1][iter  200/ 240] loss: 5.1060, lr: 5.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.734869
+INFO:root:			rpn_cls: 0.0537, rpn_box: 0.0206, rcnn_cls: 0.2570, rcnn_box 0.0009,reg_loss 4.7247, 
+INFO:root:[session 62][epoch  1][iter  210/ 240] loss: 5.1250, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.815517
+INFO:root:			rpn_cls: 0.0584, rpn_box: 0.0242, rcnn_cls: 0.3300, rcnn_box 0.0367,reg_loss 4.7087, 
+INFO:root:[session 62][epoch  1][iter  220/ 240] loss: 5.1038, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.686320
+INFO:root:			rpn_cls: 0.0510, rpn_box: 0.0257, rcnn_cls: 0.2940, rcnn_box 0.0210,reg_loss 4.6928, 
+INFO:root:[session 62][epoch  1][iter  230/ 240] loss: 5.0894, lr: 5.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.641566
+INFO:root:			rpn_cls: 0.0575, rpn_box: 0.0150, rcnn_cls: 0.2655, rcnn_box 0.0475,reg_loss 4.6768, 
+INFO:root:number   1 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_1_239.pth
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal 700 normal>) = 2.244090909090909
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal 700 normal>) = 1.2440909090909091
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/lab30202/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal 700 normal>) = 2.244090909090909
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal 700 normal>) = 1.2440909090909091
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/lab30202/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+INFO:root:[session 62][epoch  2][iter    0/ 240] loss: 5.1132, lr: 7.50e-05
+INFO:root:			fg/bg=(11/117), time cost: 0.340479
+INFO:root:			rpn_cls: 0.0584, rpn_box: 0.0245, rcnn_cls: 0.3089, rcnn_box 0.0607,reg_loss 4.6608, 
+INFO:root:[session 62][epoch  2][iter   10/ 240] loss: 5.0987, lr: 7.50e-05
+INFO:root:			fg/bg=(27/101), time cost: 3.418674
+INFO:root:			rpn_cls: 0.0865, rpn_box: 0.0615, rcnn_cls: 0.6304, rcnn_box 0.0972,reg_loss 4.6368, 
+INFO:root:[session 62][epoch  2][iter   20/ 240] loss: 5.0561, lr: 7.50e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.721567
+INFO:root:			rpn_cls: 0.0480, rpn_box: 0.0134, rcnn_cls: 0.2253, rcnn_box 0.0004,reg_loss 4.6129, 
+INFO:root:[session 62][epoch  2][iter   30/ 240] loss: 5.0924, lr: 7.50e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.742138
+INFO:root:			rpn_cls: 0.0602, rpn_box: 0.0234, rcnn_cls: 0.2412, rcnn_box 0.0173,reg_loss 4.5892, 
+INFO:root:[session 62][epoch  2][iter   40/ 240] loss: 4.9445, lr: 7.50e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.418938
+INFO:root:			rpn_cls: 0.0441, rpn_box: 0.0200, rcnn_cls: 0.2398, rcnn_box 0.0209,reg_loss 4.5656, 
+INFO:root:[session 62][epoch  2][iter   50/ 240] loss: 4.9264, lr: 7.50e-05
+INFO:root:			fg/bg=(3/125), time cost: 3.409386
+INFO:root:			rpn_cls: 0.0405, rpn_box: 0.0070, rcnn_cls: 0.1290, rcnn_box 0.0001,reg_loss 4.5421, 
+INFO:root:[session 62][epoch  2][iter   60/ 240] loss: 4.8477, lr: 7.50e-05
+INFO:root:			fg/bg=(3/125), time cost: 3.380748
+INFO:root:			rpn_cls: 0.0366, rpn_box: 0.0110, rcnn_cls: 0.1375, rcnn_box 0.0009,reg_loss 4.5187, 
+INFO:root:[session 62][epoch  2][iter   70/ 240] loss: 4.7636, lr: 7.50e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.406037
+INFO:root:			rpn_cls: 0.0619, rpn_box: 0.0255, rcnn_cls: 0.3033, rcnn_box 0.0006,reg_loss 4.4957, 
+INFO:root:[session 62][epoch  2][iter   80/ 240] loss: 4.7986, lr: 7.50e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.470308
+INFO:root:			rpn_cls: 0.0459, rpn_box: 0.0126, rcnn_cls: 0.1391, rcnn_box 0.0000,reg_loss 4.4728, 
+INFO:root:[session 62][epoch  2][iter   90/ 240] loss: 4.8889, lr: 7.50e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.536414
+INFO:root:			rpn_cls: 0.0998, rpn_box: 0.0579, rcnn_cls: 0.4167, rcnn_box 0.0399,reg_loss 4.4504, 
+INFO:root:[session 62][epoch  2][iter  100/ 240] loss: 4.7997, lr: 7.50e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.367625
+INFO:root:			rpn_cls: 0.0454, rpn_box: 0.0172, rcnn_cls: 0.2743, rcnn_box 0.0501,reg_loss 4.4274, 
+INFO:root:[session 62][epoch  2][iter  110/ 240] loss: 4.8078, lr: 7.50e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.380894
+INFO:root:			rpn_cls: 0.0345, rpn_box: 0.0136, rcnn_cls: 0.1483, rcnn_box 0.0009,reg_loss 4.4051, 
+INFO:root:[session 62][epoch  2][iter  120/ 240] loss: 4.6872, lr: 7.50e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.371692
+INFO:root:			rpn_cls: 0.0482, rpn_box: 0.0241, rcnn_cls: 0.2796, rcnn_box 0.0285,reg_loss 4.3828, 
+INFO:root:[session 62][epoch  2][iter  130/ 240] loss: 4.8095, lr: 7.50e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.364136
+INFO:root:			rpn_cls: 0.0639, rpn_box: 0.0239, rcnn_cls: 0.3411, rcnn_box 0.0218,reg_loss 4.3606, 
+INFO:root:[session 62][epoch  2][iter  140/ 240] loss: 4.6911, lr: 7.50e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.353936
+INFO:root:			rpn_cls: 0.0613, rpn_box: 0.0246, rcnn_cls: 0.3152, rcnn_box 0.0658,reg_loss 4.3385, 
+INFO:root:[session 62][epoch  2][iter  150/ 240] loss: 4.7010, lr: 7.50e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.359241
+INFO:root:			rpn_cls: 0.0895, rpn_box: 0.0374, rcnn_cls: 0.2733, rcnn_box 0.0224,reg_loss 4.3166, 
+INFO:root:[session 62][epoch  2][iter  160/ 240] loss: 4.6771, lr: 7.50e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.366161
+INFO:root:			rpn_cls: 0.0413, rpn_box: 0.0252, rcnn_cls: 0.2545, rcnn_box 0.0338,reg_loss 4.2947, 
+INFO:root:[session 62][epoch  2][iter  170/ 240] loss: 4.6906, lr: 7.50e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.364233
+INFO:root:			rpn_cls: 0.0485, rpn_box: 0.0194, rcnn_cls: 0.2188, rcnn_box 0.0136,reg_loss 4.2731, 
+INFO:root:[session 62][epoch  2][iter  180/ 240] loss: 4.6974, lr: 7.50e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.404270
+INFO:root:			rpn_cls: 0.0632, rpn_box: 0.0217, rcnn_cls: 0.3557, rcnn_box 0.0608,reg_loss 4.2515, 
+INFO:root:[session 62][epoch  2][iter  190/ 240] loss: 4.6457, lr: 7.50e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.607339
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0067, rcnn_cls: 0.2036, rcnn_box 0.0214,reg_loss 4.2303, 
+INFO:root:[session 62][epoch  2][iter  200/ 240] loss: 4.8389, lr: 7.50e-05
+INFO:root:			fg/bg=(128/0), time cost: 3.504698
+INFO:root:			rpn_cls: 0.0389, rpn_box: 0.0057, rcnn_cls: 2.4177, rcnn_box 0.0022,reg_loss 4.2093, 
+INFO:root:[session 62][epoch  2][iter  210/ 240] loss: 4.5876, lr: 7.50e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.381215
+INFO:root:			rpn_cls: 0.0416, rpn_box: 0.0112, rcnn_cls: 0.2146, rcnn_box 0.0008,reg_loss 4.1906, 
+INFO:root:[session 62][epoch  2][iter  220/ 240] loss: 4.6380, lr: 7.50e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.419968
+INFO:root:			rpn_cls: 0.0416, rpn_box: 0.0111, rcnn_cls: 0.2140, rcnn_box 0.0628,reg_loss 4.1709, 
+INFO:root:[session 62][epoch  2][iter  230/ 240] loss: 4.5938, lr: 7.50e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.495698
+INFO:root:			rpn_cls: 0.0695, rpn_box: 0.0325, rcnn_cls: 0.4480, rcnn_box 0.0796,reg_loss 4.1501, 
+INFO:root:number   2 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_2_239.pth
+INFO:root:[session 62][epoch  3][iter    0/ 240] loss: 4.5461, lr: 1.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 0.339227
+INFO:root:			rpn_cls: 0.0555, rpn_box: 0.0317, rcnn_cls: 0.2843, rcnn_box 0.0446,reg_loss 4.1300, 
+INFO:root:[session 62][epoch  3][iter   10/ 240] loss: 4.6671, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.379233
+INFO:root:			rpn_cls: 0.0545, rpn_box: 0.0266, rcnn_cls: 0.2961, rcnn_box 0.0491,reg_loss 4.1052, 
+INFO:root:[session 62][epoch  3][iter   20/ 240] loss: 4.4977, lr: 1.00e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.414879
+INFO:root:			rpn_cls: 0.0544, rpn_box: 0.0154, rcnn_cls: 0.2162, rcnn_box 0.0096,reg_loss 4.0809, 
+INFO:root:[session 62][epoch  3][iter   30/ 240] loss: 4.5527, lr: 1.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.682842
+INFO:root:			rpn_cls: 0.0335, rpn_box: 0.0146, rcnn_cls: 0.2447, rcnn_box 0.0408,reg_loss 4.0564, 
+INFO:root:[session 62][epoch  3][iter   40/ 240] loss: 4.4614, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.600482
+INFO:root:			rpn_cls: 0.0553, rpn_box: 0.0351, rcnn_cls: 0.2585, rcnn_box 0.0215,reg_loss 4.0309, 
+INFO:root:[session 62][epoch  3][iter   50/ 240] loss: 4.3555, lr: 1.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.386365
+INFO:root:			rpn_cls: 0.0503, rpn_box: 0.0074, rcnn_cls: 0.1438, rcnn_box 0.0156,reg_loss 4.0072, 
+INFO:root:[session 62][epoch  3][iter   60/ 240] loss: 4.4153, lr: 1.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.427014
+INFO:root:			rpn_cls: 0.0488, rpn_box: 0.0213, rcnn_cls: 0.3325, rcnn_box 0.0810,reg_loss 3.9834, 
+INFO:root:[session 62][epoch  3][iter   70/ 240] loss: 4.5638, lr: 1.00e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.455874
+INFO:root:			rpn_cls: 0.0597, rpn_box: 0.0369, rcnn_cls: 0.3862, rcnn_box 0.0705,reg_loss 3.9617, 
+INFO:root:[session 62][epoch  3][iter   80/ 240] loss: 4.3446, lr: 1.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.412974
+INFO:root:			rpn_cls: 0.0568, rpn_box: 0.0133, rcnn_cls: 0.2049, rcnn_box 0.0433,reg_loss 3.9404, 
+INFO:root:[session 62][epoch  3][iter   90/ 240] loss: 4.4700, lr: 1.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.421306
+INFO:root:			rpn_cls: 0.0625, rpn_box: 0.0255, rcnn_cls: 0.3613, rcnn_box 0.0636,reg_loss 3.9183, 
+INFO:root:[session 62][epoch  3][iter  100/ 240] loss: 4.6072, lr: 1.00e-04
+INFO:root:			fg/bg=(128/0), time cost: 3.441413
+INFO:root:			rpn_cls: 0.0645, rpn_box: 0.0169, rcnn_cls: 1.7242, rcnn_box 0.0006,reg_loss 3.8977, 
+INFO:root:[session 62][epoch  3][iter  110/ 240] loss: 4.3919, lr: 1.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.448200
+INFO:root:			rpn_cls: 0.0504, rpn_box: 0.0156, rcnn_cls: 0.2320, rcnn_box 0.0318,reg_loss 3.8782, 
+INFO:root:[session 62][epoch  3][iter  120/ 240] loss: 4.5579, lr: 1.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.367432
+INFO:root:			rpn_cls: 0.0247, rpn_box: 0.0063, rcnn_cls: 0.3330, rcnn_box 0.0488,reg_loss 3.8580, 
+INFO:root:[session 62][epoch  3][iter  130/ 240] loss: 4.2674, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.355184
+INFO:root:			rpn_cls: 0.0428, rpn_box: 0.0278, rcnn_cls: 0.4070, rcnn_box 0.0636,reg_loss 3.8380, 
+INFO:root:[session 62][epoch  3][iter  140/ 240] loss: 4.3678, lr: 1.00e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.420213
+INFO:root:			rpn_cls: 0.0594, rpn_box: 0.0192, rcnn_cls: 0.3046, rcnn_box 0.0264,reg_loss 3.8174, 
+INFO:root:[session 62][epoch  3][iter  150/ 240] loss: 4.0872, lr: 1.00e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.346541
+INFO:root:			rpn_cls: 0.0407, rpn_box: 0.0089, rcnn_cls: 0.1250, rcnn_box 0.0215,reg_loss 3.7964, 
+INFO:root:[session 62][epoch  3][iter  160/ 240] loss: 4.0658, lr: 1.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.397017
+INFO:root:			rpn_cls: 0.0426, rpn_box: 0.0130, rcnn_cls: 0.1123, rcnn_box 0.0001,reg_loss 3.7755, 
+INFO:root:[session 62][epoch  3][iter  170/ 240] loss: 4.1937, lr: 1.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.358228
+INFO:root:			rpn_cls: 0.0531, rpn_box: 0.0164, rcnn_cls: 0.2355, rcnn_box 0.0322,reg_loss 3.7548, 
+INFO:root:[session 62][epoch  3][iter  180/ 240] loss: 4.1849, lr: 1.00e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.607594
+INFO:root:			rpn_cls: 0.0748, rpn_box: 0.0537, rcnn_cls: 0.6772, rcnn_box 0.1535,reg_loss 3.7348, 
+INFO:root:[session 62][epoch  3][iter  190/ 240] loss: 4.0448, lr: 1.00e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.571453
+INFO:root:			rpn_cls: 0.0553, rpn_box: 0.0269, rcnn_cls: 0.3304, rcnn_box 0.0809,reg_loss 3.7141, 
+INFO:root:[session 62][epoch  3][iter  200/ 240] loss: 4.1696, lr: 1.00e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.374965
+INFO:root:			rpn_cls: 0.0639, rpn_box: 0.0310, rcnn_cls: 0.3095, rcnn_box 0.0391,reg_loss 3.6942, 
+INFO:root:[session 62][epoch  3][iter  210/ 240] loss: 4.0333, lr: 1.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.363435
+INFO:root:			rpn_cls: 0.0490, rpn_box: 0.0240, rcnn_cls: 0.2610, rcnn_box 0.0483,reg_loss 3.6747, 
+INFO:root:[session 62][epoch  3][iter  220/ 240] loss: 4.0925, lr: 1.00e-04
+INFO:root:			fg/bg=(24/104), time cost: 3.352339
+INFO:root:			rpn_cls: 0.0896, rpn_box: 0.0484, rcnn_cls: 0.5098, rcnn_box 0.0619,reg_loss 3.6547, 
+INFO:root:[session 62][epoch  3][iter  230/ 240] loss: 3.9700, lr: 1.00e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.362867
+INFO:root:			rpn_cls: 0.0352, rpn_box: 0.0174, rcnn_cls: 0.1798, rcnn_box 0.0019,reg_loss 3.6357, 
+INFO:root:number   3 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_3_239.pth
+INFO:root:[session 62][epoch  4][iter    0/ 240] loss: 4.0907, lr: 1.25e-04
+INFO:root:			fg/bg=(14/114), time cost: 0.332620
+INFO:root:			rpn_cls: 0.0688, rpn_box: 0.0362, rcnn_cls: 0.3320, rcnn_box 0.0375,reg_loss 3.6161, 
+INFO:root:[session 62][epoch  4][iter   10/ 240] loss: 4.0448, lr: 1.25e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.265625
+INFO:root:			rpn_cls: 0.0576, rpn_box: 0.0232, rcnn_cls: 0.3169, rcnn_box 0.0854,reg_loss 3.5922, 
+INFO:root:[session 62][epoch  4][iter   20/ 240] loss: 3.8702, lr: 1.25e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.281260
+INFO:root:			rpn_cls: 0.0266, rpn_box: 0.0092, rcnn_cls: 0.1307, rcnn_box 0.0320,reg_loss 3.5695, 
+INFO:root:[session 62][epoch  4][iter   30/ 240] loss: 4.0401, lr: 1.25e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.273344
+INFO:root:			rpn_cls: 0.0443, rpn_box: 0.0185, rcnn_cls: 0.2387, rcnn_box 0.0320,reg_loss 3.5465, 
+INFO:root:[session 62][epoch  4][iter   40/ 240] loss: 3.9733, lr: 1.25e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.286804
+INFO:root:			rpn_cls: 0.0794, rpn_box: 0.0451, rcnn_cls: 0.3234, rcnn_box 0.0245,reg_loss 3.5239, 
+INFO:root:[session 62][epoch  4][iter   50/ 240] loss: 3.9391, lr: 1.25e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.438351
+INFO:root:			rpn_cls: 0.0429, rpn_box: 0.0166, rcnn_cls: 0.2436, rcnn_box 0.0492,reg_loss 3.5003, 
+INFO:root:[session 62][epoch  4][iter   60/ 240] loss: 3.8012, lr: 1.25e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.409260
+INFO:root:			rpn_cls: 0.0408, rpn_box: 0.0293, rcnn_cls: 0.2088, rcnn_box 0.0005,reg_loss 3.4770, 
+INFO:root:[session 62][epoch  4][iter   70/ 240] loss: 3.8494, lr: 1.25e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.460200
+INFO:root:			rpn_cls: 0.0432, rpn_box: 0.0189, rcnn_cls: 0.2410, rcnn_box 0.0551,reg_loss 3.4548, 
+INFO:root:[session 62][epoch  4][iter   80/ 240] loss: 3.8974, lr: 1.25e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.392359
+INFO:root:			rpn_cls: 0.0494, rpn_box: 0.0179, rcnn_cls: 0.2746, rcnn_box 0.0770,reg_loss 3.4322, 
+INFO:root:[session 62][epoch  4][iter   90/ 240] loss: 3.7748, lr: 1.25e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.362559
+INFO:root:			rpn_cls: 0.0383, rpn_box: 0.0262, rcnn_cls: 0.3512, rcnn_box 0.0923,reg_loss 3.4097, 
+INFO:root:[session 62][epoch  4][iter  100/ 240] loss: 3.8034, lr: 1.25e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.364495
+INFO:root:			rpn_cls: 0.0790, rpn_box: 0.0343, rcnn_cls: 0.3416, rcnn_box 0.0481,reg_loss 3.3872, 
+INFO:root:[session 62][epoch  4][iter  110/ 240] loss: 3.6947, lr: 1.25e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.431496
+INFO:root:			rpn_cls: 0.0279, rpn_box: 0.0075, rcnn_cls: 0.1102, rcnn_box 0.0225,reg_loss 3.3654, 
+INFO:root:[session 62][epoch  4][iter  120/ 240] loss: 3.9213, lr: 1.25e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.396157
+INFO:root:			rpn_cls: 0.0365, rpn_box: 0.0166, rcnn_cls: 0.4944, rcnn_box 0.0001,reg_loss 3.3456, 
+INFO:root:[session 62][epoch  4][iter  130/ 240] loss: 3.6698, lr: 1.25e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.373612
+INFO:root:			rpn_cls: 0.0621, rpn_box: 0.0379, rcnn_cls: 0.3084, rcnn_box 0.0191,reg_loss 3.3307, 
+INFO:root:[session 62][epoch  4][iter  140/ 240] loss: 3.6566, lr: 1.25e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.443733
+INFO:root:			rpn_cls: 0.0719, rpn_box: 0.0414, rcnn_cls: 0.4005, rcnn_box 0.0379,reg_loss 3.3101, 
+INFO:root:[session 62][epoch  4][iter  150/ 240] loss: 3.6383, lr: 1.25e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.439651
+INFO:root:			rpn_cls: 0.0288, rpn_box: 0.0071, rcnn_cls: 0.0971, rcnn_box 0.0127,reg_loss 3.2879, 
+INFO:root:[session 62][epoch  4][iter  160/ 240] loss: 3.8131, lr: 1.25e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.415083
+INFO:root:			rpn_cls: 0.0542, rpn_box: 0.0134, rcnn_cls: 0.3899, rcnn_box 0.0456,reg_loss 3.2685, 
+INFO:root:[session 62][epoch  4][iter  170/ 240] loss: 3.7646, lr: 1.25e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.402573
+INFO:root:			rpn_cls: 0.0685, rpn_box: 0.0361, rcnn_cls: 0.5914, rcnn_box 0.1599,reg_loss 3.2496, 
+INFO:root:[session 62][epoch  4][iter  180/ 240] loss: 3.6500, lr: 1.25e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.416574
+INFO:root:			rpn_cls: 0.0364, rpn_box: 0.0172, rcnn_cls: 0.2728, rcnn_box 0.0494,reg_loss 3.2305, 
+INFO:root:[session 62][epoch  4][iter  190/ 240] loss: 3.5980, lr: 1.25e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.418611
+INFO:root:			rpn_cls: 0.0404, rpn_box: 0.0099, rcnn_cls: 0.1258, rcnn_box 0.0002,reg_loss 3.2107, 
+INFO:root:[session 62][epoch  4][iter  200/ 240] loss: 3.5999, lr: 1.25e-04
+INFO:root:			fg/bg=(2/126), time cost: 3.423010
+INFO:root:			rpn_cls: 0.0305, rpn_box: 0.0047, rcnn_cls: 0.1415, rcnn_box 0.0003,reg_loss 3.1900, 
+INFO:root:[session 62][epoch  4][iter  210/ 240] loss: 3.6066, lr: 1.25e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.533272
+INFO:root:			rpn_cls: 0.0469, rpn_box: 0.0275, rcnn_cls: 0.4123, rcnn_box 0.1265,reg_loss 3.1711, 
+INFO:root:[session 62][epoch  4][iter  220/ 240] loss: 3.5169, lr: 1.25e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.409585
+INFO:root:			rpn_cls: 0.0291, rpn_box: 0.0060, rcnn_cls: 0.1280, rcnn_box 0.0221,reg_loss 3.1521, 
+INFO:root:[session 62][epoch  4][iter  230/ 240] loss: 3.4424, lr: 1.25e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.400220
+INFO:root:			rpn_cls: 0.0360, rpn_box: 0.0094, rcnn_cls: 0.1647, rcnn_box 0.0189,reg_loss 3.1328, 
+INFO:root:number   4 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_4_239.pth
+INFO:root:[session 62][epoch  5][iter    0/ 240] loss: 3.3566, lr: 1.50e-04
+INFO:root:			fg/bg=(6/122), time cost: 0.342651
+INFO:root:			rpn_cls: 0.0408, rpn_box: 0.0093, rcnn_cls: 0.1533, rcnn_box 0.0394,reg_loss 3.1137, 
+INFO:root:[session 62][epoch  5][iter   10/ 240] loss: 3.5008, lr: 1.50e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.486868
+INFO:root:			rpn_cls: 0.0329, rpn_box: 0.0267, rcnn_cls: 0.2628, rcnn_box 0.0667,reg_loss 3.0918, 
+INFO:root:[session 62][epoch  5][iter   20/ 240] loss: 3.4513, lr: 1.50e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.462739
+INFO:root:			rpn_cls: 0.0505, rpn_box: 0.0278, rcnn_cls: 0.4236, rcnn_box 0.1346,reg_loss 3.0697, 
+INFO:root:[session 62][epoch  5][iter   30/ 240] loss: 3.4499, lr: 1.50e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.374975
+INFO:root:			rpn_cls: 0.0302, rpn_box: 0.0137, rcnn_cls: 0.2146, rcnn_box 0.0524,reg_loss 3.0477, 
+INFO:root:[session 62][epoch  5][iter   40/ 240] loss: 3.3987, lr: 1.50e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.398332
+INFO:root:			rpn_cls: 0.0442, rpn_box: 0.0222, rcnn_cls: 0.3059, rcnn_box 0.0611,reg_loss 3.0267, 
+INFO:root:[session 62][epoch  5][iter   50/ 240] loss: 3.4399, lr: 1.50e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.374383
+INFO:root:			rpn_cls: 0.0399, rpn_box: 0.0108, rcnn_cls: 0.0904, rcnn_box 0.0011,reg_loss 3.0073, 
+INFO:root:[session 62][epoch  5][iter   60/ 240] loss: 3.3285, lr: 1.50e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.404907
+INFO:root:			rpn_cls: 0.0452, rpn_box: 0.0253, rcnn_cls: 0.2716, rcnn_box 0.0332,reg_loss 2.9861, 
+INFO:root:[session 62][epoch  5][iter   70/ 240] loss: 3.2604, lr: 1.50e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.512933
+INFO:root:			rpn_cls: 0.0314, rpn_box: 0.0279, rcnn_cls: 0.2275, rcnn_box 0.0182,reg_loss 2.9648, 
+INFO:root:[session 62][epoch  5][iter   80/ 240] loss: 3.3816, lr: 1.50e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.423242
+INFO:root:			rpn_cls: 0.0460, rpn_box: 0.0316, rcnn_cls: 0.3412, rcnn_box 0.0635,reg_loss 2.9439, 
+INFO:root:[session 62][epoch  5][iter   90/ 240] loss: 3.3850, lr: 1.50e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.377139
+INFO:root:			rpn_cls: 0.0447, rpn_box: 0.0103, rcnn_cls: 0.2093, rcnn_box 0.0418,reg_loss 2.9236, 
+INFO:root:[session 62][epoch  5][iter  100/ 240] loss: 3.3531, lr: 1.50e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.386673
+INFO:root:			rpn_cls: 0.0448, rpn_box: 0.0195, rcnn_cls: 0.2993, rcnn_box 0.1297,reg_loss 2.9038, 
+INFO:root:[session 62][epoch  5][iter  110/ 240] loss: 3.2920, lr: 1.50e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.374544
+INFO:root:			rpn_cls: 0.0806, rpn_box: 0.0246, rcnn_cls: 0.2471, rcnn_box 0.0010,reg_loss 2.8843, 
+INFO:root:[session 62][epoch  5][iter  120/ 240] loss: 3.3282, lr: 1.50e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.372638
+INFO:root:			rpn_cls: 0.0321, rpn_box: 0.0101, rcnn_cls: 0.3072, rcnn_box 0.0959,reg_loss 2.8669, 
+INFO:root:[session 62][epoch  5][iter  130/ 240] loss: 3.2315, lr: 1.50e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.359909
+INFO:root:			rpn_cls: 0.0345, rpn_box: 0.0237, rcnn_cls: 0.2839, rcnn_box 0.0760,reg_loss 2.8492, 
+INFO:root:[session 62][epoch  5][iter  140/ 240] loss: 3.1677, lr: 1.50e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.367146
+INFO:root:			rpn_cls: 0.0647, rpn_box: 0.0310, rcnn_cls: 0.3547, rcnn_box 0.0715,reg_loss 2.8296, 
+INFO:root:[session 62][epoch  5][iter  150/ 240] loss: 3.3303, lr: 1.50e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.434674
+INFO:root:			rpn_cls: 0.0533, rpn_box: 0.0313, rcnn_cls: 0.3706, rcnn_box 0.0788,reg_loss 2.8124, 
+INFO:root:[session 62][epoch  5][iter  160/ 240] loss: 3.3100, lr: 1.50e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.456481
+INFO:root:			rpn_cls: 0.0372, rpn_box: 0.0147, rcnn_cls: 0.3167, rcnn_box 0.0558,reg_loss 2.7948, 
+INFO:root:[session 62][epoch  5][iter  170/ 240] loss: 3.1552, lr: 1.50e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.413508
+INFO:root:			rpn_cls: 0.0277, rpn_box: 0.0065, rcnn_cls: 0.0712, rcnn_box 0.0001,reg_loss 2.7767, 
+INFO:root:[session 62][epoch  5][iter  180/ 240] loss: 3.2338, lr: 1.50e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.374749
+INFO:root:			rpn_cls: 0.0767, rpn_box: 0.0348, rcnn_cls: 0.4258, rcnn_box 0.0658,reg_loss 2.7591, 
+INFO:root:[session 62][epoch  5][iter  190/ 240] loss: 3.1587, lr: 1.50e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.373832
+INFO:root:			rpn_cls: 0.0885, rpn_box: 0.0552, rcnn_cls: 0.5352, rcnn_box 0.1134,reg_loss 2.7401, 
+INFO:root:[session 62][epoch  5][iter  200/ 240] loss: 3.1355, lr: 1.50e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.373611
+INFO:root:			rpn_cls: 0.0583, rpn_box: 0.0373, rcnn_cls: 0.2849, rcnn_box 0.0037,reg_loss 2.7207, 
+INFO:root:[session 62][epoch  5][iter  210/ 240] loss: 3.1416, lr: 1.50e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.396091
+INFO:root:			rpn_cls: 0.0216, rpn_box: 0.0099, rcnn_cls: 0.1609, rcnn_box 0.0137,reg_loss 2.7021, 
+INFO:root:[session 62][epoch  5][iter  220/ 240] loss: 3.0353, lr: 1.50e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.388411
+INFO:root:			rpn_cls: 0.0451, rpn_box: 0.0098, rcnn_cls: 0.1667, rcnn_box 0.0405,reg_loss 2.6850, 
+INFO:root:[session 62][epoch  5][iter  230/ 240] loss: 3.0457, lr: 1.50e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.398866
+INFO:root:			rpn_cls: 0.0302, rpn_box: 0.0127, rcnn_cls: 0.2142, rcnn_box 0.0475,reg_loss 2.6668, 
+INFO:root:number   5 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_5_239.pth
+INFO:root:[session 62][epoch  6][iter    0/ 240] loss: 3.1033, lr: 1.75e-04
+INFO:root:			fg/bg=(12/116), time cost: 0.339885
+INFO:root:			rpn_cls: 0.0580, rpn_box: 0.0270, rcnn_cls: 0.2787, rcnn_box 0.0888,reg_loss 2.6507, 
+INFO:root:[session 62][epoch  6][iter   10/ 240] loss: 3.0681, lr: 1.75e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.381274
+INFO:root:			rpn_cls: 0.0497, rpn_box: 0.0096, rcnn_cls: 0.1305, rcnn_box 0.0004,reg_loss 2.6313, 
+INFO:root:[session 62][epoch  6][iter   20/ 240] loss: 2.9680, lr: 1.75e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.381755
+INFO:root:			rpn_cls: 0.0438, rpn_box: 0.0182, rcnn_cls: 0.2379, rcnn_box 0.0220,reg_loss 2.6107, 
+INFO:root:[session 62][epoch  6][iter   30/ 240] loss: 3.0069, lr: 1.75e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.378986
+INFO:root:			rpn_cls: 0.0676, rpn_box: 0.0280, rcnn_cls: 0.2549, rcnn_box 0.0231,reg_loss 2.5914, 
+INFO:root:[session 62][epoch  6][iter   40/ 240] loss: 3.0297, lr: 1.75e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.375660
+INFO:root:			rpn_cls: 0.0381, rpn_box: 0.0189, rcnn_cls: 0.1971, rcnn_box 0.0054,reg_loss 2.5713, 
+INFO:root:[session 62][epoch  6][iter   50/ 240] loss: 3.1007, lr: 1.75e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.398722
+INFO:root:			rpn_cls: 0.0605, rpn_box: 0.0319, rcnn_cls: 0.4020, rcnn_box 0.1184,reg_loss 2.5527, 
+INFO:root:[session 62][epoch  6][iter   60/ 240] loss: 2.8834, lr: 1.75e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.378516
+INFO:root:			rpn_cls: 0.0510, rpn_box: 0.0179, rcnn_cls: 0.2431, rcnn_box 0.0226,reg_loss 2.5376, 
+INFO:root:[session 62][epoch  6][iter   70/ 240] loss: 2.8901, lr: 1.75e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.383602
+INFO:root:			rpn_cls: 0.0411, rpn_box: 0.0132, rcnn_cls: 0.2360, rcnn_box 0.0341,reg_loss 2.5191, 
+INFO:root:[session 62][epoch  6][iter   80/ 240] loss: 2.9139, lr: 1.75e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.411067
+INFO:root:			rpn_cls: 0.0223, rpn_box: 0.0150, rcnn_cls: 0.3000, rcnn_box 0.0599,reg_loss 2.4993, 
+INFO:root:[session 62][epoch  6][iter   90/ 240] loss: 2.8528, lr: 1.75e-04
+INFO:root:			fg/bg=(28/100), time cost: 3.393432
+INFO:root:			rpn_cls: 0.0840, rpn_box: 0.0476, rcnn_cls: 0.6484, rcnn_box 0.1861,reg_loss 2.4808, 
+INFO:root:[session 62][epoch  6][iter  100/ 240] loss: 2.7653, lr: 1.75e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.382976
+INFO:root:			rpn_cls: 0.0375, rpn_box: 0.0248, rcnn_cls: 0.2938, rcnn_box 0.0307,reg_loss 2.4621, 
+INFO:root:[session 62][epoch  6][iter  110/ 240] loss: 2.8344, lr: 1.75e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.380089
+INFO:root:			rpn_cls: 0.0258, rpn_box: 0.0081, rcnn_cls: 0.2056, rcnn_box 0.0401,reg_loss 2.4440, 
+INFO:root:[session 62][epoch  6][iter  120/ 240] loss: 2.8094, lr: 1.75e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.377781
+INFO:root:			rpn_cls: 0.0650, rpn_box: 0.0242, rcnn_cls: 0.2471, rcnn_box 0.0155,reg_loss 2.4255, 
+INFO:root:[session 62][epoch  6][iter  130/ 240] loss: 2.8049, lr: 1.75e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.391511
+INFO:root:			rpn_cls: 0.0660, rpn_box: 0.0247, rcnn_cls: 0.3158, rcnn_box 0.0715,reg_loss 2.4085, 
+INFO:root:[session 62][epoch  6][iter  140/ 240] loss: 2.7255, lr: 1.75e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.591105
+INFO:root:			rpn_cls: 0.0629, rpn_box: 0.0334, rcnn_cls: 0.3422, rcnn_box 0.0654,reg_loss 2.3914, 
+INFO:root:[session 62][epoch  6][iter  150/ 240] loss: 2.7046, lr: 1.75e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.387669
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0146, rcnn_cls: 0.1829, rcnn_box 0.0149,reg_loss 2.3741, 
+INFO:root:[session 62][epoch  6][iter  160/ 240] loss: 2.8018, lr: 1.75e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.380966
+INFO:root:			rpn_cls: 0.0497, rpn_box: 0.0197, rcnn_cls: 0.2624, rcnn_box 0.0675,reg_loss 2.3572, 
+INFO:root:[session 62][epoch  6][iter  170/ 240] loss: 2.7712, lr: 1.75e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.381836
+INFO:root:			rpn_cls: 0.0579, rpn_box: 0.0179, rcnn_cls: 0.2442, rcnn_box 0.0535,reg_loss 2.3409, 
+INFO:root:[session 62][epoch  6][iter  180/ 240] loss: 2.7287, lr: 1.75e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.624650
+INFO:root:			rpn_cls: 0.0507, rpn_box: 0.0150, rcnn_cls: 0.2235, rcnn_box 0.0140,reg_loss 2.3241, 
+INFO:root:[session 62][epoch  6][iter  190/ 240] loss: 2.7452, lr: 1.75e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.394929
+INFO:root:			rpn_cls: 0.0689, rpn_box: 0.0524, rcnn_cls: 0.6440, rcnn_box 0.2041,reg_loss 2.3089, 
+INFO:root:[session 62][epoch  6][iter  200/ 240] loss: 2.8134, lr: 1.75e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.386311
+INFO:root:			rpn_cls: 0.0680, rpn_box: 0.0362, rcnn_cls: 0.3459, rcnn_box 0.0655,reg_loss 2.2942, 
+INFO:root:[session 62][epoch  6][iter  210/ 240] loss: 2.6933, lr: 1.75e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.455997
+INFO:root:			rpn_cls: 0.0428, rpn_box: 0.0197, rcnn_cls: 0.1351, rcnn_box 0.0017,reg_loss 2.2815, 
+INFO:root:[session 62][epoch  6][iter  220/ 240] loss: 2.6748, lr: 1.75e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.549811
+INFO:root:			rpn_cls: 0.0454, rpn_box: 0.0160, rcnn_cls: 0.3532, rcnn_box 0.1234,reg_loss 2.2645, 
+INFO:root:[session 62][epoch  6][iter  230/ 240] loss: 2.6806, lr: 1.75e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.792573
+INFO:root:			rpn_cls: 0.0412, rpn_box: 0.0152, rcnn_cls: 0.1965, rcnn_box 0.0212,reg_loss 2.2487, 
+INFO:root:number   6 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_6_239.pth
+INFO:root:[session 62][epoch  7][iter    0/ 240] loss: 2.6204, lr: 2.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 0.342355
+INFO:root:			rpn_cls: 0.0536, rpn_box: 0.0252, rcnn_cls: 0.3050, rcnn_box 0.0008,reg_loss 2.2359, 
+INFO:root:[session 62][epoch  7][iter   10/ 240] loss: 2.6779, lr: 2.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.395155
+INFO:root:			rpn_cls: 0.0447, rpn_box: 0.0148, rcnn_cls: 0.2675, rcnn_box 0.1001,reg_loss 2.2230, 
+INFO:root:[session 62][epoch  7][iter   20/ 240] loss: 2.5862, lr: 2.00e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.381221
+INFO:root:			rpn_cls: 0.0926, rpn_box: 0.0431, rcnn_cls: 0.4557, rcnn_box 0.0633,reg_loss 2.2047, 
+INFO:root:[session 62][epoch  7][iter   30/ 240] loss: 2.6034, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.611102
+INFO:root:			rpn_cls: 0.0570, rpn_box: 0.0295, rcnn_cls: 0.1906, rcnn_box 0.0010,reg_loss 2.1855, 
+INFO:root:[session 62][epoch  7][iter   40/ 240] loss: 2.5936, lr: 2.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.624785
+INFO:root:			rpn_cls: 0.0326, rpn_box: 0.0120, rcnn_cls: 0.2712, rcnn_box 0.1176,reg_loss 2.1684, 
+INFO:root:[session 62][epoch  7][iter   50/ 240] loss: 2.5244, lr: 2.00e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.598341
+INFO:root:			rpn_cls: 0.0337, rpn_box: 0.0153, rcnn_cls: 0.1869, rcnn_box 0.0116,reg_loss 2.1553, 
+INFO:root:[session 62][epoch  7][iter   60/ 240] loss: 2.7525, lr: 2.00e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.610991
+INFO:root:			rpn_cls: 0.0725, rpn_box: 0.0232, rcnn_cls: 0.3388, rcnn_box 0.0666,reg_loss 2.1454, 
+INFO:root:[session 62][epoch  7][iter   70/ 240] loss: 2.5250, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.593258
+INFO:root:			rpn_cls: 0.0431, rpn_box: 0.0111, rcnn_cls: 0.2484, rcnn_box 0.0658,reg_loss 2.1299, 
+INFO:root:[session 62][epoch  7][iter   80/ 240] loss: 2.4723, lr: 2.00e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.592657
+INFO:root:			rpn_cls: 0.0273, rpn_box: 0.0133, rcnn_cls: 0.1903, rcnn_box 0.0046,reg_loss 2.1124, 
+INFO:root:[session 62][epoch  7][iter   90/ 240] loss: 2.5805, lr: 2.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.402925
+INFO:root:			rpn_cls: 0.0265, rpn_box: 0.0079, rcnn_cls: 0.1491, rcnn_box 0.0022,reg_loss 2.0965, 
+INFO:root:[session 62][epoch  7][iter  100/ 240] loss: 2.5911, lr: 2.00e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.419512
+INFO:root:			rpn_cls: 0.0508, rpn_box: 0.0116, rcnn_cls: 0.2973, rcnn_box 0.0216,reg_loss 2.0817, 
+INFO:root:[session 62][epoch  7][iter  110/ 240] loss: 2.6141, lr: 2.00e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.459565
+INFO:root:			rpn_cls: 0.0392, rpn_box: 0.0170, rcnn_cls: 0.1636, rcnn_box 0.0007,reg_loss 2.0691, 
+INFO:root:[session 62][epoch  7][iter  120/ 240] loss: 2.5281, lr: 2.00e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.410014
+INFO:root:			rpn_cls: 0.0493, rpn_box: 0.0184, rcnn_cls: 0.4258, rcnn_box 0.1419,reg_loss 2.0607, 
+INFO:root:[session 62][epoch  7][iter  130/ 240] loss: 2.5215, lr: 2.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.385653
+INFO:root:			rpn_cls: 0.0734, rpn_box: 0.0395, rcnn_cls: 0.3150, rcnn_box 0.0250,reg_loss 2.0461, 
+INFO:root:[session 62][epoch  7][iter  140/ 240] loss: 2.3812, lr: 2.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.366114
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0072, rcnn_cls: 0.1314, rcnn_box 0.0214,reg_loss 2.0292, 
+INFO:root:[session 62][epoch  7][iter  150/ 240] loss: 2.3836, lr: 2.00e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.351742
+INFO:root:			rpn_cls: 0.0357, rpn_box: 0.0145, rcnn_cls: 0.1902, rcnn_box 0.0363,reg_loss 2.0118, 
+INFO:root:[session 62][epoch  7][iter  160/ 240] loss: 2.4021, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.343657
+INFO:root:			rpn_cls: 0.0430, rpn_box: 0.0243, rcnn_cls: 0.2801, rcnn_box 0.0552,reg_loss 1.9955, 
+INFO:root:[session 62][epoch  7][iter  170/ 240] loss: 2.3136, lr: 2.00e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.371448
+INFO:root:			rpn_cls: 0.0575, rpn_box: 0.0289, rcnn_cls: 0.4059, rcnn_box 0.0731,reg_loss 1.9818, 
+INFO:root:[session 62][epoch  7][iter  180/ 240] loss: 2.3369, lr: 2.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.681081
+INFO:root:			rpn_cls: 0.0130, rpn_box: 0.0027, rcnn_cls: 0.1601, rcnn_box 0.0230,reg_loss 1.9669, 
+INFO:root:[session 62][epoch  7][iter  190/ 240] loss: 2.3573, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.586261
+INFO:root:			rpn_cls: 0.0403, rpn_box: 0.0166, rcnn_cls: 0.2393, rcnn_box 0.0453,reg_loss 1.9548, 
+INFO:root:[session 62][epoch  7][iter  200/ 240] loss: 2.3795, lr: 2.00e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.592542
+INFO:root:			rpn_cls: 0.0774, rpn_box: 0.0302, rcnn_cls: 0.3649, rcnn_box 0.0795,reg_loss 1.9420, 
+INFO:root:[session 62][epoch  7][iter  210/ 240] loss: 2.3255, lr: 2.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.597238
+INFO:root:			rpn_cls: 0.0289, rpn_box: 0.0183, rcnn_cls: 0.2140, rcnn_box 0.0883,reg_loss 1.9290, 
+INFO:root:[session 62][epoch  7][iter  220/ 240] loss: 2.2615, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.582964
+INFO:root:			rpn_cls: 0.0241, rpn_box: 0.0127, rcnn_cls: 0.2633, rcnn_box 0.1133,reg_loss 1.9162, 
+INFO:root:[session 62][epoch  7][iter  230/ 240] loss: 2.3997, lr: 2.00e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.433546
+INFO:root:			rpn_cls: 0.0886, rpn_box: 0.0237, rcnn_cls: 0.3781, rcnn_box 0.1104,reg_loss 1.9045, 
+INFO:root:number   7 epoch 's map: 0.0064
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_7_239.pth
+INFO:root:[session 62][epoch  8][iter    0/ 240] loss: 2.1734, lr: 2.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 0.330436
+INFO:root:			rpn_cls: 0.0266, rpn_box: 0.0073, rcnn_cls: 0.1695, rcnn_box 0.0781,reg_loss 1.8918, 
+INFO:root:[session 62][epoch  8][iter   10/ 240] loss: 2.2683, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.267696
+INFO:root:			rpn_cls: 0.0476, rpn_box: 0.0137, rcnn_cls: 0.1925, rcnn_box 0.0361,reg_loss 1.8806, 
+INFO:root:[session 62][epoch  8][iter   20/ 240] loss: 2.2212, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.258361
+INFO:root:			rpn_cls: 0.0426, rpn_box: 0.0198, rcnn_cls: 0.2552, rcnn_box 0.0454,reg_loss 1.8718, 
+INFO:root:[session 62][epoch  8][iter   30/ 240] loss: 2.3688, lr: 2.00e-04
+INFO:root:			fg/bg=(30/98), time cost: 3.267709
+INFO:root:			rpn_cls: 0.0769, rpn_box: 0.0461, rcnn_cls: 0.6043, rcnn_box 0.1837,reg_loss 1.8673, 
+INFO:root:[session 62][epoch  8][iter   40/ 240] loss: 2.2073, lr: 2.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.270944
+INFO:root:			rpn_cls: 0.0234, rpn_box: 0.0046, rcnn_cls: 0.0947, rcnn_box 0.0197,reg_loss 1.8566, 
+INFO:root:[session 62][epoch  8][iter   50/ 240] loss: 2.4736, lr: 2.00e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.361942
+INFO:root:			rpn_cls: 0.0601, rpn_box: 0.0390, rcnn_cls: 0.3038, rcnn_box 0.1580,reg_loss 1.8536, 
+INFO:root:[session 62][epoch  8][iter   60/ 240] loss: 2.2676, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.359402
+INFO:root:			rpn_cls: 0.0369, rpn_box: 0.0183, rcnn_cls: 0.2359, rcnn_box 0.0844,reg_loss 1.8493, 
+INFO:root:[session 62][epoch  8][iter   70/ 240] loss: 2.1722, lr: 2.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.362472
+INFO:root:			rpn_cls: 0.0564, rpn_box: 0.0239, rcnn_cls: 0.2992, rcnn_box 0.0402,reg_loss 1.8380, 
+INFO:root:[session 62][epoch  8][iter   80/ 240] loss: 2.1427, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.366799
+INFO:root:			rpn_cls: 0.0387, rpn_box: 0.0160, rcnn_cls: 0.2117, rcnn_box 0.0915,reg_loss 1.8218, 
+INFO:root:[session 62][epoch  8][iter   90/ 240] loss: 2.2608, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.473848
+INFO:root:			rpn_cls: 0.0221, rpn_box: 0.0206, rcnn_cls: 0.2888, rcnn_box 0.0774,reg_loss 1.8074, 
+INFO:root:[session 62][epoch  8][iter  100/ 240] loss: 2.2724, lr: 2.00e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.414631
+INFO:root:			rpn_cls: 0.0568, rpn_box: 0.0252, rcnn_cls: 0.2326, rcnn_box 0.0905,reg_loss 1.8011, 
+INFO:root:[session 62][epoch  8][iter  110/ 240] loss: 2.1662, lr: 2.00e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.364141
+INFO:root:			rpn_cls: 0.0399, rpn_box: 0.0119, rcnn_cls: 0.1734, rcnn_box 0.0136,reg_loss 1.7914, 
+INFO:root:[session 62][epoch  8][iter  120/ 240] loss: 2.1290, lr: 2.00e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.383722
+INFO:root:			rpn_cls: 0.0291, rpn_box: 0.0039, rcnn_cls: 0.1319, rcnn_box 0.0422,reg_loss 1.7782, 
+INFO:root:[session 62][epoch  8][iter  130/ 240] loss: 2.1437, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.473212
+INFO:root:			rpn_cls: 0.0390, rpn_box: 0.0137, rcnn_cls: 0.1600, rcnn_box 0.0236,reg_loss 1.7632, 
+INFO:root:[session 62][epoch  8][iter  140/ 240] loss: 2.1732, lr: 2.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.492619
+INFO:root:			rpn_cls: 0.0312, rpn_box: 0.0143, rcnn_cls: 0.2672, rcnn_box 0.0296,reg_loss 1.7518, 
+INFO:root:[session 62][epoch  8][iter  150/ 240] loss: 2.1587, lr: 2.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.414398
+INFO:root:			rpn_cls: 0.0566, rpn_box: 0.0182, rcnn_cls: 0.1647, rcnn_box 0.0424,reg_loss 1.7404, 
+INFO:root:[session 62][epoch  8][iter  160/ 240] loss: 2.1832, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.404864
+INFO:root:			rpn_cls: 0.0449, rpn_box: 0.0157, rcnn_cls: 0.1689, rcnn_box 0.0511,reg_loss 1.7296, 
+INFO:root:[session 62][epoch  8][iter  170/ 240] loss: 2.0469, lr: 2.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.599419
+INFO:root:			rpn_cls: 0.0289, rpn_box: 0.0042, rcnn_cls: 0.2098, rcnn_box 0.0371,reg_loss 1.7170, 
+INFO:root:[session 62][epoch  8][iter  180/ 240] loss: 2.0517, lr: 2.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.622195
+INFO:root:			rpn_cls: 0.0285, rpn_box: 0.0143, rcnn_cls: 0.2639, rcnn_box 0.0617,reg_loss 1.7056, 
+INFO:root:[session 62][epoch  8][iter  190/ 240] loss: 2.0182, lr: 2.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.565382
+INFO:root:			rpn_cls: 0.0486, rpn_box: 0.0239, rcnn_cls: 0.2264, rcnn_box 0.0384,reg_loss 1.6946, 
+INFO:root:[session 62][epoch  8][iter  200/ 240] loss: 2.0950, lr: 2.00e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.462732
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0159, rcnn_cls: 0.2092, rcnn_box 0.1061,reg_loss 1.6840, 
+INFO:root:[session 62][epoch  8][iter  210/ 240] loss: 2.0718, lr: 2.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.649049
+INFO:root:			rpn_cls: 0.0358, rpn_box: 0.0090, rcnn_cls: 0.2268, rcnn_box 0.0363,reg_loss 1.6746, 
+INFO:root:[session 62][epoch  8][iter  220/ 240] loss: 2.1946, lr: 2.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.588264
+INFO:root:			rpn_cls: 0.0445, rpn_box: 0.0122, rcnn_cls: 0.2892, rcnn_box 0.0223,reg_loss 1.6715, 
+INFO:root:[session 62][epoch  8][iter  230/ 240] loss: 2.1300, lr: 2.00e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.524192
+INFO:root:			rpn_cls: 0.0516, rpn_box: 0.0125, rcnn_cls: 0.3286, rcnn_box 0.1659,reg_loss 1.6741, 
+INFO:root:number   8 epoch 's map: 0.0040
+INFO:root:[session 62][epoch  9][iter    0/ 240] loss: 2.0984, lr: 1.98e-04
+INFO:root:			fg/bg=(15/113), time cost: 0.328275
+INFO:root:			rpn_cls: 0.0699, rpn_box: 0.0265, rcnn_cls: 0.2710, rcnn_box 0.0628,reg_loss 1.6682, 
+INFO:root:[session 62][epoch  9][iter   10/ 240] loss: 2.0006, lr: 1.98e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.275819
+INFO:root:			rpn_cls: 0.0297, rpn_box: 0.0070, rcnn_cls: 0.1189, rcnn_box 0.0012,reg_loss 1.6548, 
+INFO:root:[session 62][epoch  9][iter   20/ 240] loss: 2.1641, lr: 1.98e-04
+INFO:root:			fg/bg=(2/126), time cost: 3.313619
+INFO:root:			rpn_cls: 0.0314, rpn_box: 0.0035, rcnn_cls: 0.1190, rcnn_box 0.0008,reg_loss 1.6459, 
+INFO:root:[session 62][epoch  9][iter   30/ 240] loss: 2.0884, lr: 1.98e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.360656
+INFO:root:			rpn_cls: 0.0474, rpn_box: 0.0225, rcnn_cls: 0.2917, rcnn_box 0.0159,reg_loss 1.6364, 
+INFO:root:[session 62][epoch  9][iter   40/ 240] loss: 1.9628, lr: 1.98e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.392977
+INFO:root:			rpn_cls: 0.0411, rpn_box: 0.0142, rcnn_cls: 0.2696, rcnn_box 0.0866,reg_loss 1.6250, 
+INFO:root:[session 62][epoch  9][iter   50/ 240] loss: 1.9681, lr: 1.98e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.455131
+INFO:root:			rpn_cls: 0.0623, rpn_box: 0.0291, rcnn_cls: 0.2682, rcnn_box 0.0283,reg_loss 1.6136, 
+INFO:root:[session 62][epoch  9][iter   60/ 240] loss: 1.9822, lr: 1.98e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.450788
+INFO:root:			rpn_cls: 0.0360, rpn_box: 0.0132, rcnn_cls: 0.1902, rcnn_box 0.0294,reg_loss 1.6036, 
+INFO:root:[session 62][epoch  9][iter   70/ 240] loss: 2.0315, lr: 1.98e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.421030
+INFO:root:			rpn_cls: 0.0808, rpn_box: 0.0326, rcnn_cls: 0.3843, rcnn_box 0.1713,reg_loss 1.5970, 
+INFO:root:[session 62][epoch  9][iter   80/ 240] loss: 1.9882, lr: 1.98e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.393919
+INFO:root:			rpn_cls: 0.0441, rpn_box: 0.0310, rcnn_cls: 0.3177, rcnn_box 0.1275,reg_loss 1.5884, 
+INFO:root:[session 62][epoch  9][iter   90/ 240] loss: 2.0507, lr: 1.98e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.474680
+INFO:root:			rpn_cls: 0.0272, rpn_box: 0.0139, rcnn_cls: 0.1948, rcnn_box 0.0899,reg_loss 1.5818, 
+INFO:root:[session 62][epoch  9][iter  100/ 240] loss: 1.9627, lr: 1.98e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.327552
+INFO:root:			rpn_cls: 0.0401, rpn_box: 0.0106, rcnn_cls: 0.2164, rcnn_box 0.0528,reg_loss 1.5728, 
+INFO:root:[session 62][epoch  9][iter  110/ 240] loss: 1.8705, lr: 1.98e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.404596
+INFO:root:			rpn_cls: 0.0290, rpn_box: 0.0044, rcnn_cls: 0.0874, rcnn_box 0.0213,reg_loss 1.5645, 
+INFO:root:[session 62][epoch  9][iter  120/ 240] loss: 1.8515, lr: 1.98e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.453543
+INFO:root:			rpn_cls: 0.0496, rpn_box: 0.0227, rcnn_cls: 0.2722, rcnn_box 0.1076,reg_loss 1.5548, 
+INFO:root:[session 62][epoch  9][iter  130/ 240] loss: 1.8968, lr: 1.98e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.426172
+INFO:root:			rpn_cls: 0.0372, rpn_box: 0.0223, rcnn_cls: 0.3199, rcnn_box 0.1137,reg_loss 1.5450, 
+INFO:root:[session 62][epoch  9][iter  140/ 240] loss: 1.8207, lr: 1.98e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.430299
+INFO:root:			rpn_cls: 0.0395, rpn_box: 0.0284, rcnn_cls: 0.2896, rcnn_box 0.0847,reg_loss 1.5365, 
+INFO:root:[session 62][epoch  9][iter  150/ 240] loss: 1.8835, lr: 1.98e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.665566
+INFO:root:			rpn_cls: 0.0236, rpn_box: 0.0124, rcnn_cls: 0.1822, rcnn_box 0.0932,reg_loss 1.5281, 
+INFO:root:[session 62][epoch  9][iter  160/ 240] loss: 1.8182, lr: 1.98e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.518849
+INFO:root:			rpn_cls: 0.0588, rpn_box: 0.0285, rcnn_cls: 0.3037, rcnn_box 0.0550,reg_loss 1.5195, 
+INFO:root:[session 62][epoch  9][iter  170/ 240] loss: 1.9810, lr: 1.98e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.661389
+INFO:root:			rpn_cls: 0.0654, rpn_box: 0.0433, rcnn_cls: 0.4005, rcnn_box 0.1577,reg_loss 1.5123, 
+INFO:root:[session 62][epoch  9][iter  180/ 240] loss: 1.8894, lr: 1.98e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.542241
+INFO:root:			rpn_cls: 0.0488, rpn_box: 0.0155, rcnn_cls: 0.2181, rcnn_box 0.0539,reg_loss 1.5056, 
+INFO:root:[session 62][epoch  9][iter  190/ 240] loss: 1.8699, lr: 1.98e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.331792
+INFO:root:			rpn_cls: 0.0322, rpn_box: 0.0170, rcnn_cls: 0.1673, rcnn_box 0.0588,reg_loss 1.4980, 
+INFO:root:[session 62][epoch  9][iter  200/ 240] loss: 1.8386, lr: 1.98e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.373757
+INFO:root:			rpn_cls: 0.0340, rpn_box: 0.0195, rcnn_cls: 0.3525, rcnn_box 0.2348,reg_loss 1.4890, 
+INFO:root:[session 62][epoch  9][iter  210/ 240] loss: 1.8705, lr: 1.98e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.730393
+INFO:root:			rpn_cls: 0.0412, rpn_box: 0.0161, rcnn_cls: 0.2917, rcnn_box 0.0897,reg_loss 1.4813, 
+INFO:root:[session 62][epoch  9][iter  220/ 240] loss: 1.7961, lr: 1.98e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.439436
+INFO:root:			rpn_cls: 0.0506, rpn_box: 0.0070, rcnn_cls: 0.1378, rcnn_box 0.0319,reg_loss 1.4734, 
+INFO:root:[session 62][epoch  9][iter  230/ 240] loss: 1.8630, lr: 1.98e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.418995
+INFO:root:			rpn_cls: 0.0410, rpn_box: 0.0106, rcnn_cls: 0.1718, rcnn_box 0.0334,reg_loss 1.4656, 
+INFO:root:number   9 epoch 's map: 0.0071
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_9_239.pth
+INFO:root:[session 62][epoch 10][iter    0/ 240] loss: 1.9128, lr: 1.95e-04
+INFO:root:			fg/bg=(16/112), time cost: 0.339443
+INFO:root:			rpn_cls: 0.0416, rpn_box: 0.0191, rcnn_cls: 0.2744, rcnn_box 0.1188,reg_loss 1.4589, 
+INFO:root:[session 62][epoch 10][iter   10/ 240] loss: 1.7959, lr: 1.95e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.377208
+INFO:root:			rpn_cls: 0.0350, rpn_box: 0.0170, rcnn_cls: 0.2575, rcnn_box 0.0246,reg_loss 1.4512, 
+INFO:root:[session 62][epoch 10][iter   20/ 240] loss: 1.9279, lr: 1.95e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.401608
+INFO:root:			rpn_cls: 0.0334, rpn_box: 0.0066, rcnn_cls: 0.2210, rcnn_box 0.0540,reg_loss 1.4443, 
+INFO:root:[session 62][epoch 10][iter   30/ 240] loss: 1.8030, lr: 1.95e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.461589
+INFO:root:			rpn_cls: 0.0336, rpn_box: 0.0158, rcnn_cls: 0.2505, rcnn_box 0.0960,reg_loss 1.4378, 
+INFO:root:[session 62][epoch 10][iter   40/ 240] loss: 1.7724, lr: 1.95e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.537301
+INFO:root:			rpn_cls: 0.0220, rpn_box: 0.0097, rcnn_cls: 0.0889, rcnn_box 0.0021,reg_loss 1.4311, 
+INFO:root:[session 62][epoch 10][iter   50/ 240] loss: 1.7392, lr: 1.95e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.613303
+INFO:root:			rpn_cls: 0.0747, rpn_box: 0.0266, rcnn_cls: 0.2157, rcnn_box 0.0163,reg_loss 1.4235, 
+INFO:root:[session 62][epoch 10][iter   60/ 240] loss: 1.7425, lr: 1.95e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.654097
+INFO:root:			rpn_cls: 0.0441, rpn_box: 0.0193, rcnn_cls: 0.3245, rcnn_box 0.0710,reg_loss 1.4159, 
+INFO:root:[session 62][epoch 10][iter   70/ 240] loss: 1.7342, lr: 1.95e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.455806
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0115, rcnn_cls: 0.1709, rcnn_box 0.0580,reg_loss 1.4087, 
+INFO:root:[session 62][epoch 10][iter   80/ 240] loss: 1.7775, lr: 1.95e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.499598
+INFO:root:			rpn_cls: 0.0441, rpn_box: 0.0056, rcnn_cls: 0.1097, rcnn_box 0.0004,reg_loss 1.4034, 
+INFO:root:[session 62][epoch 10][iter   90/ 240] loss: 1.7149, lr: 1.95e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.375164
+INFO:root:			rpn_cls: 0.0430, rpn_box: 0.0187, rcnn_cls: 0.3327, rcnn_box 0.0719,reg_loss 1.3963, 
+INFO:root:[session 62][epoch 10][iter  100/ 240] loss: 1.7302, lr: 1.95e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.392027
+INFO:root:			rpn_cls: 0.0305, rpn_box: 0.0151, rcnn_cls: 0.2292, rcnn_box 0.1044,reg_loss 1.3893, 
+INFO:root:[session 62][epoch 10][iter  110/ 240] loss: 1.6681, lr: 1.95e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.414459
+INFO:root:			rpn_cls: 0.0342, rpn_box: 0.0166, rcnn_cls: 0.1586, rcnn_box 0.0317,reg_loss 1.3825, 
+INFO:root:[session 62][epoch 10][iter  120/ 240] loss: 1.6844, lr: 1.95e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.666156
+INFO:root:			rpn_cls: 0.0330, rpn_box: 0.0167, rcnn_cls: 0.2398, rcnn_box 0.0861,reg_loss 1.3761, 
+INFO:root:[session 62][epoch 10][iter  130/ 240] loss: 1.7568, lr: 1.95e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.604595
+INFO:root:			rpn_cls: 0.0454, rpn_box: 0.0289, rcnn_cls: 0.3828, rcnn_box 0.1736,reg_loss 1.3701, 
+INFO:root:[session 62][epoch 10][iter  140/ 240] loss: 1.8154, lr: 1.95e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.587854
+INFO:root:			rpn_cls: 0.0629, rpn_box: 0.0266, rcnn_cls: 0.4158, rcnn_box 0.0958,reg_loss 1.3711, 
+INFO:root:[session 62][epoch 10][iter  150/ 240] loss: 1.7818, lr: 1.95e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.403204
+INFO:root:			rpn_cls: 0.0453, rpn_box: 0.0218, rcnn_cls: 0.3464, rcnn_box 0.0709,reg_loss 1.3664, 
+INFO:root:[session 62][epoch 10][iter  160/ 240] loss: 1.6467, lr: 1.95e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.370673
+INFO:root:			rpn_cls: 0.0273, rpn_box: 0.0050, rcnn_cls: 0.1484, rcnn_box 0.0472,reg_loss 1.3596, 
+INFO:root:[session 62][epoch 10][iter  170/ 240] loss: 1.6828, lr: 1.95e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.500648
+INFO:root:			rpn_cls: 0.0851, rpn_box: 0.0128, rcnn_cls: 0.1767, rcnn_box 0.0157,reg_loss 1.3518, 
+INFO:root:[session 62][epoch 10][iter  180/ 240] loss: 1.7550, lr: 1.95e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.403545
+INFO:root:			rpn_cls: 0.0303, rpn_box: 0.0145, rcnn_cls: 0.2781, rcnn_box 0.0879,reg_loss 1.3466, 
+INFO:root:[session 62][epoch 10][iter  190/ 240] loss: 1.7723, lr: 1.95e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.407189
+INFO:root:			rpn_cls: 0.0340, rpn_box: 0.0124, rcnn_cls: 0.3878, rcnn_box 0.1124,reg_loss 1.3404, 
+INFO:root:[session 62][epoch 10][iter  200/ 240] loss: 1.7221, lr: 1.95e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.428421
+INFO:root:			rpn_cls: 0.0303, rpn_box: 0.0120, rcnn_cls: 0.2761, rcnn_box 0.1562,reg_loss 1.3355, 
+INFO:root:[session 62][epoch 10][iter  210/ 240] loss: 1.7100, lr: 1.95e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.410735
+INFO:root:			rpn_cls: 0.0493, rpn_box: 0.0142, rcnn_cls: 0.2518, rcnn_box 0.1244,reg_loss 1.3279, 
+INFO:root:[session 62][epoch 10][iter  220/ 240] loss: 1.6836, lr: 1.95e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.498523
+INFO:root:			rpn_cls: 0.0456, rpn_box: 0.0081, rcnn_cls: 0.2655, rcnn_box 0.0387,reg_loss 1.3202, 
+INFO:root:[session 62][epoch 10][iter  230/ 240] loss: 1.6656, lr: 1.95e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.421405
+INFO:root:			rpn_cls: 0.0506, rpn_box: 0.0302, rcnn_cls: 0.2848, rcnn_box 0.0949,reg_loss 1.3130, 
+INFO:root:number  10 epoch 's map: 0.0158
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_10_239.pth
+INFO:root:[session 62][epoch 11][iter    0/ 240] loss: 1.6629, lr: 1.91e-04
+INFO:root:			fg/bg=(11/117), time cost: 0.337225
+INFO:root:			rpn_cls: 0.0297, rpn_box: 0.0087, rcnn_cls: 0.2272, rcnn_box 0.0856,reg_loss 1.3118, 
+INFO:root:[session 62][epoch 11][iter   10/ 240] loss: 1.6596, lr: 1.91e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.523465
+INFO:root:			rpn_cls: 0.0466, rpn_box: 0.0218, rcnn_cls: 0.1644, rcnn_box 0.1137,reg_loss 1.3072, 
+INFO:root:[session 62][epoch 11][iter   20/ 240] loss: 1.6177, lr: 1.91e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.405044
+INFO:root:			rpn_cls: 0.0293, rpn_box: 0.0058, rcnn_cls: 0.1614, rcnn_box 0.0457,reg_loss 1.3003, 
+INFO:root:[session 62][epoch 11][iter   30/ 240] loss: 1.7282, lr: 1.91e-04
+INFO:root:			fg/bg=(128/0), time cost: 3.388539
+INFO:root:			rpn_cls: 0.0187, rpn_box: 0.0031, rcnn_cls: 0.8584, rcnn_box 0.0043,reg_loss 1.2932, 
+INFO:root:[session 62][epoch 11][iter   40/ 240] loss: 1.6708, lr: 1.91e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.528646
+INFO:root:			rpn_cls: 0.0408, rpn_box: 0.0219, rcnn_cls: 0.2759, rcnn_box 0.1065,reg_loss 1.2946, 
+INFO:root:[session 62][epoch 11][iter   50/ 240] loss: 1.6786, lr: 1.91e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.596659
+INFO:root:			rpn_cls: 0.0519, rpn_box: 0.0306, rcnn_cls: 0.2928, rcnn_box 0.0981,reg_loss 1.2876, 
+INFO:root:[session 62][epoch 11][iter   60/ 240] loss: 1.6062, lr: 1.91e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.480393
+INFO:root:			rpn_cls: 0.0604, rpn_box: 0.0136, rcnn_cls: 0.3947, rcnn_box 0.1144,reg_loss 1.2803, 
+INFO:root:[session 62][epoch 11][iter   70/ 240] loss: 1.5180, lr: 1.91e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.496064
+INFO:root:			rpn_cls: 0.0273, rpn_box: 0.0070, rcnn_cls: 0.1758, rcnn_box 0.0743,reg_loss 1.2764, 
+INFO:root:[session 62][epoch 11][iter   80/ 240] loss: 1.6223, lr: 1.91e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.384168
+INFO:root:			rpn_cls: 0.0495, rpn_box: 0.0202, rcnn_cls: 0.2791, rcnn_box 0.0961,reg_loss 1.2693, 
+INFO:root:[session 62][epoch 11][iter   90/ 240] loss: 1.5931, lr: 1.91e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.471613
+INFO:root:			rpn_cls: 0.0270, rpn_box: 0.0024, rcnn_cls: 0.0501, rcnn_box 0.0142,reg_loss 1.2629, 
+INFO:root:[session 62][epoch 11][iter  100/ 240] loss: 1.5405, lr: 1.91e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.395385
+INFO:root:			rpn_cls: 0.0305, rpn_box: 0.0094, rcnn_cls: 0.2404, rcnn_box 0.0251,reg_loss 1.2568, 
+INFO:root:[session 62][epoch 11][iter  110/ 240] loss: 1.5750, lr: 1.91e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.396521
+INFO:root:			rpn_cls: 0.0383, rpn_box: 0.0137, rcnn_cls: 0.2167, rcnn_box 0.0404,reg_loss 1.2500, 
+INFO:root:[session 62][epoch 11][iter  120/ 240] loss: 1.5740, lr: 1.91e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.518544
+INFO:root:			rpn_cls: 0.0448, rpn_box: 0.0262, rcnn_cls: 0.3571, rcnn_box 0.1264,reg_loss 1.2442, 
+INFO:root:[session 62][epoch 11][iter  130/ 240] loss: 1.5738, lr: 1.91e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.486208
+INFO:root:			rpn_cls: 0.0328, rpn_box: 0.0116, rcnn_cls: 0.1816, rcnn_box 0.0610,reg_loss 1.2401, 
+INFO:root:[session 62][epoch 11][iter  140/ 240] loss: 1.6131, lr: 1.91e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.522304
+INFO:root:			rpn_cls: 0.0596, rpn_box: 0.0238, rcnn_cls: 0.2537, rcnn_box 0.0361,reg_loss 1.2354, 
+INFO:root:[session 62][epoch 11][iter  150/ 240] loss: 1.7101, lr: 1.91e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.759770
+INFO:root:			rpn_cls: 0.0483, rpn_box: 0.0182, rcnn_cls: 0.3046, rcnn_box 0.1116,reg_loss 1.2291, 
+INFO:root:[session 62][epoch 11][iter  160/ 240] loss: 1.6290, lr: 1.91e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.440949
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0079, rcnn_cls: 0.2236, rcnn_box 0.0835,reg_loss 1.2236, 
+INFO:root:[session 62][epoch 11][iter  170/ 240] loss: 1.5497, lr: 1.91e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.392536
+INFO:root:			rpn_cls: 0.0202, rpn_box: 0.0063, rcnn_cls: 0.1022, rcnn_box 0.0352,reg_loss 1.2181, 
+INFO:root:[session 62][epoch 11][iter  180/ 240] loss: 1.8014, lr: 1.91e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.525367
+INFO:root:			rpn_cls: 0.0438, rpn_box: 0.0309, rcnn_cls: 0.3609, rcnn_box 0.1532,reg_loss 1.2167, 
+INFO:root:[session 62][epoch 11][iter  190/ 240] loss: 1.5889, lr: 1.91e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.746202
+INFO:root:			rpn_cls: 0.0453, rpn_box: 0.0161, rcnn_cls: 0.2971, rcnn_box 0.1139,reg_loss 1.2123, 
+INFO:root:[session 62][epoch 11][iter  200/ 240] loss: 1.5808, lr: 1.91e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.684240
+INFO:root:			rpn_cls: 0.0580, rpn_box: 0.0170, rcnn_cls: 0.2916, rcnn_box 0.0667,reg_loss 1.2061, 
+INFO:root:[session 62][epoch 11][iter  210/ 240] loss: 1.6439, lr: 1.91e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.643374
+INFO:root:			rpn_cls: 0.0596, rpn_box: 0.0177, rcnn_cls: 0.2407, rcnn_box 0.1098,reg_loss 1.2008, 
+INFO:root:[session 62][epoch 11][iter  220/ 240] loss: 1.5163, lr: 1.91e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.591331
+INFO:root:			rpn_cls: 0.0299, rpn_box: 0.0128, rcnn_cls: 0.1213, rcnn_box 0.1395,reg_loss 1.1962, 
+INFO:root:[session 62][epoch 11][iter  230/ 240] loss: 1.5960, lr: 1.91e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.380091
+INFO:root:			rpn_cls: 0.0358, rpn_box: 0.0050, rcnn_cls: 0.1282, rcnn_box 0.0786,reg_loss 1.1916, 
+INFO:root:number  11 epoch 's map: 0.0141
+INFO:root:[session 62][epoch 12][iter    0/ 240] loss: 1.5494, lr: 1.87e-04
+INFO:root:			fg/bg=(19/109), time cost: 0.349890
+INFO:root:			rpn_cls: 0.0262, rpn_box: 0.0096, rcnn_cls: 0.2543, rcnn_box 0.0737,reg_loss 1.1855, 
+INFO:root:[session 62][epoch 12][iter   10/ 240] loss: 1.4845, lr: 1.87e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.443464
+INFO:root:			rpn_cls: 0.0225, rpn_box: 0.0005, rcnn_cls: 0.1512, rcnn_box 0.0650,reg_loss 1.1811, 
+INFO:root:[session 62][epoch 12][iter   20/ 240] loss: 1.5557, lr: 1.87e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.424952
+INFO:root:			rpn_cls: 0.0310, rpn_box: 0.0131, rcnn_cls: 0.2257, rcnn_box 0.0841,reg_loss 1.1781, 
+INFO:root:[session 62][epoch 12][iter   30/ 240] loss: 1.4739, lr: 1.87e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.433663
+INFO:root:			rpn_cls: 0.0540, rpn_box: 0.0112, rcnn_cls: 0.1083, rcnn_box 0.0869,reg_loss 1.1724, 
+INFO:root:[session 62][epoch 12][iter   40/ 240] loss: 1.5130, lr: 1.87e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.470609
+INFO:root:			rpn_cls: 0.0218, rpn_box: 0.0079, rcnn_cls: 0.3031, rcnn_box 0.0631,reg_loss 1.1675, 
+INFO:root:[session 62][epoch 12][iter   50/ 240] loss: 1.4638, lr: 1.87e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.600676
+INFO:root:			rpn_cls: 0.0307, rpn_box: 0.0155, rcnn_cls: 0.2524, rcnn_box 0.1102,reg_loss 1.1625, 
+INFO:root:[session 62][epoch 12][iter   60/ 240] loss: 1.4669, lr: 1.87e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.366976
+INFO:root:			rpn_cls: 0.0276, rpn_box: 0.0158, rcnn_cls: 0.2299, rcnn_box 0.0552,reg_loss 1.1585, 
+INFO:root:[session 62][epoch 12][iter   70/ 240] loss: 1.6072, lr: 1.87e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.476099
+INFO:root:			rpn_cls: 0.0387, rpn_box: 0.0161, rcnn_cls: 0.1895, rcnn_box 0.0270,reg_loss 1.1587, 
+INFO:root:[session 62][epoch 12][iter   80/ 240] loss: 1.4918, lr: 1.87e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.359880
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0059, rcnn_cls: 0.2295, rcnn_box 0.0409,reg_loss 1.1555, 
+INFO:root:[session 62][epoch 12][iter   90/ 240] loss: 1.4765, lr: 1.87e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.368211
+INFO:root:			rpn_cls: 0.0571, rpn_box: 0.0252, rcnn_cls: 0.1616, rcnn_box 0.0615,reg_loss 1.1514, 
+INFO:root:[session 62][epoch 12][iter  100/ 240] loss: 1.4467, lr: 1.87e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.369377
+INFO:root:			rpn_cls: 0.0279, rpn_box: 0.0078, rcnn_cls: 0.1852, rcnn_box 0.0522,reg_loss 1.1518, 
+INFO:root:[session 62][epoch 12][iter  110/ 240] loss: 1.5350, lr: 1.87e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.563816
+INFO:root:			rpn_cls: 0.0244, rpn_box: 0.0056, rcnn_cls: 0.1084, rcnn_box 0.0519,reg_loss 1.1474, 
+INFO:root:[session 62][epoch 12][iter  120/ 240] loss: 1.3780, lr: 1.87e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.565151
+INFO:root:			rpn_cls: 0.0288, rpn_box: 0.0080, rcnn_cls: 0.1040, rcnn_box 0.0348,reg_loss 1.1427, 
+INFO:root:[session 62][epoch 12][iter  130/ 240] loss: 1.4899, lr: 1.87e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.563332
+INFO:root:			rpn_cls: 0.0734, rpn_box: 0.0398, rcnn_cls: 0.3240, rcnn_box 0.1599,reg_loss 1.1371, 
+INFO:root:[session 62][epoch 12][iter  140/ 240] loss: 1.4812, lr: 1.87e-04
+INFO:root:			fg/bg=(2/126), time cost: 3.559738
+INFO:root:			rpn_cls: 0.0160, rpn_box: 0.0038, rcnn_cls: 0.2224, rcnn_box 0.0006,reg_loss 1.1315, 
+INFO:root:[session 62][epoch 12][iter  150/ 240] loss: 1.4782, lr: 1.87e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.565455
+INFO:root:			rpn_cls: 0.0237, rpn_box: 0.0091, rcnn_cls: 0.2021, rcnn_box 0.0996,reg_loss 1.1270, 
+INFO:root:[session 62][epoch 12][iter  160/ 240] loss: 1.5559, lr: 1.87e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.544125
+INFO:root:			rpn_cls: 0.0409, rpn_box: 0.0160, rcnn_cls: 0.3086, rcnn_box 0.0745,reg_loss 1.1231, 
+INFO:root:[session 62][epoch 12][iter  170/ 240] loss: 1.3809, lr: 1.87e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.495549
+INFO:root:			rpn_cls: 0.0429, rpn_box: 0.0158, rcnn_cls: 0.2328, rcnn_box 0.1064,reg_loss 1.1181, 
+INFO:root:[session 62][epoch 12][iter  180/ 240] loss: 1.4758, lr: 1.87e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.590921
+INFO:root:			rpn_cls: 0.0489, rpn_box: 0.0150, rcnn_cls: 0.2566, rcnn_box 0.0789,reg_loss 1.1134, 
+INFO:root:[session 62][epoch 12][iter  190/ 240] loss: 1.4850, lr: 1.87e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.559124
+INFO:root:			rpn_cls: 0.0431, rpn_box: 0.0094, rcnn_cls: 0.1977, rcnn_box 0.1026,reg_loss 1.1087, 
+INFO:root:[session 62][epoch 12][iter  200/ 240] loss: 1.4802, lr: 1.87e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.388075
+INFO:root:			rpn_cls: 0.0717, rpn_box: 0.0220, rcnn_cls: 0.2174, rcnn_box 0.0523,reg_loss 1.1044, 
+INFO:root:[session 62][epoch 12][iter  210/ 240] loss: 1.3929, lr: 1.87e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.415530
+INFO:root:			rpn_cls: 0.0273, rpn_box: 0.0147, rcnn_cls: 0.1691, rcnn_box 0.0804,reg_loss 1.1004, 
+INFO:root:[session 62][epoch 12][iter  220/ 240] loss: 1.4531, lr: 1.87e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.662687
+INFO:root:			rpn_cls: 0.0326, rpn_box: 0.0103, rcnn_cls: 0.1810, rcnn_box 0.0748,reg_loss 1.0970, 
+INFO:root:[session 62][epoch 12][iter  230/ 240] loss: 1.4241, lr: 1.87e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.659117
+INFO:root:			rpn_cls: 0.0737, rpn_box: 0.0402, rcnn_cls: 0.4697, rcnn_box 0.1874,reg_loss 1.0933, 
+INFO:root:number  12 epoch 's map: 0.0129
+INFO:root:[session 62][epoch 13][iter    0/ 240] loss: 1.3213, lr: 1.81e-04
+INFO:root:			fg/bg=(14/114), time cost: 0.364932
+INFO:root:			rpn_cls: 0.0294, rpn_box: 0.0206, rcnn_cls: 0.1340, rcnn_box 0.0470,reg_loss 1.0901, 
+INFO:root:[session 62][epoch 13][iter   10/ 240] loss: 1.4085, lr: 1.81e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.500861
+INFO:root:			rpn_cls: 0.0223, rpn_box: 0.0013, rcnn_cls: 0.1224, rcnn_box 0.0231,reg_loss 1.0856, 
+INFO:root:[session 62][epoch 13][iter   20/ 240] loss: 1.4279, lr: 1.81e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.365304
+INFO:root:			rpn_cls: 0.0450, rpn_box: 0.0183, rcnn_cls: 0.3479, rcnn_box 0.1238,reg_loss 1.0816, 
+INFO:root:[session 62][epoch 13][iter   30/ 240] loss: 1.4736, lr: 1.81e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.499032
+INFO:root:			rpn_cls: 0.0348, rpn_box: 0.0081, rcnn_cls: 0.1413, rcnn_box 0.0358,reg_loss 1.0777, 
+INFO:root:[session 62][epoch 13][iter   40/ 240] loss: 1.5100, lr: 1.81e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.723247
+INFO:root:			rpn_cls: 0.0493, rpn_box: 0.0145, rcnn_cls: 0.2470, rcnn_box 0.0758,reg_loss 1.0758, 
+INFO:root:[session 62][epoch 13][iter   50/ 240] loss: 1.4536, lr: 1.81e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.633455
+INFO:root:			rpn_cls: 0.0311, rpn_box: 0.0147, rcnn_cls: 0.2204, rcnn_box 0.0707,reg_loss 1.0737, 
+INFO:root:[session 62][epoch 13][iter   60/ 240] loss: 1.4179, lr: 1.81e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.538851
+INFO:root:			rpn_cls: 0.0214, rpn_box: 0.0072, rcnn_cls: 0.0823, rcnn_box 0.0296,reg_loss 1.0689, 
+INFO:root:[session 62][epoch 13][iter   70/ 240] loss: 1.3569, lr: 1.81e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.500993
+INFO:root:			rpn_cls: 0.0521, rpn_box: 0.0110, rcnn_cls: 0.1713, rcnn_box 0.0565,reg_loss 1.0648, 
+INFO:root:[session 62][epoch 13][iter   80/ 240] loss: 1.3535, lr: 1.81e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.629401
+INFO:root:			rpn_cls: 0.0390, rpn_box: 0.0158, rcnn_cls: 0.1714, rcnn_box 0.0657,reg_loss 1.0623, 
+INFO:root:[session 62][epoch 13][iter   90/ 240] loss: 1.4161, lr: 1.81e-04
+INFO:root:			fg/bg=(25/103), time cost: 3.470757
+INFO:root:			rpn_cls: 0.0675, rpn_box: 0.0349, rcnn_cls: 0.4416, rcnn_box 0.1519,reg_loss 1.0602, 
+INFO:root:[session 62][epoch 13][iter  100/ 240] loss: 1.3507, lr: 1.81e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.693495
+INFO:root:			rpn_cls: 0.0428, rpn_box: 0.0207, rcnn_cls: 0.2852, rcnn_box 0.0777,reg_loss 1.0572, 
+INFO:root:[session 62][epoch 13][iter  110/ 240] loss: 1.2569, lr: 1.81e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.461510
+INFO:root:			rpn_cls: 0.0109, rpn_box: 0.0056, rcnn_cls: 0.2465, rcnn_box 0.0885,reg_loss 1.0530, 
+INFO:root:[session 62][epoch 13][iter  120/ 240] loss: 1.3592, lr: 1.81e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.586354
+INFO:root:			rpn_cls: 0.0558, rpn_box: 0.0109, rcnn_cls: 0.1458, rcnn_box 0.0140,reg_loss 1.0497, 
+INFO:root:[session 62][epoch 13][iter  130/ 240] loss: 1.4043, lr: 1.81e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.484432
+INFO:root:			rpn_cls: 0.0381, rpn_box: 0.0124, rcnn_cls: 0.1772, rcnn_box 0.0652,reg_loss 1.0459, 
+INFO:root:[session 62][epoch 13][iter  140/ 240] loss: 1.3204, lr: 1.81e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.444740
+INFO:root:			rpn_cls: 0.0457, rpn_box: 0.0170, rcnn_cls: 0.3161, rcnn_box 0.0843,reg_loss 1.0419, 
+INFO:root:[session 62][epoch 13][iter  150/ 240] loss: 1.4729, lr: 1.81e-04
+INFO:root:			fg/bg=(128/0), time cost: 3.439148
+INFO:root:			rpn_cls: 0.0236, rpn_box: 0.0022, rcnn_cls: 0.9403, rcnn_box 0.0042,reg_loss 1.0389, 
+INFO:root:[session 62][epoch 13][iter  160/ 240] loss: 1.3708, lr: 1.81e-04
+INFO:root:			fg/bg=(25/103), time cost: 3.597109
+INFO:root:			rpn_cls: 0.0818, rpn_box: 0.0265, rcnn_cls: 0.2978, rcnn_box 0.0679,reg_loss 1.0628, 
+INFO:root:[session 62][epoch 13][iter  170/ 240] loss: 1.4558, lr: 1.81e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.492510
+INFO:root:			rpn_cls: 0.0402, rpn_box: 0.0118, rcnn_cls: 0.1921, rcnn_box 0.0697,reg_loss 1.0634, 
+INFO:root:[session 62][epoch 13][iter  180/ 240] loss: 1.3477, lr: 1.81e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.478765
+INFO:root:			rpn_cls: 0.0231, rpn_box: 0.0045, rcnn_cls: 0.1666, rcnn_box 0.0408,reg_loss 1.0591, 
+INFO:root:[session 62][epoch 13][iter  190/ 240] loss: 1.5091, lr: 1.81e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.420064
+INFO:root:			rpn_cls: 0.0102, rpn_box: 0.0079, rcnn_cls: 0.3767, rcnn_box 0.0243,reg_loss 1.0527, 
+INFO:root:[session 62][epoch 13][iter  200/ 240] loss: 1.4193, lr: 1.81e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.439717
+INFO:root:			rpn_cls: 0.0401, rpn_box: 0.0133, rcnn_cls: 0.2345, rcnn_box 0.0381,reg_loss 1.0471, 
+INFO:root:[session 62][epoch 13][iter  210/ 240] loss: 1.3140, lr: 1.81e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.419521
+INFO:root:			rpn_cls: 0.0287, rpn_box: 0.0133, rcnn_cls: 0.1673, rcnn_box 0.0304,reg_loss 1.0405, 
+INFO:root:[session 62][epoch 13][iter  220/ 240] loss: 1.3771, lr: 1.81e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.398110
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0108, rcnn_cls: 0.2043, rcnn_box 0.0773,reg_loss 1.0338, 
+INFO:root:[session 62][epoch 13][iter  230/ 240] loss: 1.3521, lr: 1.81e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.493896
+INFO:root:			rpn_cls: 0.0412, rpn_box: 0.0111, rcnn_cls: 0.1321, rcnn_box 0.0192,reg_loss 1.0283, 
+INFO:root:number  13 epoch 's map: 0.0083
+INFO:root:[session 62][epoch 14][iter    0/ 240] loss: 1.2612, lr: 1.74e-04
+INFO:root:			fg/bg=(11/117), time cost: 0.354059
+INFO:root:			rpn_cls: 0.0168, rpn_box: 0.0053, rcnn_cls: 0.1611, rcnn_box 0.0552,reg_loss 1.0227, 
+INFO:root:[session 62][epoch 14][iter   10/ 240] loss: 1.3227, lr: 1.74e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.545847
+INFO:root:			rpn_cls: 0.0481, rpn_box: 0.0178, rcnn_cls: 0.3615, rcnn_box 0.1163,reg_loss 1.0184, 
+INFO:root:[session 62][epoch 14][iter   20/ 240] loss: 1.3202, lr: 1.74e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.577426
+INFO:root:			rpn_cls: 0.0318, rpn_box: 0.0075, rcnn_cls: 0.0965, rcnn_box 0.0085,reg_loss 1.0137, 
+INFO:root:[session 62][epoch 14][iter   30/ 240] loss: 1.3135, lr: 1.74e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.562298
+INFO:root:			rpn_cls: 0.0154, rpn_box: 0.0032, rcnn_cls: 0.0705, rcnn_box 0.0123,reg_loss 1.0099, 
+INFO:root:[session 62][epoch 14][iter   40/ 240] loss: 1.3337, lr: 1.74e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.497424
+INFO:root:			rpn_cls: 0.0407, rpn_box: 0.0097, rcnn_cls: 0.0870, rcnn_box 0.0223,reg_loss 1.0070, 
+INFO:root:[session 62][epoch 14][iter   50/ 240] loss: 1.3018, lr: 1.74e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.443595
+INFO:root:			rpn_cls: 0.0173, rpn_box: 0.0078, rcnn_cls: 0.2235, rcnn_box 0.0640,reg_loss 1.0037, 
+INFO:root:[session 62][epoch 14][iter   60/ 240] loss: 1.3382, lr: 1.74e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.496027
+INFO:root:			rpn_cls: 0.0404, rpn_box: 0.0078, rcnn_cls: 0.1199, rcnn_box 0.0123,reg_loss 1.0003, 
+INFO:root:[session 62][epoch 14][iter   70/ 240] loss: 1.3907, lr: 1.74e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.402984
+INFO:root:			rpn_cls: 0.0409, rpn_box: 0.0175, rcnn_cls: 0.3853, rcnn_box 0.1259,reg_loss 0.9973, 
+INFO:root:[session 62][epoch 14][iter   80/ 240] loss: 1.2810, lr: 1.74e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.401037
+INFO:root:			rpn_cls: 0.0230, rpn_box: 0.0068, rcnn_cls: 0.2323, rcnn_box 0.0613,reg_loss 0.9943, 
+INFO:root:[session 62][epoch 14][iter   90/ 240] loss: 1.3479, lr: 1.74e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.401295
+INFO:root:			rpn_cls: 0.0115, rpn_box: 0.0101, rcnn_cls: 0.1617, rcnn_box 0.1102,reg_loss 0.9914, 
+INFO:root:[session 62][epoch 14][iter  100/ 240] loss: 1.3090, lr: 1.74e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.467235
+INFO:root:			rpn_cls: 0.0114, rpn_box: 0.0044, rcnn_cls: 0.1630, rcnn_box 0.0385,reg_loss 0.9892, 
+INFO:root:[session 62][epoch 14][iter  110/ 240] loss: 1.3231, lr: 1.74e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.637435
+INFO:root:			rpn_cls: 0.0688, rpn_box: 0.0191, rcnn_cls: 0.4256, rcnn_box 0.1626,reg_loss 0.9861, 
+INFO:root:[session 62][epoch 14][iter  120/ 240] loss: 1.2898, lr: 1.74e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.585977
+INFO:root:			rpn_cls: 0.0486, rpn_box: 0.0129, rcnn_cls: 0.2137, rcnn_box 0.0441,reg_loss 0.9837, 
+INFO:root:[session 62][epoch 14][iter  130/ 240] loss: 1.2846, lr: 1.74e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.551303
+INFO:root:			rpn_cls: 0.0359, rpn_box: 0.0094, rcnn_cls: 0.1153, rcnn_box 0.0096,reg_loss 0.9827, 
+INFO:root:[session 62][epoch 14][iter  140/ 240] loss: 1.3149, lr: 1.74e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.570705
+INFO:root:			rpn_cls: 0.0292, rpn_box: 0.0128, rcnn_cls: 0.1581, rcnn_box 0.0481,reg_loss 0.9793, 
+INFO:root:[session 62][epoch 14][iter  150/ 240] loss: 1.3333, lr: 1.74e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.364653
+INFO:root:			rpn_cls: 0.0532, rpn_box: 0.0151, rcnn_cls: 0.1781, rcnn_box 0.0845,reg_loss 0.9758, 
+INFO:root:[session 62][epoch 14][iter  160/ 240] loss: 1.3120, lr: 1.74e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.342822
+INFO:root:			rpn_cls: 0.0734, rpn_box: 0.0296, rcnn_cls: 0.5124, rcnn_box 0.2011,reg_loss 0.9730, 
+INFO:root:[session 62][epoch 14][iter  170/ 240] loss: 1.2483, lr: 1.74e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.346984
+INFO:root:			rpn_cls: 0.0416, rpn_box: 0.0181, rcnn_cls: 0.1040, rcnn_box 0.0398,reg_loss 0.9696, 
+INFO:root:[session 62][epoch 14][iter  180/ 240] loss: 1.2871, lr: 1.74e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.344815
+INFO:root:			rpn_cls: 0.0479, rpn_box: 0.0142, rcnn_cls: 0.2932, rcnn_box 0.0591,reg_loss 0.9684, 
+INFO:root:[session 62][epoch 14][iter  190/ 240] loss: 1.3799, lr: 1.74e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.389991
+INFO:root:			rpn_cls: 0.0529, rpn_box: 0.0183, rcnn_cls: 0.2331, rcnn_box 0.0462,reg_loss 0.9719, 
+INFO:root:[session 62][epoch 14][iter  200/ 240] loss: 1.3827, lr: 1.74e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.367976
+INFO:root:			rpn_cls: 0.0564, rpn_box: 0.0197, rcnn_cls: 0.2143, rcnn_box 0.0772,reg_loss 0.9762, 
+INFO:root:[session 62][epoch 14][iter  210/ 240] loss: 1.3261, lr: 1.74e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.407018
+INFO:root:			rpn_cls: 0.0495, rpn_box: 0.0123, rcnn_cls: 0.0867, rcnn_box 0.0370,reg_loss 0.9742, 
+INFO:root:[session 62][epoch 14][iter  220/ 240] loss: 1.3220, lr: 1.74e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.374929
+INFO:root:			rpn_cls: 0.0369, rpn_box: 0.0166, rcnn_cls: 0.2334, rcnn_box 0.0687,reg_loss 0.9720, 
+INFO:root:[session 62][epoch 14][iter  230/ 240] loss: 1.3466, lr: 1.74e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.380829
+INFO:root:			rpn_cls: 0.0268, rpn_box: 0.0062, rcnn_cls: 0.1100, rcnn_box 0.0602,reg_loss 0.9680, 
+INFO:root:number  14 epoch 's map: 0.0082
+INFO:root:[session 62][epoch 15][iter    0/ 240] loss: 1.1826, lr: 1.67e-04
+INFO:root:			fg/bg=(11/117), time cost: 0.339853
+INFO:root:			rpn_cls: 0.0460, rpn_box: 0.0190, rcnn_cls: 0.1194, rcnn_box 0.0345,reg_loss 0.9637, 
+INFO:root:[session 62][epoch 15][iter   10/ 240] loss: 1.3080, lr: 1.67e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.407069
+INFO:root:			rpn_cls: 0.0318, rpn_box: 0.0079, rcnn_cls: 0.1708, rcnn_box 0.0307,reg_loss 0.9593, 
+INFO:root:[session 62][epoch 15][iter   20/ 240] loss: 1.3011, lr: 1.67e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.426145
+INFO:root:			rpn_cls: 0.0151, rpn_box: 0.0040, rcnn_cls: 0.1683, rcnn_box 0.0389,reg_loss 0.9549, 
+INFO:root:[session 62][epoch 15][iter   30/ 240] loss: 1.1685, lr: 1.67e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.383654
+INFO:root:			rpn_cls: 0.0302, rpn_box: 0.0126, rcnn_cls: 0.0852, rcnn_box 0.0230,reg_loss 0.9508, 
+INFO:root:[session 62][epoch 15][iter   40/ 240] loss: 1.2592, lr: 1.67e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.396798
+INFO:root:			rpn_cls: 0.0281, rpn_box: 0.0147, rcnn_cls: 0.3064, rcnn_box 0.0859,reg_loss 0.9478, 
+INFO:root:[session 62][epoch 15][iter   50/ 240] loss: 1.3061, lr: 1.67e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.382174
+INFO:root:			rpn_cls: 0.0718, rpn_box: 0.0454, rcnn_cls: 0.4620, rcnn_box 0.2227,reg_loss 0.9451, 
+INFO:root:[session 62][epoch 15][iter   60/ 240] loss: 1.2024, lr: 1.67e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.359336
+INFO:root:			rpn_cls: 0.0163, rpn_box: 0.0069, rcnn_cls: 0.2004, rcnn_box 0.0436,reg_loss 0.9429, 
+INFO:root:[session 62][epoch 15][iter   70/ 240] loss: 1.2299, lr: 1.67e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.359243
+INFO:root:			rpn_cls: 0.0195, rpn_box: 0.0085, rcnn_cls: 0.2154, rcnn_box 0.0444,reg_loss 0.9400, 
+INFO:root:[session 62][epoch 15][iter   80/ 240] loss: 1.2788, lr: 1.67e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.391600
+INFO:root:			rpn_cls: 0.0385, rpn_box: 0.0083, rcnn_cls: 0.1316, rcnn_box 0.0467,reg_loss 0.9378, 
+INFO:root:[session 62][epoch 15][iter   90/ 240] loss: 1.2420, lr: 1.67e-04
+INFO:root:			fg/bg=(128/0), time cost: 3.396275
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0019, rcnn_cls: 0.2657, rcnn_box 0.0141,reg_loss 0.9355, 
+INFO:root:[session 62][epoch 15][iter  100/ 240] loss: 1.2848, lr: 1.67e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.334098
+INFO:root:			rpn_cls: 0.0527, rpn_box: 0.0112, rcnn_cls: 0.4803, rcnn_box 0.1721,reg_loss 0.9347, 
+INFO:root:[session 62][epoch 15][iter  110/ 240] loss: 1.1770, lr: 1.67e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.406130
+INFO:root:			rpn_cls: 0.0436, rpn_box: 0.0138, rcnn_cls: 0.1780, rcnn_box 0.0401,reg_loss 0.9329, 
+INFO:root:[session 62][epoch 15][iter  120/ 240] loss: 1.2447, lr: 1.67e-04
+INFO:root:			fg/bg=(24/104), time cost: 3.438952
+INFO:root:			rpn_cls: 0.0336, rpn_box: 0.0164, rcnn_cls: 0.2190, rcnn_box 0.1422,reg_loss 0.9312, 
+INFO:root:[session 62][epoch 15][iter  130/ 240] loss: 1.2754, lr: 1.67e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.383545
+INFO:root:			rpn_cls: 0.0254, rpn_box: 0.0108, rcnn_cls: 0.2532, rcnn_box 0.0887,reg_loss 0.9297, 
+INFO:root:[session 62][epoch 15][iter  140/ 240] loss: 1.1732, lr: 1.67e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.416985
+INFO:root:			rpn_cls: 0.0195, rpn_box: 0.0110, rcnn_cls: 0.1439, rcnn_box 0.0208,reg_loss 0.9279, 
+INFO:root:[session 62][epoch 15][iter  150/ 240] loss: 1.1758, lr: 1.67e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.384488
+INFO:root:			rpn_cls: 0.0445, rpn_box: 0.0215, rcnn_cls: 0.2010, rcnn_box 0.0423,reg_loss 0.9255, 
+INFO:root:[session 62][epoch 15][iter  160/ 240] loss: 1.2367, lr: 1.67e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.436532
+INFO:root:			rpn_cls: 0.0396, rpn_box: 0.0108, rcnn_cls: 0.2775, rcnn_box 0.1030,reg_loss 0.9261, 
+INFO:root:[session 62][epoch 15][iter  170/ 240] loss: 1.2773, lr: 1.67e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.470133
+INFO:root:			rpn_cls: 0.0291, rpn_box: 0.0146, rcnn_cls: 0.2087, rcnn_box 0.0421,reg_loss 0.9240, 
+INFO:root:[session 62][epoch 15][iter  180/ 240] loss: 1.2006, lr: 1.67e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.459743
+INFO:root:			rpn_cls: 0.0391, rpn_box: 0.0063, rcnn_cls: 0.1630, rcnn_box 0.0890,reg_loss 0.9219, 
+INFO:root:[session 62][epoch 15][iter  190/ 240] loss: 1.1457, lr: 1.67e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.458727
+INFO:root:			rpn_cls: 0.0739, rpn_box: 0.0234, rcnn_cls: 0.2786, rcnn_box 0.0651,reg_loss 0.9185, 
+INFO:root:[session 62][epoch 15][iter  200/ 240] loss: 1.1891, lr: 1.67e-04
+INFO:root:			fg/bg=(28/100), time cost: 3.419752
+INFO:root:			rpn_cls: 0.0635, rpn_box: 0.0285, rcnn_cls: 0.2740, rcnn_box 0.1123,reg_loss 0.9155, 
+INFO:root:[session 62][epoch 15][iter  210/ 240] loss: 1.2141, lr: 1.67e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.395911
+INFO:root:			rpn_cls: 0.0696, rpn_box: 0.0281, rcnn_cls: 0.2012, rcnn_box 0.1002,reg_loss 0.9128, 
+INFO:root:[session 62][epoch 15][iter  220/ 240] loss: 1.2717, lr: 1.67e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.399968
+INFO:root:			rpn_cls: 0.0482, rpn_box: 0.0366, rcnn_cls: 0.2705, rcnn_box 0.1302,reg_loss 0.9106, 
+INFO:root:[session 62][epoch 15][iter  230/ 240] loss: 1.2823, lr: 1.67e-04
+INFO:root:			fg/bg=(29/99), time cost: 3.438574
+INFO:root:			rpn_cls: 0.0312, rpn_box: 0.0218, rcnn_cls: 0.4929, rcnn_box 0.1784,reg_loss 0.9096, 
+INFO:root:number  15 epoch 's map: 0.0053
+INFO:root:[session 62][epoch 16][iter    0/ 240] loss: 1.1225, lr: 1.59e-04
+INFO:root:			fg/bg=(6/122), time cost: 0.338257
+INFO:root:			rpn_cls: 0.0540, rpn_box: 0.0100, rcnn_cls: 0.1328, rcnn_box 0.0167,reg_loss 0.9092, 
+INFO:root:[session 62][epoch 16][iter   10/ 240] loss: 1.2047, lr: 1.59e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.445504
+INFO:root:			rpn_cls: 0.0232, rpn_box: 0.0082, rcnn_cls: 0.2255, rcnn_box 0.0288,reg_loss 0.9082, 
+INFO:root:[session 62][epoch 16][iter   20/ 240] loss: 1.1161, lr: 1.59e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.418352
+INFO:root:			rpn_cls: 0.0260, rpn_box: 0.0085, rcnn_cls: 0.1338, rcnn_box 0.0182,reg_loss 0.9064, 
+INFO:root:[session 62][epoch 16][iter   30/ 240] loss: 1.1807, lr: 1.59e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.380778
+INFO:root:			rpn_cls: 0.0219, rpn_box: 0.0064, rcnn_cls: 0.0513, rcnn_box 0.0019,reg_loss 0.9046, 
+INFO:root:[session 62][epoch 16][iter   40/ 240] loss: 1.2157, lr: 1.59e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.391689
+INFO:root:			rpn_cls: 0.0581, rpn_box: 0.0256, rcnn_cls: 0.2972, rcnn_box 0.0847,reg_loss 0.9032, 
+INFO:root:[session 62][epoch 16][iter   50/ 240] loss: 1.2079, lr: 1.59e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.460597
+INFO:root:			rpn_cls: 0.0429, rpn_box: 0.0098, rcnn_cls: 0.1714, rcnn_box 0.0505,reg_loss 0.9015, 
+INFO:root:[session 62][epoch 16][iter   60/ 240] loss: 1.2540, lr: 1.59e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.412566
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0028, rcnn_cls: 0.1115, rcnn_box 0.0283,reg_loss 0.8992, 
+INFO:root:[session 62][epoch 16][iter   70/ 240] loss: 1.1753, lr: 1.59e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.403547
+INFO:root:			rpn_cls: 0.0292, rpn_box: 0.0090, rcnn_cls: 0.1192, rcnn_box 0.0497,reg_loss 0.8966, 
+INFO:root:[session 62][epoch 16][iter   80/ 240] loss: 1.1968, lr: 1.59e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.416121
+INFO:root:			rpn_cls: 0.0414, rpn_box: 0.0175, rcnn_cls: 0.1983, rcnn_box 0.0801,reg_loss 0.8950, 
+INFO:root:[session 62][epoch 16][iter   90/ 240] loss: 1.1749, lr: 1.59e-04
+INFO:root:			fg/bg=(24/104), time cost: 3.401071
+INFO:root:			rpn_cls: 0.0221, rpn_box: 0.0271, rcnn_cls: 0.1603, rcnn_box 0.1421,reg_loss 0.8929, 
+INFO:root:[session 62][epoch 16][iter  100/ 240] loss: 1.1582, lr: 1.59e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.340616
+INFO:root:			rpn_cls: 0.0368, rpn_box: 0.0073, rcnn_cls: 0.1366, rcnn_box 0.0325,reg_loss 0.8910, 
+INFO:root:[session 62][epoch 16][iter  110/ 240] loss: 1.1974, lr: 1.59e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.340947
+INFO:root:			rpn_cls: 0.0286, rpn_box: 0.0065, rcnn_cls: 0.1457, rcnn_box 0.0279,reg_loss 0.8891, 
+INFO:root:[session 62][epoch 16][iter  120/ 240] loss: 1.1674, lr: 1.59e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.406751
+INFO:root:			rpn_cls: 0.0366, rpn_box: 0.0117, rcnn_cls: 0.2295, rcnn_box 0.0835,reg_loss 0.8879, 
+INFO:root:[session 62][epoch 16][iter  130/ 240] loss: 1.1279, lr: 1.59e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.490787
+INFO:root:			rpn_cls: 0.0275, rpn_box: 0.0109, rcnn_cls: 0.1821, rcnn_box 0.0653,reg_loss 0.8862, 
+INFO:root:[session 62][epoch 16][iter  140/ 240] loss: 1.2557, lr: 1.59e-04
+INFO:root:			fg/bg=(29/99), time cost: 3.381428
+INFO:root:			rpn_cls: 0.0539, rpn_box: 0.0309, rcnn_cls: 0.2813, rcnn_box 0.1614,reg_loss 0.8840, 
+INFO:root:[session 62][epoch 16][iter  150/ 240] loss: 1.1134, lr: 1.59e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.443578
+INFO:root:			rpn_cls: 0.0392, rpn_box: 0.0191, rcnn_cls: 0.0545, rcnn_box 0.0153,reg_loss 0.8832, 
+INFO:root:[session 62][epoch 16][iter  160/ 240] loss: 1.1126, lr: 1.59e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.385249
+INFO:root:			rpn_cls: 0.0528, rpn_box: 0.0168, rcnn_cls: 0.1662, rcnn_box 0.0388,reg_loss 0.8821, 
+INFO:root:[session 62][epoch 16][iter  170/ 240] loss: 1.1400, lr: 1.59e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.351063
+INFO:root:			rpn_cls: 0.0212, rpn_box: 0.0051, rcnn_cls: 0.0829, rcnn_box 0.0487,reg_loss 0.8808, 
+INFO:root:[session 62][epoch 16][iter  180/ 240] loss: 1.1994, lr: 1.59e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.383084
+INFO:root:			rpn_cls: 0.0359, rpn_box: 0.0130, rcnn_cls: 0.1199, rcnn_box 0.1091,reg_loss 0.8805, 
+INFO:root:[session 62][epoch 16][iter  190/ 240] loss: 1.2128, lr: 1.59e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.405747
+INFO:root:			rpn_cls: 0.0375, rpn_box: 0.0234, rcnn_cls: 0.4803, rcnn_box 0.0640,reg_loss 0.8791, 
+INFO:root:[session 62][epoch 16][iter  200/ 240] loss: 1.1793, lr: 1.59e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.405010
+INFO:root:			rpn_cls: 0.0521, rpn_box: 0.0150, rcnn_cls: 0.2382, rcnn_box 0.0195,reg_loss 0.8779, 
+INFO:root:[session 62][epoch 16][iter  210/ 240] loss: 1.1223, lr: 1.59e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.467467
+INFO:root:			rpn_cls: 0.0211, rpn_box: 0.0104, rcnn_cls: 0.0811, rcnn_box 0.0157,reg_loss 0.8762, 
+INFO:root:[session 62][epoch 16][iter  220/ 240] loss: 1.1420, lr: 1.59e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.394390
+INFO:root:			rpn_cls: 0.0217, rpn_box: 0.0099, rcnn_cls: 0.1672, rcnn_box 0.0889,reg_loss 0.8736, 
+INFO:root:[session 62][epoch 16][iter  230/ 240] loss: 1.1747, lr: 1.59e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.422652
+INFO:root:			rpn_cls: 0.0755, rpn_box: 0.0201, rcnn_cls: 0.1337, rcnn_box 0.0366,reg_loss 0.8714, 
+INFO:root:number  16 epoch 's map: 0.0104
+INFO:root:[session 62][epoch 17][iter    0/ 240] loss: 1.0446, lr: 1.50e-04
+INFO:root:			fg/bg=(10/118), time cost: 0.339921
+INFO:root:			rpn_cls: 0.0156, rpn_box: 0.0043, rcnn_cls: 0.1096, rcnn_box 0.0461,reg_loss 0.8689, 
+INFO:root:[session 62][epoch 17][iter   10/ 240] loss: 1.0941, lr: 1.50e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.351037
+INFO:root:			rpn_cls: 0.0399, rpn_box: 0.0123, rcnn_cls: 0.1112, rcnn_box 0.0290,reg_loss 0.8665, 
+INFO:root:[session 62][epoch 17][iter   20/ 240] loss: 1.1293, lr: 1.50e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.379932
+INFO:root:			rpn_cls: 0.0295, rpn_box: 0.0116, rcnn_cls: 0.1531, rcnn_box 0.0833,reg_loss 0.8651, 
+INFO:root:[session 62][epoch 17][iter   30/ 240] loss: 1.1154, lr: 1.50e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.390240
+INFO:root:			rpn_cls: 0.0307, rpn_box: 0.0139, rcnn_cls: 0.2780, rcnn_box 0.1388,reg_loss 0.8637, 
+INFO:root:[session 62][epoch 17][iter   40/ 240] loss: 1.1627, lr: 1.50e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.369127
+INFO:root:			rpn_cls: 0.0461, rpn_box: 0.0121, rcnn_cls: 0.1500, rcnn_box 0.0333,reg_loss 0.8627, 
+INFO:root:[session 62][epoch 17][iter   50/ 240] loss: 1.1531, lr: 1.50e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.361881
+INFO:root:			rpn_cls: 0.0381, rpn_box: 0.0146, rcnn_cls: 0.2364, rcnn_box 0.0611,reg_loss 0.8617, 
+INFO:root:[session 62][epoch 17][iter   60/ 240] loss: 1.1159, lr: 1.50e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.383096
+INFO:root:			rpn_cls: 0.0183, rpn_box: 0.0129, rcnn_cls: 0.1132, rcnn_box 0.1110,reg_loss 0.8608, 
+INFO:root:[session 62][epoch 17][iter   70/ 240] loss: 1.1555, lr: 1.50e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.392099
+INFO:root:			rpn_cls: 0.0345, rpn_box: 0.0116, rcnn_cls: 0.0986, rcnn_box 0.0295,reg_loss 0.8591, 
+INFO:root:[session 62][epoch 17][iter   80/ 240] loss: 1.0947, lr: 1.50e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.387613
+INFO:root:			rpn_cls: 0.0134, rpn_box: 0.0035, rcnn_cls: 0.0637, rcnn_box 0.0025,reg_loss 0.8581, 
+INFO:root:[session 62][epoch 17][iter   90/ 240] loss: 1.1409, lr: 1.50e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.387452
+INFO:root:			rpn_cls: 0.0180, rpn_box: 0.0061, rcnn_cls: 0.1641, rcnn_box 0.0803,reg_loss 0.8567, 
+INFO:root:[session 62][epoch 17][iter  100/ 240] loss: 1.2091, lr: 1.50e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.426847
+INFO:root:			rpn_cls: 0.0579, rpn_box: 0.0276, rcnn_cls: 0.2767, rcnn_box 0.1351,reg_loss 0.8558, 
+INFO:root:[session 62][epoch 17][iter  110/ 240] loss: 1.1299, lr: 1.50e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.430665
+INFO:root:			rpn_cls: 0.0206, rpn_box: 0.0098, rcnn_cls: 0.0981, rcnn_box 0.0552,reg_loss 0.8542, 
+INFO:root:[session 62][epoch 17][iter  120/ 240] loss: 1.2097, lr: 1.50e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.387619
+INFO:root:			rpn_cls: 0.0301, rpn_box: 0.0108, rcnn_cls: 0.2782, rcnn_box 0.1227,reg_loss 0.8526, 
+INFO:root:[session 62][epoch 17][iter  130/ 240] loss: 1.1580, lr: 1.50e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.372221
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0062, rcnn_cls: 0.1036, rcnn_box 0.0306,reg_loss 0.8515, 
+INFO:root:[session 62][epoch 17][iter  140/ 240] loss: 1.0949, lr: 1.50e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.531791
+INFO:root:			rpn_cls: 0.0510, rpn_box: 0.0141, rcnn_cls: 0.0944, rcnn_box 0.0386,reg_loss 0.8504, 
+INFO:root:[session 62][epoch 17][iter  150/ 240] loss: 1.1277, lr: 1.50e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.574813
+INFO:root:			rpn_cls: 0.0348, rpn_box: 0.0164, rcnn_cls: 0.1650, rcnn_box 0.0762,reg_loss 0.8491, 
+INFO:root:[session 62][epoch 17][iter  160/ 240] loss: 1.1395, lr: 1.50e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.469114
+INFO:root:			rpn_cls: 0.0223, rpn_box: 0.0058, rcnn_cls: 0.1252, rcnn_box 0.0549,reg_loss 0.8476, 
+INFO:root:[session 62][epoch 17][iter  170/ 240] loss: 1.0638, lr: 1.50e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.529331
+INFO:root:			rpn_cls: 0.0122, rpn_box: 0.0018, rcnn_cls: 0.0556, rcnn_box 0.0120,reg_loss 0.8463, 
+INFO:root:[session 62][epoch 17][iter  180/ 240] loss: 1.1571, lr: 1.50e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.379967
+INFO:root:			rpn_cls: 0.0543, rpn_box: 0.0213, rcnn_cls: 0.3177, rcnn_box 0.1285,reg_loss 0.8446, 
+INFO:root:[session 62][epoch 17][iter  190/ 240] loss: 1.1378, lr: 1.50e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.505259
+INFO:root:			rpn_cls: 0.0272, rpn_box: 0.0023, rcnn_cls: 0.0705, rcnn_box 0.0349,reg_loss 0.8445, 
+INFO:root:[session 62][epoch 17][iter  200/ 240] loss: 1.0811, lr: 1.50e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.400031
+INFO:root:			rpn_cls: 0.0429, rpn_box: 0.0005, rcnn_cls: 0.0292, rcnn_box 0.0153,reg_loss 0.8453, 
+INFO:root:[session 62][epoch 17][iter  210/ 240] loss: 1.0918, lr: 1.50e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.406075
+INFO:root:			rpn_cls: 0.0517, rpn_box: 0.0132, rcnn_cls: 0.2641, rcnn_box 0.0405,reg_loss 0.8492, 
+INFO:root:[session 62][epoch 17][iter  220/ 240] loss: 1.1336, lr: 1.50e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.522099
+INFO:root:			rpn_cls: 0.0297, rpn_box: 0.0141, rcnn_cls: 0.1344, rcnn_box 0.0234,reg_loss 0.8485, 
+INFO:root:[session 62][epoch 17][iter  230/ 240] loss: 1.2108, lr: 1.50e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.436661
+INFO:root:			rpn_cls: 0.0452, rpn_box: 0.0088, rcnn_cls: 0.1455, rcnn_box 0.0473,reg_loss 0.8485, 
+INFO:root:number  17 epoch 's map: 0.0051
+INFO:root:[session 62][epoch 18][iter    0/ 240] loss: 1.0155, lr: 1.41e-04
+INFO:root:			fg/bg=(9/119), time cost: 0.362858
+INFO:root:			rpn_cls: 0.0160, rpn_box: 0.0092, rcnn_cls: 0.1118, rcnn_box 0.0304,reg_loss 0.8480, 
+INFO:root:[session 62][epoch 18][iter   10/ 240] loss: 1.1195, lr: 1.41e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.625113
+INFO:root:			rpn_cls: 0.0344, rpn_box: 0.0118, rcnn_cls: 0.1640, rcnn_box 0.0695,reg_loss 0.8454, 
+INFO:root:[session 62][epoch 18][iter   20/ 240] loss: 1.0739, lr: 1.41e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.500888
+INFO:root:			rpn_cls: 0.0671, rpn_box: 0.0178, rcnn_cls: 0.2723, rcnn_box 0.1031,reg_loss 0.8424, 
+INFO:root:[session 62][epoch 18][iter   30/ 240] loss: 1.1402, lr: 1.41e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.430274
+INFO:root:			rpn_cls: 0.0270, rpn_box: 0.0136, rcnn_cls: 0.1568, rcnn_box 0.0581,reg_loss 0.8400, 
+INFO:root:[session 62][epoch 18][iter   40/ 240] loss: 1.1164, lr: 1.41e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.484927
+INFO:root:			rpn_cls: 0.0182, rpn_box: 0.0083, rcnn_cls: 0.0959, rcnn_box 0.0157,reg_loss 0.8384, 
+INFO:root:[session 62][epoch 18][iter   50/ 240] loss: 1.1033, lr: 1.41e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.392709
+INFO:root:			rpn_cls: 0.0344, rpn_box: 0.0081, rcnn_cls: 0.0641, rcnn_box 0.0193,reg_loss 0.8371, 
+INFO:root:[session 62][epoch 18][iter   60/ 240] loss: 1.0630, lr: 1.41e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.437885
+INFO:root:			rpn_cls: 0.0200, rpn_box: 0.0078, rcnn_cls: 0.1018, rcnn_box 0.0846,reg_loss 0.8351, 
+INFO:root:[session 62][epoch 18][iter   70/ 240] loss: 1.1330, lr: 1.41e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.487515
+INFO:root:			rpn_cls: 0.0337, rpn_box: 0.0256, rcnn_cls: 0.1846, rcnn_box 0.0852,reg_loss 0.8335, 
+INFO:root:[session 62][epoch 18][iter   80/ 240] loss: 1.0919, lr: 1.41e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.373809
+INFO:root:			rpn_cls: 0.0308, rpn_box: 0.0083, rcnn_cls: 0.0614, rcnn_box 0.0196,reg_loss 0.8330, 
+INFO:root:[session 62][epoch 18][iter   90/ 240] loss: 1.1048, lr: 1.41e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.371923
+INFO:root:			rpn_cls: 0.0169, rpn_box: 0.0072, rcnn_cls: 0.1529, rcnn_box 0.0471,reg_loss 0.8312, 
+INFO:root:[session 62][epoch 18][iter  100/ 240] loss: 1.0809, lr: 1.41e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.363620
+INFO:root:			rpn_cls: 0.0333, rpn_box: 0.0145, rcnn_cls: 0.1366, rcnn_box 0.0591,reg_loss 0.8291, 
+INFO:root:[session 62][epoch 18][iter  110/ 240] loss: 1.0631, lr: 1.41e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.361892
+INFO:root:			rpn_cls: 0.0296, rpn_box: 0.0140, rcnn_cls: 0.1557, rcnn_box 0.0945,reg_loss 0.8285, 
+INFO:root:[session 62][epoch 18][iter  120/ 240] loss: 1.1000, lr: 1.41e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.578376
+INFO:root:			rpn_cls: 0.0292, rpn_box: 0.0112, rcnn_cls: 0.2319, rcnn_box 0.0921,reg_loss 0.8273, 
+INFO:root:[session 62][epoch 18][iter  130/ 240] loss: 1.1538, lr: 1.41e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.588019
+INFO:root:			rpn_cls: 0.0294, rpn_box: 0.0274, rcnn_cls: 0.2012, rcnn_box 0.1667,reg_loss 0.8259, 
+INFO:root:[session 62][epoch 18][iter  140/ 240] loss: 1.1527, lr: 1.41e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.570995
+INFO:root:			rpn_cls: 0.0278, rpn_box: 0.0071, rcnn_cls: 0.1913, rcnn_box 0.0767,reg_loss 0.8248, 
+INFO:root:[session 62][epoch 18][iter  150/ 240] loss: 1.0930, lr: 1.41e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.565173
+INFO:root:			rpn_cls: 0.0334, rpn_box: 0.0211, rcnn_cls: 0.2303, rcnn_box 0.1102,reg_loss 0.8239, 
+INFO:root:[session 62][epoch 18][iter  160/ 240] loss: 1.0728, lr: 1.41e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.591120
+INFO:root:			rpn_cls: 0.0342, rpn_box: 0.0087, rcnn_cls: 0.2146, rcnn_box 0.0861,reg_loss 0.8237, 
+INFO:root:[session 62][epoch 18][iter  170/ 240] loss: 1.1595, lr: 1.41e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.576703
+INFO:root:			rpn_cls: 0.0452, rpn_box: 0.0194, rcnn_cls: 0.2777, rcnn_box 0.1066,reg_loss 0.8226, 
+INFO:root:[session 62][epoch 18][iter  180/ 240] loss: 1.0764, lr: 1.41e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.568471
+INFO:root:			rpn_cls: 0.0299, rpn_box: 0.0073, rcnn_cls: 0.0458, rcnn_box 0.0313,reg_loss 0.8216, 
+INFO:root:[session 62][epoch 18][iter  190/ 240] loss: 1.1194, lr: 1.41e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.586968
+INFO:root:			rpn_cls: 0.0244, rpn_box: 0.0110, rcnn_cls: 0.0968, rcnn_box 0.0505,reg_loss 0.8210, 
+INFO:root:[session 62][epoch 18][iter  200/ 240] loss: 1.0554, lr: 1.41e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.576401
+INFO:root:			rpn_cls: 0.0333, rpn_box: 0.0129, rcnn_cls: 0.1809, rcnn_box 0.0305,reg_loss 0.8204, 
+INFO:root:[session 62][epoch 18][iter  210/ 240] loss: 1.0848, lr: 1.41e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.649619
+INFO:root:			rpn_cls: 0.0135, rpn_box: 0.0054, rcnn_cls: 0.1989, rcnn_box 0.0953,reg_loss 0.8186, 
+INFO:root:[session 62][epoch 18][iter  220/ 240] loss: 1.1168, lr: 1.41e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.576067
+INFO:root:			rpn_cls: 0.0367, rpn_box: 0.0039, rcnn_cls: 0.1057, rcnn_box 0.0338,reg_loss 0.8173, 
+INFO:root:[session 62][epoch 18][iter  230/ 240] loss: 1.0458, lr: 1.41e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.570649
+INFO:root:			rpn_cls: 0.0313, rpn_box: 0.0137, rcnn_cls: 0.1942, rcnn_box 0.0732,reg_loss 0.8165, 
+INFO:root:number  18 epoch 's map: 0.0119
+INFO:root:[session 62][epoch 19][iter    0/ 240] loss: 0.8873, lr: 1.31e-04
+INFO:root:			fg/bg=(10/118), time cost: 0.355828
+INFO:root:			rpn_cls: 0.0221, rpn_box: 0.0113, rcnn_cls: 0.0281, rcnn_box 0.0097,reg_loss 0.8161, 
+INFO:root:[session 62][epoch 19][iter   10/ 240] loss: 1.0394, lr: 1.31e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.567044
+INFO:root:			rpn_cls: 0.0430, rpn_box: 0.0115, rcnn_cls: 0.1478, rcnn_box 0.0557,reg_loss 0.8147, 
+INFO:root:[session 62][epoch 19][iter   20/ 240] loss: 0.9942, lr: 1.31e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.601385
+INFO:root:			rpn_cls: 0.0418, rpn_box: 0.0130, rcnn_cls: 0.1731, rcnn_box 0.0438,reg_loss 0.8132, 
+INFO:root:[session 62][epoch 19][iter   30/ 240] loss: 1.0664, lr: 1.31e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.445710
+INFO:root:			rpn_cls: 0.0266, rpn_box: 0.0027, rcnn_cls: 0.2683, rcnn_box 0.0831,reg_loss 0.8126, 
+INFO:root:[session 62][epoch 19][iter   40/ 240] loss: 1.0775, lr: 1.31e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.444675
+INFO:root:			rpn_cls: 0.0439, rpn_box: 0.0171, rcnn_cls: 0.1166, rcnn_box 0.0541,reg_loss 0.8117, 
+INFO:root:[session 62][epoch 19][iter   50/ 240] loss: 1.0842, lr: 1.31e-04
+INFO:root:			fg/bg=(29/99), time cost: 3.434025
+INFO:root:			rpn_cls: 0.0460, rpn_box: 0.0232, rcnn_cls: 0.2658, rcnn_box 0.1190,reg_loss 0.8112, 
+INFO:root:[session 62][epoch 19][iter   60/ 240] loss: 1.0645, lr: 1.31e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.552728
+INFO:root:			rpn_cls: 0.0402, rpn_box: 0.0231, rcnn_cls: 0.2063, rcnn_box 0.0722,reg_loss 0.8112, 
+INFO:root:[session 62][epoch 19][iter   70/ 240] loss: 1.0982, lr: 1.31e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.371083
+INFO:root:			rpn_cls: 0.0250, rpn_box: 0.0113, rcnn_cls: 0.1566, rcnn_box 0.0265,reg_loss 0.8102, 
+INFO:root:[session 62][epoch 19][iter   80/ 240] loss: 1.0605, lr: 1.31e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.400836
+INFO:root:			rpn_cls: 0.0472, rpn_box: 0.0159, rcnn_cls: 0.1795, rcnn_box 0.0846,reg_loss 0.8092, 
+INFO:root:[session 62][epoch 19][iter   90/ 240] loss: 1.0971, lr: 1.31e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.378437
+INFO:root:			rpn_cls: 0.0135, rpn_box: 0.0076, rcnn_cls: 0.0980, rcnn_box 0.0657,reg_loss 0.8092, 
+INFO:root:[session 62][epoch 19][iter  100/ 240] loss: 1.0775, lr: 1.31e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.446529
+INFO:root:			rpn_cls: 0.0535, rpn_box: 0.0174, rcnn_cls: 0.2437, rcnn_box 0.0584,reg_loss 0.8083, 
+INFO:root:[session 62][epoch 19][iter  110/ 240] loss: 1.0486, lr: 1.31e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.381222
+INFO:root:			rpn_cls: 0.0335, rpn_box: 0.0069, rcnn_cls: 0.1059, rcnn_box 0.0744,reg_loss 0.8070, 
+INFO:root:[session 62][epoch 19][iter  120/ 240] loss: 1.0815, lr: 1.31e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.494465
+INFO:root:			rpn_cls: 0.0272, rpn_box: 0.0142, rcnn_cls: 0.1538, rcnn_box 0.1069,reg_loss 0.8074, 
+INFO:root:[session 62][epoch 19][iter  130/ 240] loss: 1.0556, lr: 1.31e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.559063
+INFO:root:			rpn_cls: 0.0225, rpn_box: 0.0045, rcnn_cls: 0.1131, rcnn_box 0.0319,reg_loss 0.8089, 
+INFO:root:[session 62][epoch 19][iter  140/ 240] loss: 1.1025, lr: 1.31e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.461618
+INFO:root:			rpn_cls: 0.0519, rpn_box: 0.0113, rcnn_cls: 0.2602, rcnn_box 0.0725,reg_loss 0.8076, 
+INFO:root:[session 62][epoch 19][iter  150/ 240] loss: 1.0522, lr: 1.31e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.523069
+INFO:root:			rpn_cls: 0.0452, rpn_box: 0.0148, rcnn_cls: 0.1357, rcnn_box 0.0429,reg_loss 0.8076, 
+INFO:root:[session 62][epoch 19][iter  160/ 240] loss: 1.0524, lr: 1.31e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.402930
+INFO:root:			rpn_cls: 0.0179, rpn_box: 0.0072, rcnn_cls: 0.1687, rcnn_box 0.0903,reg_loss 0.8119, 
+INFO:root:[session 62][epoch 19][iter  170/ 240] loss: 1.0699, lr: 1.31e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.370244
+INFO:root:			rpn_cls: 0.0573, rpn_box: 0.0217, rcnn_cls: 0.2064, rcnn_box 0.0523,reg_loss 0.8108, 
+INFO:root:[session 62][epoch 19][iter  180/ 240] loss: 1.1141, lr: 1.31e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.376270
+INFO:root:			rpn_cls: 0.0304, rpn_box: 0.0138, rcnn_cls: 0.1270, rcnn_box 0.0660,reg_loss 0.8086, 
+INFO:root:[session 62][epoch 19][iter  190/ 240] loss: 1.0006, lr: 1.31e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.433483
+INFO:root:			rpn_cls: 0.0363, rpn_box: 0.0089, rcnn_cls: 0.1269, rcnn_box 0.0433,reg_loss 0.8061, 
+INFO:root:[session 62][epoch 19][iter  200/ 240] loss: 0.9892, lr: 1.31e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.360758
+INFO:root:			rpn_cls: 0.0228, rpn_box: 0.0216, rcnn_cls: 0.1495, rcnn_box 0.0794,reg_loss 0.8038, 
+INFO:root:[session 62][epoch 19][iter  210/ 240] loss: 1.0544, lr: 1.31e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.386857
+INFO:root:			rpn_cls: 0.0733, rpn_box: 0.0360, rcnn_cls: 0.3046, rcnn_box 0.1848,reg_loss 0.8016, 
+INFO:root:[session 62][epoch 19][iter  220/ 240] loss: 1.0843, lr: 1.31e-04
+INFO:root:			fg/bg=(25/103), time cost: 3.501029
+INFO:root:			rpn_cls: 0.0627, rpn_box: 0.0294, rcnn_cls: 0.3045, rcnn_box 0.1272,reg_loss 0.8009, 
+INFO:root:[session 62][epoch 19][iter  230/ 240] loss: 1.0943, lr: 1.31e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.485959
+INFO:root:			rpn_cls: 0.0232, rpn_box: 0.0057, rcnn_cls: 0.1713, rcnn_box 0.0211,reg_loss 0.7998, 
+INFO:root:number  19 epoch 's map: 0.0102
+INFO:root:[session 62][epoch 20][iter    0/ 240] loss: 0.9156, lr: 1.21e-04
+INFO:root:			fg/bg=(6/122), time cost: 0.339513
+INFO:root:			rpn_cls: 0.0036, rpn_box: 0.0032, rcnn_cls: 0.0746, rcnn_box 0.0357,reg_loss 0.7986, 
+INFO:root:[session 62][epoch 20][iter   10/ 240] loss: 1.0235, lr: 1.21e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.385072
+INFO:root:			rpn_cls: 0.0386, rpn_box: 0.0132, rcnn_cls: 0.0479, rcnn_box 0.0513,reg_loss 0.7972, 
+INFO:root:[session 62][epoch 20][iter   20/ 240] loss: 1.0348, lr: 1.21e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.649549
+INFO:root:			rpn_cls: 0.0360, rpn_box: 0.0093, rcnn_cls: 0.0586, rcnn_box 0.0247,reg_loss 0.7957, 
+INFO:root:[session 62][epoch 20][iter   30/ 240] loss: 0.9542, lr: 1.21e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.642107
+INFO:root:			rpn_cls: 0.0437, rpn_box: 0.0096, rcnn_cls: 0.1106, rcnn_box 0.0599,reg_loss 0.7940, 
+INFO:root:[session 62][epoch 20][iter   40/ 240] loss: 0.9661, lr: 1.21e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.600105
+INFO:root:			rpn_cls: 0.0254, rpn_box: 0.0103, rcnn_cls: 0.0178, rcnn_box 0.0135,reg_loss 0.7928, 
+INFO:root:[session 62][epoch 20][iter   50/ 240] loss: 1.0113, lr: 1.21e-04
+INFO:root:			fg/bg=(24/104), time cost: 3.519873
+INFO:root:			rpn_cls: 0.0417, rpn_box: 0.0243, rcnn_cls: 0.1745, rcnn_box 0.1089,reg_loss 0.7920, 
+INFO:root:[session 62][epoch 20][iter   60/ 240] loss: 1.0075, lr: 1.21e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.405671
+INFO:root:			rpn_cls: 0.0308, rpn_box: 0.0057, rcnn_cls: 0.0867, rcnn_box 0.0475,reg_loss 0.7914, 
+INFO:root:[session 62][epoch 20][iter   70/ 240] loss: 1.0452, lr: 1.21e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.483877
+INFO:root:			rpn_cls: 0.0236, rpn_box: 0.0031, rcnn_cls: 0.0266, rcnn_box 0.0150,reg_loss 0.7909, 
+INFO:root:[session 62][epoch 20][iter   80/ 240] loss: 1.0329, lr: 1.21e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.467829
+INFO:root:			rpn_cls: 0.0620, rpn_box: 0.0086, rcnn_cls: 0.1044, rcnn_box 0.0274,reg_loss 0.7906, 
+INFO:root:[session 62][epoch 20][iter   90/ 240] loss: 1.0238, lr: 1.21e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.458753
+INFO:root:			rpn_cls: 0.0317, rpn_box: 0.0052, rcnn_cls: 0.0289, rcnn_box 0.0215,reg_loss 0.7906, 
+INFO:root:[session 62][epoch 20][iter  100/ 240] loss: 1.0317, lr: 1.21e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.730151
+INFO:root:			rpn_cls: 0.0304, rpn_box: 0.0096, rcnn_cls: 0.1063, rcnn_box 0.0370,reg_loss 0.7897, 
+INFO:root:[session 62][epoch 20][iter  110/ 240] loss: 1.0232, lr: 1.21e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.684043
+INFO:root:			rpn_cls: 0.0631, rpn_box: 0.0209, rcnn_cls: 0.1496, rcnn_box 0.0438,reg_loss 0.7889, 
+INFO:root:[session 62][epoch 20][iter  120/ 240] loss: 1.0740, lr: 1.21e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.744586
+INFO:root:			rpn_cls: 0.0488, rpn_box: 0.0149, rcnn_cls: 0.1618, rcnn_box 0.0823,reg_loss 0.7881, 
+INFO:root:[session 62][epoch 20][iter  130/ 240] loss: 1.0574, lr: 1.21e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.804569
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0195, rcnn_cls: 0.1617, rcnn_box 0.2115,reg_loss 0.7879, 
+INFO:root:[session 62][epoch 20][iter  140/ 240] loss: 0.9801, lr: 1.21e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.544509
+INFO:root:			rpn_cls: 0.0338, rpn_box: 0.0067, rcnn_cls: 0.0588, rcnn_box 0.0145,reg_loss 0.7871, 
+INFO:root:[session 62][epoch 20][iter  150/ 240] loss: 0.9923, lr: 1.21e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.678208
+INFO:root:			rpn_cls: 0.0364, rpn_box: 0.0107, rcnn_cls: 0.0541, rcnn_box 0.0064,reg_loss 0.7860, 
+INFO:root:[session 62][epoch 20][iter  160/ 240] loss: 1.0275, lr: 1.21e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.776613
+INFO:root:			rpn_cls: 0.0276, rpn_box: 0.0148, rcnn_cls: 0.1565, rcnn_box 0.0736,reg_loss 0.7853, 
+INFO:root:[session 62][epoch 20][iter  170/ 240] loss: 1.0398, lr: 1.21e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.680654
+INFO:root:			rpn_cls: 0.0156, rpn_box: 0.0143, rcnn_cls: 0.1926, rcnn_box 0.1150,reg_loss 0.7843, 
+INFO:root:[session 62][epoch 20][iter  180/ 240] loss: 1.0682, lr: 1.21e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.530752
+INFO:root:			rpn_cls: 0.0288, rpn_box: 0.0110, rcnn_cls: 0.0704, rcnn_box 0.0266,reg_loss 0.7832, 
+INFO:root:[session 62][epoch 20][iter  190/ 240] loss: 0.9549, lr: 1.21e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.557171
+INFO:root:			rpn_cls: 0.0303, rpn_box: 0.0077, rcnn_cls: 0.0621, rcnn_box 0.0291,reg_loss 0.7822, 
+INFO:root:[session 62][epoch 20][iter  200/ 240] loss: 1.0129, lr: 1.21e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.534523
+INFO:root:			rpn_cls: 0.0305, rpn_box: 0.0106, rcnn_cls: 0.0965, rcnn_box 0.0485,reg_loss 0.7813, 
+INFO:root:[session 62][epoch 20][iter  210/ 240] loss: 1.0293, lr: 1.21e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.724899
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0164, rcnn_cls: 0.2046, rcnn_box 0.0586,reg_loss 0.7810, 
+INFO:root:[session 62][epoch 20][iter  220/ 240] loss: 0.9846, lr: 1.21e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.721251
+INFO:root:			rpn_cls: 0.0551, rpn_box: 0.0126, rcnn_cls: 0.2033, rcnn_box 0.0443,reg_loss 0.7803, 
+INFO:root:[session 62][epoch 20][iter  230/ 240] loss: 1.0392, lr: 1.21e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.413801
+INFO:root:			rpn_cls: 0.0794, rpn_box: 0.0508, rcnn_cls: 0.3112, rcnn_box 0.1544,reg_loss 0.7797, 
+INFO:root:number  20 epoch 's map: 0.0124
+INFO:root:[session 62][epoch 21][iter    0/ 240] loss: 0.9950, lr: 1.10e-04
+INFO:root:			fg/bg=(9/119), time cost: 0.335659
+INFO:root:			rpn_cls: 0.0210, rpn_box: 0.0080, rcnn_cls: 0.1197, rcnn_box 0.0666,reg_loss 0.7797, 
+INFO:root:[session 62][epoch 21][iter   10/ 240] loss: 0.9595, lr: 1.10e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.468469
+INFO:root:			rpn_cls: 0.0141, rpn_box: 0.0047, rcnn_cls: 0.0845, rcnn_box 0.0345,reg_loss 0.7792, 
+INFO:root:[session 62][epoch 21][iter   20/ 240] loss: 0.9718, lr: 1.10e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.584825
+INFO:root:			rpn_cls: 0.0211, rpn_box: 0.0120, rcnn_cls: 0.0259, rcnn_box 0.0175,reg_loss 0.7787, 
+INFO:root:[session 62][epoch 21][iter   30/ 240] loss: 0.9522, lr: 1.10e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.403274
+INFO:root:			rpn_cls: 0.0229, rpn_box: 0.0014, rcnn_cls: 0.0233, rcnn_box 0.0282,reg_loss 0.7788, 
+INFO:root:[session 62][epoch 21][iter   40/ 240] loss: 1.0099, lr: 1.10e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.534528
+INFO:root:			rpn_cls: 0.0303, rpn_box: 0.0074, rcnn_cls: 0.2379, rcnn_box 0.0752,reg_loss 0.7804, 
+INFO:root:[session 62][epoch 21][iter   50/ 240] loss: 1.0374, lr: 1.10e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.553890
+INFO:root:			rpn_cls: 0.0349, rpn_box: 0.0164, rcnn_cls: 0.1745, rcnn_box 0.0656,reg_loss 0.7800, 
+INFO:root:[session 62][epoch 21][iter   60/ 240] loss: 0.9783, lr: 1.10e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.360302
+INFO:root:			rpn_cls: 0.0555, rpn_box: 0.0118, rcnn_cls: 0.1070, rcnn_box 0.0522,reg_loss 0.7786, 
+INFO:root:[session 62][epoch 21][iter   70/ 240] loss: 0.9851, lr: 1.10e-04
+INFO:root:			fg/bg=(30/98), time cost: 3.370427
+INFO:root:			rpn_cls: 0.0638, rpn_box: 0.0243, rcnn_cls: 0.1340, rcnn_box 0.1320,reg_loss 0.7768, 
+INFO:root:[session 62][epoch 21][iter   80/ 240] loss: 1.0318, lr: 1.10e-04
+INFO:root:			fg/bg=(28/100), time cost: 3.511777
+INFO:root:			rpn_cls: 0.0539, rpn_box: 0.0285, rcnn_cls: 0.1908, rcnn_box 0.0906,reg_loss 0.7766, 
+INFO:root:[session 62][epoch 21][iter   90/ 240] loss: 1.0707, lr: 1.10e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.409544
+INFO:root:			rpn_cls: 0.0388, rpn_box: 0.0205, rcnn_cls: 0.2252, rcnn_box 0.1907,reg_loss 0.7757, 
+INFO:root:[session 62][epoch 21][iter  100/ 240] loss: 1.0462, lr: 1.10e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.433260
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0232, rcnn_cls: 0.1118, rcnn_box 0.0726,reg_loss 0.7750, 
+INFO:root:[session 62][epoch 21][iter  110/ 240] loss: 1.0336, lr: 1.10e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.465565
+INFO:root:			rpn_cls: 0.0323, rpn_box: 0.0096, rcnn_cls: 0.0252, rcnn_box 0.0148,reg_loss 0.7745, 
+INFO:root:[session 62][epoch 21][iter  120/ 240] loss: 0.9684, lr: 1.10e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.571756
+INFO:root:			rpn_cls: 0.0155, rpn_box: 0.0101, rcnn_cls: 0.1071, rcnn_box 0.0133,reg_loss 0.7745, 
+INFO:root:[session 62][epoch 21][iter  130/ 240] loss: 1.0141, lr: 1.10e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.382872
+INFO:root:			rpn_cls: 0.0688, rpn_box: 0.0206, rcnn_cls: 0.1805, rcnn_box 0.0568,reg_loss 0.7740, 
+INFO:root:[session 62][epoch 21][iter  140/ 240] loss: 0.9817, lr: 1.10e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.388415
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0102, rcnn_cls: 0.0446, rcnn_box 0.0106,reg_loss 0.7732, 
+INFO:root:[session 62][epoch 21][iter  150/ 240] loss: 1.0455, lr: 1.10e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.406274
+INFO:root:			rpn_cls: 0.0341, rpn_box: 0.0138, rcnn_cls: 0.1726, rcnn_box 0.0956,reg_loss 0.7723, 
+INFO:root:[session 62][epoch 21][iter  160/ 240] loss: 0.9506, lr: 1.10e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.432315
+INFO:root:			rpn_cls: 0.0374, rpn_box: 0.0105, rcnn_cls: 0.1227, rcnn_box 0.0713,reg_loss 0.7713, 
+INFO:root:[session 62][epoch 21][iter  170/ 240] loss: 1.0679, lr: 1.10e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.443958
+INFO:root:			rpn_cls: 0.0266, rpn_box: 0.0114, rcnn_cls: 0.1316, rcnn_box 0.0640,reg_loss 0.7706, 
+INFO:root:[session 62][epoch 21][iter  180/ 240] loss: 0.9728, lr: 1.10e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.498233
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0079, rcnn_cls: 0.0313, rcnn_box 0.0428,reg_loss 0.7698, 
+INFO:root:[session 62][epoch 21][iter  190/ 240] loss: 0.9712, lr: 1.10e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.420747
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0169, rcnn_cls: 0.0664, rcnn_box 0.0636,reg_loss 0.7690, 
+INFO:root:[session 62][epoch 21][iter  200/ 240] loss: 0.9982, lr: 1.10e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.423425
+INFO:root:			rpn_cls: 0.0450, rpn_box: 0.0196, rcnn_cls: 0.2198, rcnn_box 0.1535,reg_loss 0.7682, 
+INFO:root:[session 62][epoch 21][iter  210/ 240] loss: 1.0894, lr: 1.10e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.414054
+INFO:root:			rpn_cls: 0.0633, rpn_box: 0.0314, rcnn_cls: 0.3843, rcnn_box 0.1886,reg_loss 0.7675, 
+INFO:root:[session 62][epoch 21][iter  220/ 240] loss: 1.0370, lr: 1.10e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.424705
+INFO:root:			rpn_cls: 0.0730, rpn_box: 0.0209, rcnn_cls: 0.2402, rcnn_box 0.0320,reg_loss 0.7669, 
+INFO:root:[session 62][epoch 21][iter  230/ 240] loss: 0.9608, lr: 1.10e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.518829
+INFO:root:			rpn_cls: 0.0294, rpn_box: 0.0102, rcnn_cls: 0.0822, rcnn_box 0.0738,reg_loss 0.7666, 
+INFO:root:number  21 epoch 's map: 0.0216
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_62_21_239.pth
+INFO:root:[session 62][epoch 22][iter    0/ 240] loss: 0.9076, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 0.342954
+INFO:root:			rpn_cls: 0.0158, rpn_box: 0.0090, rcnn_cls: 0.0804, rcnn_box 0.0367,reg_loss 0.7658, 
+INFO:root:[session 62][epoch 22][iter   10/ 240] loss: 1.0199, lr: 1.00e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.482477
+INFO:root:			rpn_cls: 0.0616, rpn_box: 0.0106, rcnn_cls: 0.0557, rcnn_box 0.0113,reg_loss 0.7652, 
+INFO:root:[session 62][epoch 22][iter   20/ 240] loss: 0.9597, lr: 1.00e-04
+INFO:root:			fg/bg=(24/104), time cost: 3.420078
+INFO:root:			rpn_cls: 0.0467, rpn_box: 0.0160, rcnn_cls: 0.1177, rcnn_box 0.0926,reg_loss 0.7652, 
+INFO:root:[session 62][epoch 22][iter   30/ 240] loss: 0.9534, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.438728
+INFO:root:			rpn_cls: 0.0322, rpn_box: 0.0151, rcnn_cls: 0.0865, rcnn_box 0.0534,reg_loss 0.7651, 
+INFO:root:[session 62][epoch 22][iter   40/ 240] loss: 0.9513, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.542574
+INFO:root:			rpn_cls: 0.0767, rpn_box: 0.0182, rcnn_cls: 0.1076, rcnn_box 0.0144,reg_loss 0.7645, 
+INFO:root:[session 62][epoch 22][iter   50/ 240] loss: 0.9785, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.409257
+INFO:root:			rpn_cls: 0.0519, rpn_box: 0.0093, rcnn_cls: 0.0475, rcnn_box 0.0217,reg_loss 0.7637, 
+INFO:root:[session 62][epoch 22][iter   60/ 240] loss: 0.9801, lr: 1.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.457315
+INFO:root:			rpn_cls: 0.0467, rpn_box: 0.0085, rcnn_cls: 0.0636, rcnn_box 0.0509,reg_loss 0.7633, 
+INFO:root:[session 62][epoch 22][iter   70/ 240] loss: 0.9608, lr: 1.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.422664
+INFO:root:			rpn_cls: 0.0233, rpn_box: 0.0086, rcnn_cls: 0.0496, rcnn_box 0.0397,reg_loss 0.7629, 
+INFO:root:[session 62][epoch 22][iter   80/ 240] loss: 0.9565, lr: 1.00e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.404505
+INFO:root:			rpn_cls: 0.0594, rpn_box: 0.0132, rcnn_cls: 0.1919, rcnn_box 0.0580,reg_loss 0.7628, 
+INFO:root:[session 62][epoch 22][iter   90/ 240] loss: 0.9906, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.422584
+INFO:root:			rpn_cls: 0.0697, rpn_box: 0.0157, rcnn_cls: 0.0461, rcnn_box 0.0566,reg_loss 0.7617, 
+INFO:root:[session 62][epoch 22][iter  100/ 240] loss: 0.9885, lr: 1.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.438116
+INFO:root:			rpn_cls: 0.0216, rpn_box: 0.0049, rcnn_cls: 0.0872, rcnn_box 0.0500,reg_loss 0.7615, 
+INFO:root:[session 62][epoch 22][iter  110/ 240] loss: 1.0156, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.536031
+INFO:root:			rpn_cls: 0.0340, rpn_box: 0.0124, rcnn_cls: 0.1596, rcnn_box 0.0962,reg_loss 0.7612, 
+INFO:root:[session 62][epoch 22][iter  120/ 240] loss: 1.0464, lr: 1.00e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.669127
+INFO:root:			rpn_cls: 0.0523, rpn_box: 0.0119, rcnn_cls: 0.2772, rcnn_box 0.0666,reg_loss 0.7608, 
+INFO:root:[session 62][epoch 22][iter  130/ 240] loss: 0.9891, lr: 1.00e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.625293
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0123, rcnn_cls: 0.0645, rcnn_box 0.0393,reg_loss 0.7606, 
+INFO:root:[session 62][epoch 22][iter  140/ 240] loss: 1.0191, lr: 1.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.561224
+INFO:root:			rpn_cls: 0.0396, rpn_box: 0.0126, rcnn_cls: 0.1739, rcnn_box 0.0721,reg_loss 0.7602, 
+INFO:root:[session 62][epoch 22][iter  150/ 240] loss: 0.9700, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.557383
+INFO:root:			rpn_cls: 0.0363, rpn_box: 0.0071, rcnn_cls: 0.3051, rcnn_box 0.0802,reg_loss 0.7594, 
+INFO:root:[session 62][epoch 22][iter  160/ 240] loss: 0.9576, lr: 1.00e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.600430
+INFO:root:			rpn_cls: 0.0478, rpn_box: 0.0077, rcnn_cls: 0.0565, rcnn_box 0.0329,reg_loss 0.7606, 
+INFO:root:[session 62][epoch 22][iter  170/ 240] loss: 1.0034, lr: 1.00e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.642723
+INFO:root:			rpn_cls: 0.0311, rpn_box: 0.0100, rcnn_cls: 0.0570, rcnn_box 0.0437,reg_loss 0.7600, 
+INFO:root:[session 62][epoch 22][iter  180/ 240] loss: 0.9767, lr: 1.00e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.415851
+INFO:root:			rpn_cls: 0.0308, rpn_box: 0.0094, rcnn_cls: 0.1116, rcnn_box 0.0432,reg_loss 0.7599, 
+INFO:root:[session 62][epoch 22][iter  190/ 240] loss: 0.9726, lr: 1.00e-04
+INFO:root:			fg/bg=(29/99), time cost: 3.383467
+INFO:root:			rpn_cls: 0.0370, rpn_box: 0.0173, rcnn_cls: 0.2379, rcnn_box 0.1400,reg_loss 0.7589, 
+INFO:root:[session 62][epoch 22][iter  200/ 240] loss: 0.9586, lr: 1.00e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.411638
+INFO:root:			rpn_cls: 0.0213, rpn_box: 0.0057, rcnn_cls: 0.1149, rcnn_box 0.0594,reg_loss 0.7579, 
+INFO:root:[session 62][epoch 22][iter  210/ 240] loss: 0.9559, lr: 1.00e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.360723
+INFO:root:			rpn_cls: 0.0129, rpn_box: 0.0034, rcnn_cls: 0.1399, rcnn_box 0.0955,reg_loss 0.7571, 
+INFO:root:[session 62][epoch 22][iter  220/ 240] loss: 1.0001, lr: 1.00e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.372189
+INFO:root:			rpn_cls: 0.0625, rpn_box: 0.0324, rcnn_cls: 0.1873, rcnn_box 0.1158,reg_loss 0.7566, 
+INFO:root:[session 62][epoch 22][iter  230/ 240] loss: 0.9633, lr: 1.00e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.413511
+INFO:root:			rpn_cls: 0.0112, rpn_box: 0.0016, rcnn_cls: 0.0832, rcnn_box 0.0448,reg_loss 0.7560, 
+INFO:root:number  22 epoch 's map: 0.0143
+INFO:root:[session 62][epoch 23][iter    0/ 240] loss: 0.9087, lr: 8.95e-05
+INFO:root:			fg/bg=(11/117), time cost: 0.358799
+INFO:root:			rpn_cls: 0.0340, rpn_box: 0.0097, rcnn_cls: 0.0719, rcnn_box 0.0379,reg_loss 0.7553, 
+INFO:root:[session 62][epoch 23][iter   10/ 240] loss: 0.9999, lr: 8.95e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.495719
+INFO:root:			rpn_cls: 0.0319, rpn_box: 0.0174, rcnn_cls: 0.1536, rcnn_box 0.0632,reg_loss 0.7553, 
+INFO:root:[session 62][epoch 23][iter   20/ 240] loss: 1.0064, lr: 8.95e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.642527
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0097, rcnn_cls: 0.0369, rcnn_box 0.0419,reg_loss 0.7549, 
+INFO:root:[session 62][epoch 23][iter   30/ 240] loss: 0.9294, lr: 8.95e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.586781
+INFO:root:			rpn_cls: 0.0382, rpn_box: 0.0045, rcnn_cls: 0.0778, rcnn_box 0.0286,reg_loss 0.7541, 
+INFO:root:[session 62][epoch 23][iter   40/ 240] loss: 0.9542, lr: 8.95e-05
+INFO:root:			fg/bg=(30/98), time cost: 3.408718
+INFO:root:			rpn_cls: 0.0685, rpn_box: 0.0248, rcnn_cls: 0.1200, rcnn_box 0.1469,reg_loss 0.7533, 
+INFO:root:[session 62][epoch 23][iter   50/ 240] loss: 1.0063, lr: 8.95e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.417265
+INFO:root:			rpn_cls: 0.0364, rpn_box: 0.0100, rcnn_cls: 0.0266, rcnn_box 0.0197,reg_loss 0.7528, 
+INFO:root:[session 62][epoch 23][iter   60/ 240] loss: 0.9575, lr: 8.95e-05
+INFO:root:			fg/bg=(25/103), time cost: 3.395963
+INFO:root:			rpn_cls: 0.0527, rpn_box: 0.0201, rcnn_cls: 0.1871, rcnn_box 0.1106,reg_loss 0.7533, 
+INFO:root:[session 62][epoch 23][iter   70/ 240] loss: 0.9307, lr: 8.95e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.614597
+INFO:root:			rpn_cls: 0.0288, rpn_box: 0.0139, rcnn_cls: 0.0501, rcnn_box 0.0239,reg_loss 0.7529, 
+INFO:root:[session 62][epoch 23][iter   80/ 240] loss: 0.9472, lr: 8.95e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.479819
+INFO:root:			rpn_cls: 0.0220, rpn_box: 0.0078, rcnn_cls: 0.0637, rcnn_box 0.0549,reg_loss 0.7525, 
+INFO:root:[session 62][epoch 23][iter   90/ 240] loss: 1.0215, lr: 8.95e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.372074
+INFO:root:			rpn_cls: 0.0345, rpn_box: 0.0109, rcnn_cls: 0.2841, rcnn_box 0.0332,reg_loss 0.7519, 
+INFO:root:[session 62][epoch 23][iter  100/ 240] loss: 0.9519, lr: 8.95e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.387809
+INFO:root:			rpn_cls: 0.0198, rpn_box: 0.0100, rcnn_cls: 0.1434, rcnn_box 0.1180,reg_loss 0.7520, 
+INFO:root:[session 62][epoch 23][iter  110/ 240] loss: 0.8886, lr: 8.95e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.419633
+INFO:root:			rpn_cls: 0.0168, rpn_box: 0.0014, rcnn_cls: 0.0345, rcnn_box 0.0120,reg_loss 0.7511, 
+INFO:root:[session 62][epoch 23][iter  120/ 240] loss: 0.9715, lr: 8.95e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.516140
+INFO:root:			rpn_cls: 0.0559, rpn_box: 0.0125, rcnn_cls: 0.0237, rcnn_box 0.0034,reg_loss 0.7506, 
+INFO:root:[session 62][epoch 23][iter  130/ 240] loss: 0.9361, lr: 8.95e-05
+INFO:root:			fg/bg=(21/107), time cost: 3.377125
+INFO:root:			rpn_cls: 0.0504, rpn_box: 0.0227, rcnn_cls: 0.1871, rcnn_box 0.0805,reg_loss 0.7511, 
+INFO:root:[session 62][epoch 23][iter  140/ 240] loss: 0.9657, lr: 8.95e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.504951
+INFO:root:			rpn_cls: 0.0234, rpn_box: 0.0076, rcnn_cls: 0.0272, rcnn_box 0.0413,reg_loss 0.7508, 
+INFO:root:[session 62][epoch 23][iter  150/ 240] loss: 0.9528, lr: 8.95e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.401127
+INFO:root:			rpn_cls: 0.0227, rpn_box: 0.0110, rcnn_cls: 0.1049, rcnn_box 0.0787,reg_loss 0.7500, 
+INFO:root:[session 62][epoch 23][iter  160/ 240] loss: 0.8778, lr: 8.95e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.371433
+INFO:root:			rpn_cls: 0.0410, rpn_box: 0.0083, rcnn_cls: 0.0193, rcnn_box 0.0085,reg_loss 0.7495, 
+INFO:root:[session 62][epoch 23][iter  170/ 240] loss: 0.9204, lr: 8.95e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.416983
+INFO:root:			rpn_cls: 0.0362, rpn_box: 0.0075, rcnn_cls: 0.0280, rcnn_box 0.0567,reg_loss 0.7489, 
+INFO:root:[session 62][epoch 23][iter  180/ 240] loss: 0.8904, lr: 8.95e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.365373
+INFO:root:			rpn_cls: 0.0369, rpn_box: 0.0087, rcnn_cls: 0.0233, rcnn_box 0.0107,reg_loss 0.7480, 
+INFO:root:[session 62][epoch 23][iter  190/ 240] loss: 0.9444, lr: 8.95e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.453347
+INFO:root:			rpn_cls: 0.0234, rpn_box: 0.0058, rcnn_cls: 0.0847, rcnn_box 0.0152,reg_loss 0.7479, 
+INFO:root:[session 62][epoch 23][iter  200/ 240] loss: 0.9475, lr: 8.95e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.372174
+INFO:root:			rpn_cls: 0.0246, rpn_box: 0.0133, rcnn_cls: 0.1036, rcnn_box 0.0750,reg_loss 0.7476, 
+INFO:root:[session 62][epoch 23][iter  210/ 240] loss: 0.9920, lr: 8.95e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.411715
+INFO:root:			rpn_cls: 0.0497, rpn_box: 0.0135, rcnn_cls: 0.0938, rcnn_box 0.0771,reg_loss 0.7476, 
+INFO:root:[session 62][epoch 23][iter  220/ 240] loss: 0.9682, lr: 8.95e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.379122
+INFO:root:			rpn_cls: 0.0402, rpn_box: 0.0104, rcnn_cls: 0.1125, rcnn_box 0.0659,reg_loss 0.7474, 
+INFO:root:[session 62][epoch 23][iter  230/ 240] loss: 0.9600, lr: 8.95e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.379838
+INFO:root:			rpn_cls: 0.0214, rpn_box: 0.0124, rcnn_cls: 0.0434, rcnn_box 0.1143,reg_loss 0.7469, 
+INFO:root:number  23 epoch 's map: 0.0162
+INFO:root:[session 62][epoch 24][iter    0/ 240] loss: 0.8844, lr: 7.92e-05
+INFO:root:			fg/bg=(6/122), time cost: 0.329923
+INFO:root:			rpn_cls: 0.0440, rpn_box: 0.0072, rcnn_cls: 0.0682, rcnn_box 0.0179,reg_loss 0.7471, 
+INFO:root:[session 62][epoch 24][iter   10/ 240] loss: 0.9965, lr: 7.92e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.315325
+INFO:root:			rpn_cls: 0.0387, rpn_box: 0.0314, rcnn_cls: 0.2364, rcnn_box 0.1578,reg_loss 0.7467, 
+INFO:root:[session 62][epoch 24][iter   20/ 240] loss: 0.9264, lr: 7.92e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.455160
+INFO:root:			rpn_cls: 0.0282, rpn_box: 0.0079, rcnn_cls: 0.0686, rcnn_box 0.0646,reg_loss 0.7464, 
+INFO:root:[session 62][epoch 24][iter   30/ 240] loss: 0.9650, lr: 7.92e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.409834
+INFO:root:			rpn_cls: 0.0088, rpn_box: 0.0035, rcnn_cls: 0.0212, rcnn_box 0.0111,reg_loss 0.7459, 
+INFO:root:[session 62][epoch 24][iter   40/ 240] loss: 0.9601, lr: 7.92e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.497755
+INFO:root:			rpn_cls: 0.0155, rpn_box: 0.0058, rcnn_cls: 0.0238, rcnn_box 0.0552,reg_loss 0.7459, 
+INFO:root:[session 62][epoch 24][iter   50/ 240] loss: 0.9344, lr: 7.92e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.456535
+INFO:root:			rpn_cls: 0.0244, rpn_box: 0.0046, rcnn_cls: 0.0196, rcnn_box 0.0174,reg_loss 0.7456, 
+INFO:root:[session 62][epoch 24][iter   60/ 240] loss: 0.9532, lr: 7.92e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.479377
+INFO:root:			rpn_cls: 0.0385, rpn_box: 0.0066, rcnn_cls: 0.0151, rcnn_box 0.0271,reg_loss 0.7452, 
+INFO:root:[session 62][epoch 24][iter   70/ 240] loss: 0.8990, lr: 7.92e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.674955
+INFO:root:			rpn_cls: 0.0154, rpn_box: 0.0017, rcnn_cls: 0.0181, rcnn_box 0.0334,reg_loss 0.7455, 
+INFO:root:[session 62][epoch 24][iter   80/ 240] loss: 0.9318, lr: 7.92e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.499403
+INFO:root:			rpn_cls: 0.0284, rpn_box: 0.0137, rcnn_cls: 0.0131, rcnn_box 0.0158,reg_loss 0.7495, 
+INFO:root:[session 62][epoch 24][iter   90/ 240] loss: 0.9096, lr: 7.92e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.667875
+INFO:root:			rpn_cls: 0.0315, rpn_box: 0.0166, rcnn_cls: 0.1032, rcnn_box 0.0471,reg_loss 0.7488, 
+INFO:root:[session 62][epoch 24][iter  100/ 240] loss: 0.9302, lr: 7.92e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.522794
+INFO:root:			rpn_cls: 0.0225, rpn_box: 0.0085, rcnn_cls: 0.0337, rcnn_box 0.0356,reg_loss 0.7474, 
+INFO:root:[session 62][epoch 24][iter  110/ 240] loss: 1.0117, lr: 7.92e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.459488
+INFO:root:			rpn_cls: 0.0296, rpn_box: 0.0065, rcnn_cls: 0.1092, rcnn_box 0.0384,reg_loss 0.7465, 
+INFO:root:[session 62][epoch 24][iter  120/ 240] loss: 0.9352, lr: 7.92e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.697427
+INFO:root:			rpn_cls: 0.0281, rpn_box: 0.0066, rcnn_cls: 0.1047, rcnn_box 0.0381,reg_loss 0.7455, 
+INFO:root:[session 62][epoch 24][iter  130/ 240] loss: 0.9200, lr: 7.92e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.612293
+INFO:root:			rpn_cls: 0.0231, rpn_box: 0.0051, rcnn_cls: 0.1072, rcnn_box 0.0342,reg_loss 0.7446, 
+INFO:root:[session 62][epoch 24][iter  140/ 240] loss: 0.9546, lr: 7.92e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.585824
+INFO:root:			rpn_cls: 0.0202, rpn_box: 0.0031, rcnn_cls: 0.0257, rcnn_box 0.0187,reg_loss 0.7435, 
+INFO:root:[session 62][epoch 24][iter  150/ 240] loss: 0.9321, lr: 7.92e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.510190
+INFO:root:			rpn_cls: 0.0451, rpn_box: 0.0180, rcnn_cls: 0.0818, rcnn_box 0.0282,reg_loss 0.7427, 
+INFO:root:[session 62][epoch 24][iter  160/ 240] loss: 0.9152, lr: 7.92e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.513879
+INFO:root:			rpn_cls: 0.0105, rpn_box: 0.0018, rcnn_cls: 0.0050, rcnn_box 0.0071,reg_loss 0.7421, 
+INFO:root:[session 62][epoch 24][iter  170/ 240] loss: 0.9153, lr: 7.92e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.629078
+INFO:root:			rpn_cls: 0.0269, rpn_box: 0.0029, rcnn_cls: 0.0287, rcnn_box 0.0206,reg_loss 0.7414, 
+INFO:root:[session 62][epoch 24][iter  180/ 240] loss: 0.9396, lr: 7.92e-05
+INFO:root:			fg/bg=(22/106), time cost: 3.413536
+INFO:root:			rpn_cls: 0.0348, rpn_box: 0.0270, rcnn_cls: 0.1006, rcnn_box 0.0592,reg_loss 0.7410, 
+INFO:root:[session 62][epoch 24][iter  190/ 240] loss: 0.8823, lr: 7.92e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.403813
+INFO:root:			rpn_cls: 0.0586, rpn_box: 0.0224, rcnn_cls: 0.0928, rcnn_box 0.0316,reg_loss 0.7405, 
+INFO:root:[session 62][epoch 24][iter  200/ 240] loss: 1.0458, lr: 7.92e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.405076
+INFO:root:			rpn_cls: 0.0302, rpn_box: 0.0092, rcnn_cls: 0.1656, rcnn_box 0.0429,reg_loss 0.7403, 
+INFO:root:[session 62][epoch 24][iter  210/ 240] loss: 0.9222, lr: 7.92e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.359489
+INFO:root:			rpn_cls: 0.0176, rpn_box: 0.0110, rcnn_cls: 0.0527, rcnn_box 0.0348,reg_loss 0.7402, 
+INFO:root:[session 62][epoch 24][iter  220/ 240] loss: 0.9277, lr: 7.92e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.411504
+INFO:root:			rpn_cls: 0.0150, rpn_box: 0.0081, rcnn_cls: 0.1118, rcnn_box 0.0229,reg_loss 0.7401, 
+INFO:root:[session 62][epoch 24][iter  230/ 240] loss: 0.9199, lr: 7.92e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.324755
+INFO:root:			rpn_cls: 0.0147, rpn_box: 0.0087, rcnn_cls: 0.0400, rcnn_box 0.0690,reg_loss 0.7396, 
+INFO:root:number  24 epoch 's map: 0.0163
+INFO:root:[session 62][epoch 25][iter    0/ 240] loss: 0.9253, lr: 6.91e-05
+INFO:root:			fg/bg=(12/116), time cost: 0.344008
+INFO:root:			rpn_cls: 0.0311, rpn_box: 0.0116, rcnn_cls: 0.1001, rcnn_box 0.0437,reg_loss 0.7388, 
+INFO:root:[session 62][epoch 25][iter   10/ 240] loss: 0.8987, lr: 6.91e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.441060
+INFO:root:			rpn_cls: 0.0188, rpn_box: 0.0087, rcnn_cls: 0.0677, rcnn_box 0.0184,reg_loss 0.7383, 
+INFO:root:[session 62][epoch 25][iter   20/ 240] loss: 0.8944, lr: 6.91e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.392070
+INFO:root:			rpn_cls: 0.0188, rpn_box: 0.0069, rcnn_cls: 0.0809, rcnn_box 0.0470,reg_loss 0.7377, 
+INFO:root:[session 62][epoch 25][iter   30/ 240] loss: 0.9342, lr: 6.91e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.395494
+INFO:root:			rpn_cls: 0.0438, rpn_box: 0.0081, rcnn_cls: 0.0210, rcnn_box 0.0407,reg_loss 0.7374, 
+INFO:root:[session 62][epoch 25][iter   40/ 240] loss: 0.9386, lr: 6.91e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.475315
+INFO:root:			rpn_cls: 0.0598, rpn_box: 0.0280, rcnn_cls: 0.1576, rcnn_box 0.1481,reg_loss 0.7371, 
+INFO:root:[session 62][epoch 25][iter   50/ 240] loss: 0.9246, lr: 6.91e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.489606
+INFO:root:			rpn_cls: 0.0139, rpn_box: 0.0058, rcnn_cls: 0.0586, rcnn_box 0.0122,reg_loss 0.7371, 
+INFO:root:[session 62][epoch 25][iter   60/ 240] loss: 0.9257, lr: 6.91e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.391123
+INFO:root:			rpn_cls: 0.0453, rpn_box: 0.0273, rcnn_cls: 0.2187, rcnn_box 0.1124,reg_loss 0.7368, 
+INFO:root:[session 62][epoch 25][iter   70/ 240] loss: 0.9544, lr: 6.91e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.556526
+INFO:root:			rpn_cls: 0.0352, rpn_box: 0.0066, rcnn_cls: 0.0458, rcnn_box 0.0572,reg_loss 0.7367, 
+INFO:root:[session 62][epoch 25][iter   80/ 240] loss: 0.9061, lr: 6.91e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.363351
+INFO:root:			rpn_cls: 0.0462, rpn_box: 0.0267, rcnn_cls: 0.1386, rcnn_box 0.1848,reg_loss 0.7370, 
+INFO:root:[session 62][epoch 25][iter   90/ 240] loss: 0.9292, lr: 6.91e-05
+INFO:root:			fg/bg=(31/97), time cost: 3.482064
+INFO:root:			rpn_cls: 0.0696, rpn_box: 0.0241, rcnn_cls: 0.0941, rcnn_box 0.1174,reg_loss 0.7365, 
+INFO:root:[session 62][epoch 25][iter  100/ 240] loss: 0.8906, lr: 6.91e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.432698
+INFO:root:			rpn_cls: 0.0213, rpn_box: 0.0073, rcnn_cls: 0.0914, rcnn_box 0.0393,reg_loss 0.7359, 
+INFO:root:[session 62][epoch 25][iter  110/ 240] loss: 0.9757, lr: 6.91e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.448275
+INFO:root:			rpn_cls: 0.0318, rpn_box: 0.0148, rcnn_cls: 0.2343, rcnn_box 0.0407,reg_loss 0.7363, 
+INFO:root:[session 62][epoch 25][iter  120/ 240] loss: 0.9181, lr: 6.91e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.362837
+INFO:root:			rpn_cls: 0.0374, rpn_box: 0.0052, rcnn_cls: 0.0114, rcnn_box 0.0263,reg_loss 0.7376, 
+INFO:root:[session 62][epoch 25][iter  130/ 240] loss: 0.9306, lr: 6.91e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.343106
+INFO:root:			rpn_cls: 0.0228, rpn_box: 0.0106, rcnn_cls: 0.3092, rcnn_box 0.0858,reg_loss 0.7371, 
+INFO:root:[session 62][epoch 25][iter  140/ 240] loss: 0.9739, lr: 6.91e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.346493
+INFO:root:			rpn_cls: 0.0623, rpn_box: 0.0304, rcnn_cls: 0.1467, rcnn_box 0.1498,reg_loss 0.7373, 
+INFO:root:[session 62][epoch 25][iter  150/ 240] loss: 0.9189, lr: 6.91e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.338424
+INFO:root:			rpn_cls: 0.0240, rpn_box: 0.0067, rcnn_cls: 0.0131, rcnn_box 0.0277,reg_loss 0.7370, 
+INFO:root:[session 62][epoch 25][iter  160/ 240] loss: 0.9976, lr: 6.91e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.358301
+INFO:root:			rpn_cls: 0.0285, rpn_box: 0.0134, rcnn_cls: 0.1510, rcnn_box 0.0547,reg_loss 0.7365, 
+INFO:root:[session 62][epoch 25][iter  170/ 240] loss: 0.8991, lr: 6.91e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.420951
+INFO:root:			rpn_cls: 0.0269, rpn_box: 0.0097, rcnn_cls: 0.0932, rcnn_box 0.0164,reg_loss 0.7359, 
+INFO:root:[session 62][epoch 25][iter  180/ 240] loss: 0.9448, lr: 6.91e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.382232
+INFO:root:			rpn_cls: 0.0411, rpn_box: 0.0172, rcnn_cls: 0.1864, rcnn_box 0.1590,reg_loss 0.7354, 
+INFO:root:[session 62][epoch 25][iter  190/ 240] loss: 0.8587, lr: 6.91e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.359256
+INFO:root:			rpn_cls: 0.0375, rpn_box: 0.0186, rcnn_cls: 0.1042, rcnn_box 0.0672,reg_loss 0.7349, 
+INFO:root:[session 62][epoch 25][iter  200/ 240] loss: 0.9108, lr: 6.91e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.370209
+INFO:root:			rpn_cls: 0.0431, rpn_box: 0.0027, rcnn_cls: 0.0330, rcnn_box 0.0170,reg_loss 0.7342, 
+INFO:root:[session 62][epoch 25][iter  210/ 240] loss: 0.9546, lr: 6.91e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.694962
+INFO:root:			rpn_cls: 0.0163, rpn_box: 0.0079, rcnn_cls: 0.1676, rcnn_box 0.0193,reg_loss 0.7339, 
+INFO:root:[session 62][epoch 25][iter  220/ 240] loss: 0.9009, lr: 6.91e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.618150
+INFO:root:			rpn_cls: 0.0211, rpn_box: 0.0074, rcnn_cls: 0.1277, rcnn_box 0.0178,reg_loss 0.7334, 
+INFO:root:[session 62][epoch 25][iter  230/ 240] loss: 0.8857, lr: 6.91e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.632179
+INFO:root:			rpn_cls: 0.0111, rpn_box: 0.0077, rcnn_cls: 0.0724, rcnn_box 0.0324,reg_loss 0.7333, 
+INFO:root:number  25 epoch 's map: 0.0152
+INFO:root:[session 62][epoch 26][iter    0/ 240] loss: 0.8661, lr: 5.93e-05
+INFO:root:			fg/bg=(12/116), time cost: 0.335286
+INFO:root:			rpn_cls: 0.0098, rpn_box: 0.0048, rcnn_cls: 0.0715, rcnn_box 0.0474,reg_loss 0.7327, 
+INFO:root:[session 62][epoch 26][iter   10/ 240] loss: 0.9116, lr: 5.93e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.357806
+INFO:root:			rpn_cls: 0.0106, rpn_box: 0.0059, rcnn_cls: 0.0589, rcnn_box 0.0376,reg_loss 0.7323, 
+INFO:root:[session 62][epoch 26][iter   20/ 240] loss: 0.9071, lr: 5.93e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.362729
+INFO:root:			rpn_cls: 0.0387, rpn_box: 0.0163, rcnn_cls: 0.1369, rcnn_box 0.0747,reg_loss 0.7319, 
+INFO:root:[session 62][epoch 26][iter   30/ 240] loss: 0.8646, lr: 5.93e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.373696
+INFO:root:			rpn_cls: 0.0459, rpn_box: 0.0249, rcnn_cls: 0.0408, rcnn_box 0.0463,reg_loss 0.7319, 
+INFO:root:[session 62][epoch 26][iter   40/ 240] loss: 0.9352, lr: 5.93e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.354633
+INFO:root:			rpn_cls: 0.0372, rpn_box: 0.0114, rcnn_cls: 0.0440, rcnn_box 0.0108,reg_loss 0.7319, 
+INFO:root:[session 62][epoch 26][iter   50/ 240] loss: 0.8929, lr: 5.93e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.448235
+INFO:root:			rpn_cls: 0.0469, rpn_box: 0.0275, rcnn_cls: 0.0758, rcnn_box 0.0631,reg_loss 0.7314, 
+INFO:root:[session 62][epoch 26][iter   60/ 240] loss: 0.8521, lr: 5.93e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.407217
+INFO:root:			rpn_cls: 0.0199, rpn_box: 0.0046, rcnn_cls: 0.1021, rcnn_box 0.0607,reg_loss 0.7316, 
+INFO:root:[session 62][epoch 26][iter   70/ 240] loss: 0.9088, lr: 5.93e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.407904
+INFO:root:			rpn_cls: 0.0392, rpn_box: 0.0092, rcnn_cls: 0.0984, rcnn_box 0.0478,reg_loss 0.7314, 
+INFO:root:[session 62][epoch 26][iter   80/ 240] loss: 0.9007, lr: 5.93e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.364865
+INFO:root:			rpn_cls: 0.0093, rpn_box: 0.0014, rcnn_cls: 0.0174, rcnn_box 0.0278,reg_loss 0.7312, 
+INFO:root:[session 62][epoch 26][iter   90/ 240] loss: 0.9415, lr: 5.93e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.426557
+INFO:root:			rpn_cls: 0.0265, rpn_box: 0.0054, rcnn_cls: 0.0394, rcnn_box 0.0890,reg_loss 0.7305, 
+INFO:root:[session 62][epoch 26][iter  100/ 240] loss: 0.9192, lr: 5.93e-05
+INFO:root:			fg/bg=(20/108), time cost: 3.378591
+INFO:root:			rpn_cls: 0.0553, rpn_box: 0.0157, rcnn_cls: 0.0991, rcnn_box 0.0813,reg_loss 0.7301, 
+INFO:root:[session 62][epoch 26][iter  110/ 240] loss: 0.8649, lr: 5.93e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.538965
+INFO:root:			rpn_cls: 0.0193, rpn_box: 0.0117, rcnn_cls: 0.0287, rcnn_box 0.0296,reg_loss 0.7300, 
+INFO:root:[session 62][epoch 26][iter  120/ 240] loss: 0.9289, lr: 5.93e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.492952
+INFO:root:			rpn_cls: 0.0524, rpn_box: 0.0164, rcnn_cls: 0.0968, rcnn_box 0.0430,reg_loss 0.7298, 
+INFO:root:[session 62][epoch 26][iter  130/ 240] loss: 0.9443, lr: 5.93e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.480134
+INFO:root:			rpn_cls: 0.0943, rpn_box: 0.0173, rcnn_cls: 0.1845, rcnn_box 0.0437,reg_loss 0.7295, 
+INFO:root:[session 62][epoch 26][iter  140/ 240] loss: 0.9212, lr: 5.93e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.401934
+INFO:root:			rpn_cls: 0.0270, rpn_box: 0.0064, rcnn_cls: 0.1498, rcnn_box 0.0390,reg_loss 0.7293, 
+INFO:root:[session 62][epoch 26][iter  150/ 240] loss: 0.9181, lr: 5.93e-05
+INFO:root:			fg/bg=(21/107), time cost: 3.451028
+INFO:root:			rpn_cls: 0.0262, rpn_box: 0.0136, rcnn_cls: 0.1067, rcnn_box 0.1015,reg_loss 0.7290, 
+INFO:root:[session 62][epoch 26][iter  160/ 240] loss: 0.9109, lr: 5.93e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.363968
+INFO:root:			rpn_cls: 0.0259, rpn_box: 0.0129, rcnn_cls: 0.0719, rcnn_box 0.0232,reg_loss 0.7287, 
+INFO:root:[session 62][epoch 26][iter  170/ 240] loss: 0.8870, lr: 5.93e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.393441
+INFO:root:			rpn_cls: 0.0303, rpn_box: 0.0106, rcnn_cls: 0.0818, rcnn_box 0.0378,reg_loss 0.7288, 
+INFO:root:[session 62][epoch 26][iter  180/ 240] loss: 0.8957, lr: 5.93e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.402455
+INFO:root:			rpn_cls: 0.0265, rpn_box: 0.0086, rcnn_cls: 0.0902, rcnn_box 0.0292,reg_loss 0.7292, 
+INFO:root:[session 62][epoch 26][iter  190/ 240] loss: 0.9536, lr: 5.93e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.448470
+INFO:root:			rpn_cls: 0.0262, rpn_box: 0.0134, rcnn_cls: 0.1629, rcnn_box 0.0587,reg_loss 0.7291, 
+INFO:root:[session 62][epoch 26][iter  200/ 240] loss: 0.9070, lr: 5.93e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.558869
+INFO:root:			rpn_cls: 0.0228, rpn_box: 0.0065, rcnn_cls: 0.0907, rcnn_box 0.0473,reg_loss 0.7292, 
+INFO:root:[session 62][epoch 26][iter  210/ 240] loss: 0.9190, lr: 5.93e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.494095
+INFO:root:			rpn_cls: 0.0176, rpn_box: 0.0032, rcnn_cls: 0.0072, rcnn_box 0.0119,reg_loss 0.7289, 
+INFO:root:[session 62][epoch 26][iter  220/ 240] loss: 0.8896, lr: 5.93e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.463390
+INFO:root:			rpn_cls: 0.0164, rpn_box: 0.0096, rcnn_cls: 0.0615, rcnn_box 0.0948,reg_loss 0.7284, 
+INFO:root:[session 62][epoch 26][iter  230/ 240] loss: 0.9347, lr: 5.93e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.586150
+INFO:root:			rpn_cls: 0.0626, rpn_box: 0.0305, rcnn_cls: 0.2005, rcnn_box 0.1094,reg_loss 0.7282, 
+INFO:root:number  26 epoch 's map: 0.0159
+INFO:root:[session 62][epoch 27][iter    0/ 240] loss: 0.9293, lr: 5.00e-05
+INFO:root:			fg/bg=(15/113), time cost: 0.339683
+INFO:root:			rpn_cls: 0.0300, rpn_box: 0.0091, rcnn_cls: 0.0988, rcnn_box 0.0633,reg_loss 0.7280, 
+INFO:root:[session 62][epoch 27][iter   10/ 240] loss: 0.8912, lr: 5.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.388896
+INFO:root:			rpn_cls: 0.0306, rpn_box: 0.0153, rcnn_cls: 0.0843, rcnn_box 0.0634,reg_loss 0.7274, 
+INFO:root:[session 62][epoch 27][iter   20/ 240] loss: 0.8931, lr: 5.00e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.458501
+INFO:root:			rpn_cls: 0.0293, rpn_box: 0.0064, rcnn_cls: 0.0389, rcnn_box 0.0659,reg_loss 0.7274, 
+INFO:root:[session 62][epoch 27][iter   30/ 240] loss: 0.8903, lr: 5.00e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.629822
+INFO:root:			rpn_cls: 0.0249, rpn_box: 0.0098, rcnn_cls: 0.0806, rcnn_box 0.0799,reg_loss 0.7270, 
+INFO:root:[session 62][epoch 27][iter   40/ 240] loss: 0.8981, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.390192
+INFO:root:			rpn_cls: 0.0322, rpn_box: 0.0120, rcnn_cls: 0.0846, rcnn_box 0.0335,reg_loss 0.7266, 
+INFO:root:[session 62][epoch 27][iter   50/ 240] loss: 0.8548, lr: 5.00e-05
+INFO:root:			fg/bg=(23/105), time cost: 3.391221
+INFO:root:			rpn_cls: 0.0269, rpn_box: 0.0185, rcnn_cls: 0.0736, rcnn_box 0.0855,reg_loss 0.7266, 
+INFO:root:[session 62][epoch 27][iter   60/ 240] loss: 0.8831, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.373888
+INFO:root:			rpn_cls: 0.0247, rpn_box: 0.0086, rcnn_cls: 0.0346, rcnn_box 0.0456,reg_loss 0.7266, 
+INFO:root:[session 62][epoch 27][iter   70/ 240] loss: 0.8690, lr: 5.00e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.380401
+INFO:root:			rpn_cls: 0.0523, rpn_box: 0.0207, rcnn_cls: 0.1181, rcnn_box 0.0733,reg_loss 0.7265, 
+INFO:root:[session 62][epoch 27][iter   80/ 240] loss: 0.8881, lr: 5.00e-05
+INFO:root:			fg/bg=(28/100), time cost: 3.398991
+INFO:root:			rpn_cls: 0.0596, rpn_box: 0.0250, rcnn_cls: 0.0335, rcnn_box 0.0963,reg_loss 0.7257, 
+INFO:root:[session 62][epoch 27][iter   90/ 240] loss: 0.8725, lr: 5.00e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.387310
+INFO:root:			rpn_cls: 0.0209, rpn_box: 0.0054, rcnn_cls: 0.0560, rcnn_box 0.0734,reg_loss 0.7252, 
+INFO:root:[session 62][epoch 27][iter  100/ 240] loss: 0.8567, lr: 5.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.399657
+INFO:root:			rpn_cls: 0.0205, rpn_box: 0.0099, rcnn_cls: 0.0451, rcnn_box 0.0344,reg_loss 0.7247, 
+INFO:root:[session 62][epoch 27][iter  110/ 240] loss: 0.8874, lr: 5.00e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.374489
+INFO:root:			rpn_cls: 0.0095, rpn_box: 0.0010, rcnn_cls: 0.0299, rcnn_box 0.0080,reg_loss 0.7246, 
+INFO:root:[session 62][epoch 27][iter  120/ 240] loss: 0.9568, lr: 5.00e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.410337
+INFO:root:			rpn_cls: 0.0284, rpn_box: 0.0159, rcnn_cls: 0.0546, rcnn_box 0.0593,reg_loss 0.7246, 
+INFO:root:[session 62][epoch 27][iter  130/ 240] loss: 0.8725, lr: 5.00e-05
+INFO:root:			fg/bg=(27/101), time cost: 3.415836
+INFO:root:			rpn_cls: 0.0405, rpn_box: 0.0133, rcnn_cls: 0.0623, rcnn_box 0.0810,reg_loss 0.7243, 
+INFO:root:[session 62][epoch 27][iter  140/ 240] loss: 0.9610, lr: 5.00e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.370760
+INFO:root:			rpn_cls: 0.0294, rpn_box: 0.0105, rcnn_cls: 0.1177, rcnn_box 0.0683,reg_loss 0.7242, 
+INFO:root:[session 62][epoch 27][iter  150/ 240] loss: 0.8931, lr: 5.00e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.370054
+INFO:root:			rpn_cls: 0.0322, rpn_box: 0.0131, rcnn_cls: 0.0530, rcnn_box 0.0669,reg_loss 0.7242, 
+INFO:root:[session 62][epoch 27][iter  160/ 240] loss: 0.8971, lr: 5.00e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.367294
+INFO:root:			rpn_cls: 0.0238, rpn_box: 0.0056, rcnn_cls: 0.0226, rcnn_box 0.0321,reg_loss 0.7239, 
+INFO:root:[session 62][epoch 27][iter  170/ 240] loss: 0.8808, lr: 5.00e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.486661
+INFO:root:			rpn_cls: 0.0216, rpn_box: 0.0079, rcnn_cls: 0.0613, rcnn_box 0.0683,reg_loss 0.7239, 
+INFO:root:[session 62][epoch 27][iter  180/ 240] loss: 0.8914, lr: 5.00e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.401542
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0104, rcnn_cls: 0.0264, rcnn_box 0.0505,reg_loss 0.7234, 
+INFO:root:[session 62][epoch 27][iter  190/ 240] loss: 0.9340, lr: 5.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.344467
+INFO:root:			rpn_cls: 0.0516, rpn_box: 0.0285, rcnn_cls: 0.2524, rcnn_box 0.1153,reg_loss 0.7232, 
+INFO:root:[session 62][epoch 27][iter  200/ 240] loss: 0.8799, lr: 5.00e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.407722
+INFO:root:			rpn_cls: 0.0277, rpn_box: 0.0177, rcnn_cls: 0.0338, rcnn_box 0.0727,reg_loss 0.7229, 
+INFO:root:[session 62][epoch 27][iter  210/ 240] loss: 0.9269, lr: 5.00e-05
+INFO:root:			fg/bg=(24/104), time cost: 3.358835
+INFO:root:			rpn_cls: 0.0385, rpn_box: 0.0165, rcnn_cls: 0.1685, rcnn_box 0.0880,reg_loss 0.7233, 
+INFO:root:[session 62][epoch 27][iter  220/ 240] loss: 0.9303, lr: 5.00e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.358211
+INFO:root:			rpn_cls: 0.0257, rpn_box: 0.0099, rcnn_cls: 0.0651, rcnn_box 0.0070,reg_loss 0.7235, 
+INFO:root:[session 62][epoch 27][iter  230/ 240] loss: 0.9393, lr: 5.00e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.411418
+INFO:root:			rpn_cls: 0.0201, rpn_box: 0.0145, rcnn_cls: 0.1270, rcnn_box 0.0938,reg_loss 0.7234, 
+INFO:root:number  27 epoch 's map: 0.0179
+INFO:root:[session 62][epoch 28][iter    0/ 240] loss: 0.8993, lr: 4.12e-05
+INFO:root:			fg/bg=(15/113), time cost: 0.336124
+INFO:root:			rpn_cls: 0.0403, rpn_box: 0.0117, rcnn_cls: 0.0677, rcnn_box 0.0563,reg_loss 0.7233, 
+INFO:root:[session 62][epoch 28][iter   10/ 240] loss: 0.8811, lr: 4.12e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.504738
+INFO:root:			rpn_cls: 0.0183, rpn_box: 0.0025, rcnn_cls: 0.0269, rcnn_box 0.0166,reg_loss 0.7229, 
+INFO:root:[session 62][epoch 28][iter   20/ 240] loss: 0.9374, lr: 4.12e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.373594
+INFO:root:			rpn_cls: 0.0336, rpn_box: 0.0101, rcnn_cls: 0.0556, rcnn_box 0.0477,reg_loss 0.7224, 
+INFO:root:[session 62][epoch 28][iter   30/ 240] loss: 0.8808, lr: 4.12e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.429972
+INFO:root:			rpn_cls: 0.0236, rpn_box: 0.0083, rcnn_cls: 0.0969, rcnn_box 0.0867,reg_loss 0.7221, 
+INFO:root:[session 62][epoch 28][iter   40/ 240] loss: 0.8885, lr: 4.12e-05
+INFO:root:			fg/bg=(20/108), time cost: 3.423685
+INFO:root:			rpn_cls: 0.0227, rpn_box: 0.0130, rcnn_cls: 0.0647, rcnn_box 0.0957,reg_loss 0.7218, 
+INFO:root:[session 62][epoch 28][iter   50/ 240] loss: 0.8926, lr: 4.12e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.355103
+INFO:root:			rpn_cls: 0.0249, rpn_box: 0.0055, rcnn_cls: 0.0441, rcnn_box 0.0400,reg_loss 0.7217, 
+INFO:root:[session 62][epoch 28][iter   60/ 240] loss: 0.8932, lr: 4.12e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.351670
+INFO:root:			rpn_cls: 0.0229, rpn_box: 0.0126, rcnn_cls: 0.0483, rcnn_box 0.0526,reg_loss 0.7213, 
+INFO:root:[session 62][epoch 28][iter   70/ 240] loss: 0.8716, lr: 4.12e-05
+INFO:root:			fg/bg=(30/98), time cost: 3.497072
+INFO:root:			rpn_cls: 0.0418, rpn_box: 0.0149, rcnn_cls: 0.1066, rcnn_box 0.0935,reg_loss 0.7210, 
+INFO:root:[session 62][epoch 28][iter   80/ 240] loss: 0.8722, lr: 4.12e-05
+INFO:root:			fg/bg=(31/97), time cost: 3.625285
+INFO:root:			rpn_cls: 0.0276, rpn_box: 0.0115, rcnn_cls: 0.0909, rcnn_box 0.1227,reg_loss 0.7209, 
+INFO:root:[session 62][epoch 28][iter   90/ 240] loss: 0.9418, lr: 4.12e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.531361
+INFO:root:			rpn_cls: 0.0133, rpn_box: 0.0055, rcnn_cls: 0.0178, rcnn_box 0.0569,reg_loss 0.7208, 
+INFO:root:[session 62][epoch 28][iter  100/ 240] loss: 0.8408, lr: 4.12e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.541676
+INFO:root:			rpn_cls: 0.0449, rpn_box: 0.0231, rcnn_cls: 0.0494, rcnn_box 0.0406,reg_loss 0.7206, 
+INFO:root:[session 62][epoch 28][iter  110/ 240] loss: 0.9088, lr: 4.12e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.527045
+INFO:root:			rpn_cls: 0.0406, rpn_box: 0.0252, rcnn_cls: 0.1259, rcnn_box 0.1100,reg_loss 0.7207, 
+INFO:root:[session 62][epoch 28][iter  120/ 240] loss: 0.8907, lr: 4.12e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.449675
+INFO:root:			rpn_cls: 0.0350, rpn_box: 0.0096, rcnn_cls: 0.0869, rcnn_box 0.0488,reg_loss 0.7211, 
+INFO:root:[session 62][epoch 28][iter  130/ 240] loss: 0.9167, lr: 4.12e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.447526
+INFO:root:			rpn_cls: 0.0213, rpn_box: 0.0061, rcnn_cls: 0.0954, rcnn_box 0.0903,reg_loss 0.7210, 
+INFO:root:[session 62][epoch 28][iter  140/ 240] loss: 0.9098, lr: 4.12e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.448071
+INFO:root:			rpn_cls: 0.0368, rpn_box: 0.0161, rcnn_cls: 0.0704, rcnn_box 0.0558,reg_loss 0.7208, 
+INFO:root:[session 62][epoch 28][iter  150/ 240] loss: 0.8749, lr: 4.12e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.445229
+INFO:root:			rpn_cls: 0.0435, rpn_box: 0.0156, rcnn_cls: 0.2012, rcnn_box 0.0573,reg_loss 0.7207, 
+INFO:root:[session 62][epoch 28][iter  160/ 240] loss: 0.8364, lr: 4.12e-05
+INFO:root:			fg/bg=(7/121), time cost: 3.465451
+INFO:root:			rpn_cls: 0.0169, rpn_box: 0.0035, rcnn_cls: 0.0695, rcnn_box 0.0345,reg_loss 0.7205, 
+INFO:root:[session 62][epoch 28][iter  170/ 240] loss: 0.8631, lr: 4.12e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.466174
+INFO:root:			rpn_cls: 0.0347, rpn_box: 0.0111, rcnn_cls: 0.1680, rcnn_box 0.0487,reg_loss 0.7205, 
+INFO:root:[session 62][epoch 28][iter  180/ 240] loss: 0.8409, lr: 4.12e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.458840
+INFO:root:			rpn_cls: 0.0233, rpn_box: 0.0063, rcnn_cls: 0.0174, rcnn_box 0.0568,reg_loss 0.7201, 
+INFO:root:[session 62][epoch 28][iter  190/ 240] loss: 0.9188, lr: 4.12e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.455284
+INFO:root:			rpn_cls: 0.0575, rpn_box: 0.0284, rcnn_cls: 0.1725, rcnn_box 0.1445,reg_loss 0.7200, 
+INFO:root:[session 62][epoch 28][iter  200/ 240] loss: 0.9115, lr: 4.12e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.437490
+INFO:root:			rpn_cls: 0.0239, rpn_box: 0.0069, rcnn_cls: 0.0492, rcnn_box 0.0392,reg_loss 0.7198, 
+INFO:root:[session 62][epoch 28][iter  210/ 240] loss: 0.8275, lr: 4.12e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.507178
+INFO:root:			rpn_cls: 0.0138, rpn_box: 0.0047, rcnn_cls: 0.0559, rcnn_box 0.0207,reg_loss 0.7193, 
+INFO:root:[session 62][epoch 28][iter  220/ 240] loss: 0.8724, lr: 4.12e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.437732
+INFO:root:			rpn_cls: 0.0341, rpn_box: 0.0103, rcnn_cls: 0.1362, rcnn_box 0.0475,reg_loss 0.7191, 
+INFO:root:[session 62][epoch 28][iter  230/ 240] loss: 0.8602, lr: 4.12e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.442719
+INFO:root:			rpn_cls: 0.0223, rpn_box: 0.0059, rcnn_cls: 0.0428, rcnn_box 0.0689,reg_loss 0.7188, 
+INFO:root:number  28 epoch 's map: 0.0176
+INFO:root:[session 62][epoch 29][iter    0/ 240] loss: 0.8540, lr: 3.31e-05
+INFO:root:			fg/bg=(9/119), time cost: 0.346760
+INFO:root:			rpn_cls: 0.0319, rpn_box: 0.0110, rcnn_cls: 0.0413, rcnn_box 0.0511,reg_loss 0.7187, 
+INFO:root:[session 62][epoch 29][iter   10/ 240] loss: 0.8481, lr: 3.31e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.435704
+INFO:root:			rpn_cls: 0.0099, rpn_box: 0.0016, rcnn_cls: 0.0085, rcnn_box 0.0119,reg_loss 0.7186, 
+INFO:root:[session 62][epoch 29][iter   20/ 240] loss: 0.8683, lr: 3.31e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.510589
+INFO:root:			rpn_cls: 0.0157, rpn_box: 0.0073, rcnn_cls: 0.0464, rcnn_box 0.0304,reg_loss 0.7182, 
+INFO:root:[session 62][epoch 29][iter   30/ 240] loss: 0.8504, lr: 3.31e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.442963
+INFO:root:			rpn_cls: 0.0300, rpn_box: 0.0022, rcnn_cls: 0.0075, rcnn_box 0.0087,reg_loss 0.7181, 
+INFO:root:[session 62][epoch 29][iter   40/ 240] loss: 0.8652, lr: 3.31e-05
+INFO:root:			fg/bg=(21/107), time cost: 3.499331
+INFO:root:			rpn_cls: 0.0509, rpn_box: 0.0084, rcnn_cls: 0.1035, rcnn_box 0.0757,reg_loss 0.7179, 
+INFO:root:[session 62][epoch 29][iter   50/ 240] loss: 0.8775, lr: 3.31e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.521433
+INFO:root:			rpn_cls: 0.0326, rpn_box: 0.0116, rcnn_cls: 0.0575, rcnn_box 0.0570,reg_loss 0.7177, 
+INFO:root:[session 62][epoch 29][iter   60/ 240] loss: 0.8744, lr: 3.31e-05
+INFO:root:			fg/bg=(23/105), time cost: 3.540347
+INFO:root:			rpn_cls: 0.0427, rpn_box: 0.0176, rcnn_cls: 0.0666, rcnn_box 0.0605,reg_loss 0.7174, 
+INFO:root:[session 62][epoch 29][iter   70/ 240] loss: 0.8854, lr: 3.31e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.541764
+INFO:root:			rpn_cls: 0.0460, rpn_box: 0.0124, rcnn_cls: 0.0722, rcnn_box 0.0782,reg_loss 0.7173, 
+INFO:root:[session 62][epoch 29][iter   80/ 240] loss: 0.8791, lr: 3.31e-05
+INFO:root:			fg/bg=(27/101), time cost: 3.387453
+INFO:root:			rpn_cls: 0.0159, rpn_box: 0.0124, rcnn_cls: 0.0488, rcnn_box 0.1119,reg_loss 0.7176, 
+INFO:root:[session 62][epoch 29][iter   90/ 240] loss: 0.8721, lr: 3.31e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.345049
+INFO:root:			rpn_cls: 0.0225, rpn_box: 0.0069, rcnn_cls: 0.0243, rcnn_box 0.0272,reg_loss 0.7175, 
+INFO:root:[session 62][epoch 29][iter  100/ 240] loss: 0.8629, lr: 3.31e-05
+INFO:root:			fg/bg=(5/123), time cost: 3.352225
+INFO:root:			rpn_cls: 0.0206, rpn_box: 0.0096, rcnn_cls: 0.0581, rcnn_box 0.0262,reg_loss 0.7175, 
+INFO:root:[session 62][epoch 29][iter  110/ 240] loss: 0.9096, lr: 3.31e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.353526
+INFO:root:			rpn_cls: 0.0538, rpn_box: 0.0144, rcnn_cls: 0.0987, rcnn_box 0.0487,reg_loss 0.7173, 
+INFO:root:[session 62][epoch 29][iter  120/ 240] loss: 0.8709, lr: 3.31e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.391203
+INFO:root:			rpn_cls: 0.0258, rpn_box: 0.0098, rcnn_cls: 0.0159, rcnn_box 0.0354,reg_loss 0.7172, 
+INFO:root:[session 62][epoch 29][iter  130/ 240] loss: 0.8635, lr: 3.31e-05
+INFO:root:			fg/bg=(15/113), time cost: 3.442565
+INFO:root:			rpn_cls: 0.0147, rpn_box: 0.0106, rcnn_cls: 0.0450, rcnn_box 0.0556,reg_loss 0.7169, 
+INFO:root:[session 62][epoch 29][iter  140/ 240] loss: 0.8503, lr: 3.31e-05
+INFO:root:			fg/bg=(19/109), time cost: 3.367192
+INFO:root:			rpn_cls: 0.0344, rpn_box: 0.0129, rcnn_cls: 0.0113, rcnn_box 0.0545,reg_loss 0.7167, 
+INFO:root:[session 62][epoch 29][iter  150/ 240] loss: 0.8388, lr: 3.31e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.354696
+INFO:root:			rpn_cls: 0.0228, rpn_box: 0.0066, rcnn_cls: 0.0307, rcnn_box 0.0195,reg_loss 0.7165, 
+INFO:root:[session 62][epoch 29][iter  160/ 240] loss: 0.8861, lr: 3.31e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.518378
+INFO:root:			rpn_cls: 0.0506, rpn_box: 0.0233, rcnn_cls: 0.0861, rcnn_box 0.0441,reg_loss 0.7165, 
+INFO:root:[session 62][epoch 29][iter  170/ 240] loss: 0.8956, lr: 3.31e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.505202
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0084, rcnn_cls: 0.0648, rcnn_box 0.0484,reg_loss 0.7163, 
+INFO:root:[session 62][epoch 29][iter  180/ 240] loss: 0.8212, lr: 3.31e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.401719
+INFO:root:			rpn_cls: 0.0131, rpn_box: 0.0048, rcnn_cls: 0.0055, rcnn_box 0.0320,reg_loss 0.7162, 
+INFO:root:[session 62][epoch 29][iter  190/ 240] loss: 0.8621, lr: 3.31e-05
+INFO:root:			fg/bg=(16/112), time cost: 3.371888
+INFO:root:			rpn_cls: 0.0263, rpn_box: 0.0074, rcnn_cls: 0.0152, rcnn_box 0.0314,reg_loss 0.7160, 
+INFO:root:[session 62][epoch 29][iter  200/ 240] loss: 0.8783, lr: 3.31e-05
+INFO:root:			fg/bg=(14/114), time cost: 3.460511
+INFO:root:			rpn_cls: 0.0348, rpn_box: 0.0104, rcnn_cls: 0.0870, rcnn_box 0.0460,reg_loss 0.7160, 
+INFO:root:[session 62][epoch 29][iter  210/ 240] loss: 0.8665, lr: 3.31e-05
+INFO:root:			fg/bg=(20/108), time cost: 3.402037
+INFO:root:			rpn_cls: 0.0202, rpn_box: 0.0171, rcnn_cls: 0.1382, rcnn_box 0.0740,reg_loss 0.7160, 
+INFO:root:[session 62][epoch 29][iter  220/ 240] loss: 0.9261, lr: 3.31e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.356343
+INFO:root:			rpn_cls: 0.0500, rpn_box: 0.0231, rcnn_cls: 0.1032, rcnn_box 0.1394,reg_loss 0.7161, 
+INFO:root:[session 62][epoch 29][iter  230/ 240] loss: 0.8965, lr: 3.31e-05
+INFO:root:			fg/bg=(31/97), time cost: 3.359837
+INFO:root:			rpn_cls: 0.0344, rpn_box: 0.0145, rcnn_cls: 0.0734, rcnn_box 0.0894,reg_loss 0.7159, 
+INFO:root:number  29 epoch 's map: 0.0131

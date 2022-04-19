@@ -1,0 +1,16 @@
+README.md
+setup.py
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/vision.cpp
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/cpu/ROIAlign_cpu.cpp
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/cpu/nms_cpu.cpp
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/cuda/ROIAlign_cuda.cu
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/cuda/ROIPool_cuda.cu
+/home/lab30202/lq/ai_future/torch1_0/FPN_star/fpn_star_torch1_0/lib/model/AlignPool/roi_util/csrc/cuda/nms.cu
+roi_util/__init__.py
+roi_util/nms.py
+roi_util/roi_align.py
+roi_util/roi_pool.py
+roi_util.egg-info/PKG-INFO
+roi_util.egg-info/SOURCES.txt
+roi_util.egg-info/dependency_links.txt
+roi_util.egg-info/top_level.txt

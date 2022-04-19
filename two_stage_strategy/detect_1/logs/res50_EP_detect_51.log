@@ -1,0 +1,852 @@
+INFO:root:2021-09-20 16:15:29.886302
+INFO:root:{'TRAIN': {'LEARNING_RATE': 0.0001, 'MOMENTUM': 0.9, 'WEIGHT_DECAY': 0.0001, 'GAMMA': 0.1, 'STEPSIZE': [30000], 'DISPLAY': 20, 'DOUBLE_BIAS': False, 'TRUNCATED': False, 'BIAS_DECAY': False, 'USE_GT': False, 'ASPECT_GROUPING': False, 'SNAPSHOT_KEPT': 3, 'SUMMARY_INTERVAL': 180, 'SCALES': [600], 'MAX_SIZE': 1000, 'TRIM_HEIGHT': 600, 'TRIM_WIDTH': 600, 'IMS_PER_BATCH': 1, 'FG_FRACTION': 0.25, 'FG_THRESH': 0.5, 'BG_THRESH_HI': 0.5, 'BG_THRESH_LO': 0.0, 'USE_FLIPPED': True, 'BBOX_REG': True, 'BBOX_THRESH': 0.5, 'SNAPSHOT_ITERS': 5000, 'SNAPSHOT_PREFIX': 'res50_faster_rcnn', 'BBOX_NORMALIZE_TARGETS': True, 'BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'BBOX_NORMALIZE_TARGETS_PRECOMPUTED': True, 'BBOX_NORMALIZE_MEANS': [0.0, 0.0, 0.0, 0.0], 'BBOX_NORMALIZE_STDS': [0.1, 0.1, 0.2, 0.2], 'PROPOSAL_METHOD': 'gt', 'HAS_RPN': True, 'RPN_POSITIVE_OVERLAP': 0.7, 'RPN_NEGATIVE_OVERLAP': 0.3, 'RPN_CLOBBER_POSITIVES': False, 'RPN_FG_FRACTION': 0.5, 'BATCH_SIZE': 128, 'RPN_BATCHSIZE': 256, 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 12000, 'RPN_POST_NMS_TOP_N': 2000, 'RPN_MIN_SIZE': 4, 'RPN_BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'RPN_POSITIVE_WEIGHT': -1.0, 'USE_ALL_GT': True, 'BN_TRAIN': False}, 'TEST': {'SCALES': [600], 'MAX_SIZE': 1000, 'NMS': 0.3, 'SVM': False, 'BBOX_REG': True, 'HAS_RPN': True, 'PROPOSAL_METHOD': 'gt', 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 6000, 'RPN_POST_NMS_TOP_N': 300, 'RPN_MIN_SIZE': 6, 'MODE': 'nms', 'RPN_TOP_N': 5000}, 'RESNET': {'MAX_POOL': False, 'FIXED_BLOCKS': 1}, 'MOBILENET': {'REGU_DEPTH': False, 'FIXED_LAYERS': 5, 'WEIGHT_DECAY': 4e-05, 'DEPTH_MULTIPLIER': 1.0}, 'DEDUP_BOXES': 0.0625, 'PIXEL_MEANS': array([[[102.9801, 115.9465, 122.7717]]]), 'RNG_SEED': 3, 'EPS': 1e-14, 'ROOT_DIR': '/home/lab30202/lwb/EP/single_detect/single_telescope/fpn_star_single_torch_1_1', 'DATA_DIR': '/home/lab30202/lwb/EP/single_detect/single_telescope/fpn_star_single_torch_1_1/data', 'MATLAB': 'matlab', 'EXP_DIR': 'res50', 'USE_GPU_NMS': True, 'GPU_ID': '0', 'POOLING_MODE': 'align', 'POOLING_SIZE': 7, 'MAX_NUM_GT_BOXES': 100, 'ANCHOR_SCALES': [2, 4, 6], 'ANCHOR_RATIOS': [0.5, 1, 2], 'FEAT_STRIDE': [2], 'FPN_ANCHOR_SCALES': [1, 2, 4, 8, 16], 'FPN_FEAT_STRIDES': [1, 2, 4, 8, 16], 'FPN_ANCHOR_STRIDE': 1, 'CUDA': False, 'CROP_RESIZE_WITH_MAX_POOL': False, 'HAS_MASK': True}
+INFO:root:Train: 61 roidb entries
+INFO:root:[session 51][epoch  1][iter    0/  61] loss: 9.9946, lr: 6.00e-05
+INFO:root:			fg/bg=(1/127), time cost: 0.473093
+INFO:root:			rpn_cls: 0.6929, rpn_box: 0.0115, rcnn_cls: 4.1641, rcnn_box 0.0000,reg_loss 5.1261, 
+INFO:root:[session 51][epoch  1][iter   10/  61] loss: 9.9629, lr: 6.00e-05
+INFO:root:			fg/bg=(1/127), time cost: 3.243119
+INFO:root:			rpn_cls: 0.6907, rpn_box: 0.0137, rcnn_cls: 3.6840, rcnn_box 0.0000,reg_loss 5.0819, 
+INFO:root:[session 51][epoch  1][iter   20/  61] loss: 8.0135, lr: 6.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 2.971565
+INFO:root:			rpn_cls: 0.6836, rpn_box: 0.1908, rcnn_cls: 1.8169, rcnn_box 0.0395,reg_loss 5.0589, 
+INFO:root:[session 51][epoch  1][iter   30/  61] loss: 7.2850, lr: 6.00e-05
+INFO:root:			fg/bg=(26/102), time cost: 3.369833
+INFO:root:			rpn_cls: 0.6436, rpn_box: 0.0424, rcnn_cls: 1.6417, rcnn_box 0.5020,reg_loss 5.0384, 
+INFO:root:[session 51][epoch  1][iter   40/  61] loss: 7.0594, lr: 6.00e-05
+INFO:root:			fg/bg=(21/107), time cost: 3.050546
+INFO:root:			rpn_cls: 0.6431, rpn_box: 0.4966, rcnn_cls: 1.6188, rcnn_box 0.2526,reg_loss 5.0172, 
+INFO:root:[session 51][epoch  1][iter   50/  61] loss: 6.5563, lr: 6.00e-05
+INFO:root:			fg/bg=(15/113), time cost: 2.982108
+INFO:root:			rpn_cls: 0.6536, rpn_box: 0.1800, rcnn_cls: 1.4080, rcnn_box 0.2069,reg_loss 4.9955, 
+INFO:root:[session 51][epoch  1][iter   60/  61] loss: 6.5509, lr: 6.00e-05
+INFO:root:			fg/bg=(25/103), time cost: 3.164119
+INFO:root:			rpn_cls: 0.6392, rpn_box: 0.4168, rcnn_cls: 1.9953, rcnn_box 0.2414,reg_loss 4.9735, 
+INFO:root:number   1 epoch 's map: 0.0000
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_1_60.pth
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal 700 normal>) = 2.244090909090909
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal 700 normal>) = 1.2440909090909091
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/lab30202/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal 700 normal>) = 2.244090909090909
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal 700 normal>) = 1.2440909090909091
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/lab30202/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+INFO:root:[session 51][epoch  2][iter    0/  61] loss: 5.9712, lr: 9.00e-05
+INFO:root:			fg/bg=(13/115), time cost: 0.300976
+INFO:root:			rpn_cls: 0.5116, rpn_box: 0.0101, rcnn_cls: 0.2608, rcnn_box 0.2174,reg_loss 4.9713, 
+INFO:root:[session 51][epoch  2][iter   10/  61] loss: 6.1199, lr: 9.00e-05
+INFO:root:			fg/bg=(18/110), time cost: 3.186701
+INFO:root:			rpn_cls: 0.5207, rpn_box: 0.5127, rcnn_cls: 0.9066, rcnn_box 0.1504,reg_loss 4.9391, 
+INFO:root:[session 51][epoch  2][iter   20/  61] loss: 5.9611, lr: 9.00e-05
+INFO:root:			fg/bg=(12/116), time cost: 3.038052
+INFO:root:			rpn_cls: 0.1885, rpn_box: 0.1506, rcnn_cls: 0.4184, rcnn_box 0.0946,reg_loss 4.9104, 
+INFO:root:[session 51][epoch  2][iter   30/  61] loss: 5.3954, lr: 9.00e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.164273
+INFO:root:			rpn_cls: 0.0429, rpn_box: 0.0178, rcnn_cls: 0.1261, rcnn_box 0.0959,reg_loss 4.8814, 
+INFO:root:[session 51][epoch  2][iter   40/  61] loss: 5.5572, lr: 9.00e-05
+INFO:root:			fg/bg=(28/100), time cost: 3.013947
+INFO:root:			rpn_cls: 0.0897, rpn_box: 0.1648, rcnn_cls: 0.3802, rcnn_box 0.3381,reg_loss 4.8511, 
+INFO:root:[session 51][epoch  2][iter   50/  61] loss: 5.4327, lr: 9.00e-05
+INFO:root:			fg/bg=(4/124), time cost: 3.053947
+INFO:root:			rpn_cls: 0.0412, rpn_box: 0.0052, rcnn_cls: 0.1370, rcnn_box 0.0648,reg_loss 4.8219, 
+INFO:root:[session 51][epoch  2][iter   60/  61] loss: 5.1971, lr: 9.00e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.145676
+INFO:root:			rpn_cls: 0.0622, rpn_box: 0.0643, rcnn_cls: 0.1709, rcnn_box 0.1156,reg_loss 4.7921, 
+INFO:root:number   2 epoch 's map: 0.0317
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_2_60.pth
+INFO:root:[session 51][epoch  3][iter    0/  61] loss: 5.0436, lr: 1.20e-04
+INFO:root:			fg/bg=(5/123), time cost: 0.332528
+INFO:root:			rpn_cls: 0.0517, rpn_box: 0.0178, rcnn_cls: 0.1483, rcnn_box 0.0367,reg_loss 4.7890, 
+INFO:root:[session 51][epoch  3][iter   10/  61] loss: 5.3492, lr: 1.20e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.139040
+INFO:root:			rpn_cls: 0.0968, rpn_box: 0.1265, rcnn_cls: 0.4222, rcnn_box 0.4406,reg_loss 4.7490, 
+INFO:root:[session 51][epoch  3][iter   20/  61] loss: 5.2844, lr: 1.20e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.179144
+INFO:root:			rpn_cls: 0.0457, rpn_box: 0.0440, rcnn_cls: 0.1695, rcnn_box 0.2134,reg_loss 4.7090, 
+INFO:root:[session 51][epoch  3][iter   30/  61] loss: 5.4944, lr: 1.20e-04
+INFO:root:			fg/bg=(22/106), time cost: 3.166126
+INFO:root:			rpn_cls: 0.0743, rpn_box: 0.1237, rcnn_cls: 0.4813, rcnn_box 0.2016,reg_loss 4.6695, 
+INFO:root:[session 51][epoch  3][iter   40/  61] loss: 5.1022, lr: 1.20e-04
+INFO:root:			fg/bg=(3/125), time cost: 3.252563
+INFO:root:			rpn_cls: 0.0279, rpn_box: 0.0051, rcnn_cls: 0.0727, rcnn_box 0.0277,reg_loss 4.6309, 
+INFO:root:[session 51][epoch  3][iter   50/  61] loss: 5.0779, lr: 1.20e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.281668
+INFO:root:			rpn_cls: 0.0294, rpn_box: 0.0072, rcnn_cls: 0.1436, rcnn_box 0.0361,reg_loss 4.5922, 
+INFO:root:[session 51][epoch  3][iter   60/  61] loss: 5.0604, lr: 1.20e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.206473
+INFO:root:			rpn_cls: 0.0351, rpn_box: 0.0313, rcnn_cls: 0.4626, rcnn_box 0.2424,reg_loss 4.5545, 
+INFO:root:number   3 epoch 's map: 0.2898
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_3_60.pth
+INFO:root:[session 51][epoch  4][iter    0/  61] loss: 5.6623, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.339044
+INFO:root:			rpn_cls: 0.1185, rpn_box: 0.2123, rcnn_cls: 0.4788, rcnn_box 0.3021,reg_loss 4.5507, 
+INFO:root:[session 51][epoch  4][iter   10/  61] loss: 5.0340, lr: 1.50e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.191954
+INFO:root:			rpn_cls: 0.0301, rpn_box: 0.0103, rcnn_cls: 0.0741, rcnn_box 0.0365,reg_loss 4.5053, 
+INFO:root:[session 51][epoch  4][iter   20/  61] loss: 4.9577, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.112003
+INFO:root:			rpn_cls: 0.1964, rpn_box: 0.2390, rcnn_cls: 0.4356, rcnn_box 0.3736,reg_loss 4.4608, 
+INFO:root:[session 51][epoch  4][iter   30/  61] loss: 5.1603, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.052004
+INFO:root:			rpn_cls: 0.0798, rpn_box: 0.1504, rcnn_cls: 0.4594, rcnn_box 0.3310,reg_loss 4.4224, 
+INFO:root:[session 51][epoch  4][iter   40/  61] loss: 4.9376, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.147622
+INFO:root:			rpn_cls: 0.0493, rpn_box: 0.0753, rcnn_cls: 0.4523, rcnn_box 0.3795,reg_loss 4.3850, 
+INFO:root:[session 51][epoch  4][iter   50/  61] loss: 4.7567, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.113539
+INFO:root:			rpn_cls: 0.1163, rpn_box: 0.1021, rcnn_cls: 0.3412, rcnn_box 0.3183,reg_loss 4.3474, 
+INFO:root:[session 51][epoch  4][iter   60/  61] loss: 4.8364, lr: 1.50e-04
+INFO:root:			fg/bg=(6/122), time cost: 2.972138
+INFO:root:			rpn_cls: 0.0208, rpn_box: 0.0067, rcnn_cls: 0.1144, rcnn_box 0.0363,reg_loss 4.3105, 
+INFO:root:number   4 epoch 's map: 0.3943
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_4_60.pth
+INFO:root:[session 51][epoch  5][iter    0/  61] loss: 5.1732, lr: 1.80e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.358973
+INFO:root:			rpn_cls: 0.0620, rpn_box: 0.0916, rcnn_cls: 0.3120, rcnn_box 0.4007,reg_loss 4.3068, 
+INFO:root:[session 51][epoch  5][iter   10/  61] loss: 4.7256, lr: 1.80e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.058388
+INFO:root:			rpn_cls: 0.0442, rpn_box: 0.0055, rcnn_cls: 0.1791, rcnn_box 0.1750,reg_loss 4.2642, 
+INFO:root:[session 51][epoch  5][iter   20/  61] loss: 4.6739, lr: 1.80e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.127246
+INFO:root:			rpn_cls: 0.0123, rpn_box: 0.0526, rcnn_cls: 0.2530, rcnn_box 0.2090,reg_loss 4.2238, 
+INFO:root:[session 51][epoch  5][iter   30/  61] loss: 4.6463, lr: 1.80e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.069266
+INFO:root:			rpn_cls: 0.0906, rpn_box: 0.0582, rcnn_cls: 0.2232, rcnn_box 0.2881,reg_loss 4.1850, 
+INFO:root:[session 51][epoch  5][iter   40/  61] loss: 4.5180, lr: 1.80e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.004496
+INFO:root:			rpn_cls: 0.0442, rpn_box: 0.0074, rcnn_cls: 0.0440, rcnn_box 0.0474,reg_loss 4.1495, 
+INFO:root:[session 51][epoch  5][iter   50/  61] loss: 4.5901, lr: 1.80e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.028095
+INFO:root:			rpn_cls: 0.0493, rpn_box: 0.0136, rcnn_cls: 0.0291, rcnn_box 0.0576,reg_loss 4.1146, 
+INFO:root:[session 51][epoch  5][iter   60/  61] loss: 4.5546, lr: 1.80e-04
+INFO:root:			fg/bg=(12/116), time cost: 2.957056
+INFO:root:			rpn_cls: 0.0399, rpn_box: 0.0073, rcnn_cls: 0.1759, rcnn_box 0.1203,reg_loss 4.0809, 
+INFO:root:number   5 epoch 's map: 0.6726
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_5_60.pth
+INFO:root:[session 51][epoch  6][iter    0/  61] loss: 4.5153, lr: 2.10e-04
+INFO:root:			fg/bg=(22/106), time cost: 0.284827
+INFO:root:			rpn_cls: 0.0217, rpn_box: 0.0271, rcnn_cls: 0.1711, rcnn_box 0.2178,reg_loss 4.0776, 
+INFO:root:[session 51][epoch  6][iter   10/  61] loss: 4.5543, lr: 2.10e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.246118
+INFO:root:			rpn_cls: 0.0916, rpn_box: 0.1837, rcnn_cls: 0.1862, rcnn_box 0.4046,reg_loss 4.0401, 
+INFO:root:[session 51][epoch  6][iter   20/  61] loss: 4.4407, lr: 2.10e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.272596
+INFO:root:			rpn_cls: 0.0310, rpn_box: 0.0242, rcnn_cls: 0.2207, rcnn_box 0.1916,reg_loss 4.0046, 
+INFO:root:[session 51][epoch  6][iter   30/  61] loss: 4.2897, lr: 2.10e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.048170
+INFO:root:			rpn_cls: 0.0381, rpn_box: 0.0300, rcnn_cls: 0.1367, rcnn_box 0.1740,reg_loss 3.9694, 
+INFO:root:[session 51][epoch  6][iter   40/  61] loss: 4.3094, lr: 2.10e-04
+INFO:root:			fg/bg=(2/126), time cost: 3.058018
+INFO:root:			rpn_cls: 0.0214, rpn_box: 0.0446, rcnn_cls: 0.2045, rcnn_box 0.0102,reg_loss 3.9357, 
+INFO:root:[session 51][epoch  6][iter   50/  61] loss: 4.3813, lr: 2.10e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.158951
+INFO:root:			rpn_cls: 0.0038, rpn_box: 0.0046, rcnn_cls: 0.0967, rcnn_box 0.0446,reg_loss 3.9020, 
+INFO:root:[session 51][epoch  6][iter   60/  61] loss: 4.2588, lr: 2.10e-04
+INFO:root:			fg/bg=(18/110), time cost: 3.022879
+INFO:root:			rpn_cls: 0.0123, rpn_box: 0.0493, rcnn_cls: 0.4815, rcnn_box 0.2271,reg_loss 3.8697, 
+INFO:root:number   6 epoch 's map: 0.5702
+INFO:root:[session 51][epoch  7][iter    0/  61] loss: 4.7138, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.345049
+INFO:root:			rpn_cls: 0.0443, rpn_box: 0.1743, rcnn_cls: 0.2786, rcnn_box 0.3500,reg_loss 3.8666, 
+INFO:root:[session 51][epoch  7][iter   10/  61] loss: 4.2271, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.357014
+INFO:root:			rpn_cls: 0.0525, rpn_box: 0.0839, rcnn_cls: 0.1943, rcnn_box 0.2282,reg_loss 3.8312, 
+INFO:root:[session 51][epoch  7][iter   20/  61] loss: 4.2002, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.136961
+INFO:root:			rpn_cls: 0.0073, rpn_box: 0.0494, rcnn_cls: 0.2531, rcnn_box 0.2517,reg_loss 3.7959, 
+INFO:root:[session 51][epoch  7][iter   30/  61] loss: 4.0939, lr: 2.40e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.150146
+INFO:root:			rpn_cls: 0.0087, rpn_box: 0.0447, rcnn_cls: 0.2086, rcnn_box 0.1024,reg_loss 3.7625, 
+INFO:root:[session 51][epoch  7][iter   40/  61] loss: 4.0447, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.088281
+INFO:root:			rpn_cls: 0.4347, rpn_box: 0.1506, rcnn_cls: 0.1753, rcnn_box 0.2204,reg_loss 3.7293, 
+INFO:root:[session 51][epoch  7][iter   50/  61] loss: 4.1032, lr: 2.40e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.154154
+INFO:root:			rpn_cls: 0.0339, rpn_box: 0.0121, rcnn_cls: 0.1646, rcnn_box 0.0535,reg_loss 3.6993, 
+INFO:root:[session 51][epoch  7][iter   60/  61] loss: 4.0209, lr: 2.40e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.114205
+INFO:root:			rpn_cls: 0.0333, rpn_box: 0.0368, rcnn_cls: 0.0637, rcnn_box 0.1635,reg_loss 3.6680, 
+INFO:root:number   7 epoch 's map: 0.7288
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_7_60.pth
+INFO:root:[session 51][epoch  8][iter    0/  61] loss: 3.8757, lr: 2.40e-04
+INFO:root:			fg/bg=(7/121), time cost: 0.359914
+INFO:root:			rpn_cls: 0.0177, rpn_box: 0.0054, rcnn_cls: 0.1101, rcnn_box 0.0776,reg_loss 3.6648, 
+INFO:root:[session 51][epoch  8][iter   10/  61] loss: 3.9948, lr: 2.40e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.285424
+INFO:root:			rpn_cls: 0.0134, rpn_box: 0.0060, rcnn_cls: 0.1470, rcnn_box 0.1093,reg_loss 3.6330, 
+INFO:root:[session 51][epoch  8][iter   20/  61] loss: 3.9075, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.142528
+INFO:root:			rpn_cls: 0.0277, rpn_box: 0.0765, rcnn_cls: 0.2568, rcnn_box 0.2784,reg_loss 3.6016, 
+INFO:root:[session 51][epoch  8][iter   30/  61] loss: 3.6925, lr: 2.40e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.091687
+INFO:root:			rpn_cls: 0.0072, rpn_box: 0.0193, rcnn_cls: 0.0532, rcnn_box 0.0178,reg_loss 3.5713, 
+INFO:root:[session 51][epoch  8][iter   40/  61] loss: 3.8699, lr: 2.40e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.008756
+INFO:root:			rpn_cls: 0.1377, rpn_box: 0.1057, rcnn_cls: 0.1724, rcnn_box 0.1955,reg_loss 3.5407, 
+INFO:root:[session 51][epoch  8][iter   50/  61] loss: 3.7973, lr: 2.40e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.014091
+INFO:root:			rpn_cls: 0.0237, rpn_box: 0.0026, rcnn_cls: 0.1433, rcnn_box 0.0137,reg_loss 3.5113, 
+INFO:root:[session 51][epoch  8][iter   60/  61] loss: 3.6803, lr: 2.40e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.147764
+INFO:root:			rpn_cls: 0.0014, rpn_box: 0.0079, rcnn_cls: 0.1347, rcnn_box 0.0448,reg_loss 3.4830, 
+INFO:root:number   8 epoch 's map: 0.6825
+INFO:root:[session 51][epoch  9][iter    0/  61] loss: 3.6936, lr: 2.37e-04
+INFO:root:			fg/bg=(22/106), time cost: 0.351257
+INFO:root:			rpn_cls: 0.0054, rpn_box: 0.0154, rcnn_cls: 0.1053, rcnn_box 0.0874,reg_loss 3.4801, 
+INFO:root:[session 51][epoch  9][iter   10/  61] loss: 3.7066, lr: 2.37e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.279744
+INFO:root:			rpn_cls: 0.0163, rpn_box: 0.0301, rcnn_cls: 0.0806, rcnn_box 0.1464,reg_loss 3.4521, 
+INFO:root:[session 51][epoch  9][iter   20/  61] loss: 3.6645, lr: 2.37e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.179517
+INFO:root:			rpn_cls: 0.0079, rpn_box: 0.0046, rcnn_cls: 0.0132, rcnn_box 0.0118,reg_loss 3.4253, 
+INFO:root:[session 51][epoch  9][iter   30/  61] loss: 3.5652, lr: 2.37e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.065873
+INFO:root:			rpn_cls: 0.0402, rpn_box: 0.0026, rcnn_cls: 0.1227, rcnn_box 0.0862,reg_loss 3.3999, 
+INFO:root:[session 51][epoch  9][iter   40/  61] loss: 3.7316, lr: 2.37e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.190963
+INFO:root:			rpn_cls: 0.0060, rpn_box: 0.0472, rcnn_cls: 0.0882, rcnn_box 0.1209,reg_loss 3.3737, 
+INFO:root:[session 51][epoch  9][iter   50/  61] loss: 3.5763, lr: 2.37e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.145272
+INFO:root:			rpn_cls: 0.0169, rpn_box: 0.0021, rcnn_cls: 0.0146, rcnn_box 0.0110,reg_loss 3.3482, 
+INFO:root:[session 51][epoch  9][iter   60/  61] loss: 3.6440, lr: 2.37e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.111883
+INFO:root:			rpn_cls: 0.0121, rpn_box: 0.0022, rcnn_cls: 0.0794, rcnn_box 0.0488,reg_loss 3.3221, 
+INFO:root:number   9 epoch 's map: 0.6731
+INFO:root:[session 51][epoch 10][iter    0/  61] loss: 3.4893, lr: 2.34e-04
+INFO:root:			fg/bg=(20/108), time cost: 0.315469
+INFO:root:			rpn_cls: 0.0037, rpn_box: 0.0279, rcnn_cls: 0.0467, rcnn_box 0.0912,reg_loss 3.3198, 
+INFO:root:[session 51][epoch 10][iter   10/  61] loss: 3.5264, lr: 2.34e-04
+INFO:root:			fg/bg=(5/123), time cost: 3.299535
+INFO:root:			rpn_cls: 0.0104, rpn_box: 0.0098, rcnn_cls: 0.0172, rcnn_box 0.0158,reg_loss 3.2952, 
+INFO:root:[session 51][epoch 10][iter   20/  61] loss: 3.4756, lr: 2.34e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.070523
+INFO:root:			rpn_cls: 0.0026, rpn_box: 0.0029, rcnn_cls: 0.0300, rcnn_box 0.0462,reg_loss 3.2707, 
+INFO:root:[session 51][epoch 10][iter   30/  61] loss: 3.4323, lr: 2.34e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.119071
+INFO:root:			rpn_cls: 0.0076, rpn_box: 0.0011, rcnn_cls: 0.0224, rcnn_box 0.0411,reg_loss 3.2466, 
+INFO:root:[session 51][epoch 10][iter   40/  61] loss: 3.4714, lr: 2.34e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.176921
+INFO:root:			rpn_cls: 0.0090, rpn_box: 0.0211, rcnn_cls: 0.1143, rcnn_box 0.0844,reg_loss 3.2237, 
+INFO:root:[session 51][epoch 10][iter   50/  61] loss: 3.4214, lr: 2.34e-04
+INFO:root:			fg/bg=(17/111), time cost: 3.257927
+INFO:root:			rpn_cls: 0.0610, rpn_box: 0.0114, rcnn_cls: 0.0452, rcnn_box 0.0748,reg_loss 3.1997, 
+INFO:root:[session 51][epoch 10][iter   60/  61] loss: 3.4072, lr: 2.34e-04
+INFO:root:			fg/bg=(6/122), time cost: 3.192720
+INFO:root:			rpn_cls: 0.0147, rpn_box: 0.0018, rcnn_cls: 0.1283, rcnn_box 0.0098,reg_loss 3.1766, 
+INFO:root:number  10 epoch 's map: 0.6892
+INFO:root:[session 51][epoch 11][iter    0/  61] loss: 3.2688, lr: 2.30e-04
+INFO:root:			fg/bg=(6/122), time cost: 0.318774
+INFO:root:			rpn_cls: 0.0260, rpn_box: 0.0096, rcnn_cls: 0.0429, rcnn_box 0.0160,reg_loss 3.1744, 
+INFO:root:[session 51][epoch 11][iter   10/  61] loss: 3.3435, lr: 2.30e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.195643
+INFO:root:			rpn_cls: 0.0024, rpn_box: 0.0080, rcnn_cls: 0.1646, rcnn_box 0.0367,reg_loss 3.1529, 
+INFO:root:[session 51][epoch 11][iter   20/  61] loss: 3.2948, lr: 2.30e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.151942
+INFO:root:			rpn_cls: 0.0075, rpn_box: 0.0237, rcnn_cls: 0.0728, rcnn_box 0.0601,reg_loss 3.1309, 
+INFO:root:[session 51][epoch 11][iter   30/  61] loss: 3.2752, lr: 2.30e-04
+INFO:root:			fg/bg=(27/101), time cost: 3.163484
+INFO:root:			rpn_cls: 0.0025, rpn_box: 0.0091, rcnn_cls: 0.0628, rcnn_box 0.0939,reg_loss 3.1091, 
+INFO:root:[session 51][epoch 11][iter   40/  61] loss: 3.3228, lr: 2.30e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.349040
+INFO:root:			rpn_cls: 0.0074, rpn_box: 0.0487, rcnn_cls: 0.1203, rcnn_box 0.0902,reg_loss 3.0875, 
+INFO:root:[session 51][epoch 11][iter   50/  61] loss: 3.3202, lr: 2.30e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.078281
+INFO:root:			rpn_cls: 0.0199, rpn_box: 0.0084, rcnn_cls: 0.0351, rcnn_box 0.1110,reg_loss 3.0675, 
+INFO:root:[session 51][epoch 11][iter   60/  61] loss: 3.3640, lr: 2.30e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.208882
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0808, rcnn_cls: 0.1171, rcnn_box 0.1655,reg_loss 3.0478, 
+INFO:root:number  11 epoch 's map: 0.7102
+INFO:root:[session 51][epoch 12][iter    0/  61] loss: 3.1154, lr: 2.24e-04
+INFO:root:			fg/bg=(5/123), time cost: 0.317860
+INFO:root:			rpn_cls: 0.0149, rpn_box: 0.0026, rcnn_cls: 0.0457, rcnn_box 0.0063,reg_loss 3.0458, 
+INFO:root:[session 51][epoch 12][iter   10/  61] loss: 3.2736, lr: 2.24e-04
+INFO:root:			fg/bg=(23/105), time cost: 3.175474
+INFO:root:			rpn_cls: 0.0125, rpn_box: 0.0557, rcnn_cls: 0.1097, rcnn_box 0.0758,reg_loss 3.0258, 
+INFO:root:[session 51][epoch 12][iter   20/  61] loss: 3.2674, lr: 2.24e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.181037
+INFO:root:			rpn_cls: 0.0160, rpn_box: 0.0118, rcnn_cls: 0.0581, rcnn_box 0.0324,reg_loss 3.0069, 
+INFO:root:[session 51][epoch 12][iter   30/  61] loss: 3.2835, lr: 2.24e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.259106
+INFO:root:			rpn_cls: 0.0023, rpn_box: 0.0037, rcnn_cls: 0.0715, rcnn_box 0.0255,reg_loss 2.9886, 
+INFO:root:[session 51][epoch 12][iter   40/  61] loss: 3.1472, lr: 2.24e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.291020
+INFO:root:			rpn_cls: 0.0198, rpn_box: 0.0716, rcnn_cls: 0.1104, rcnn_box 0.1362,reg_loss 2.9694, 
+INFO:root:[session 51][epoch 12][iter   50/  61] loss: 3.0908, lr: 2.24e-04
+INFO:root:			fg/bg=(9/119), time cost: 3.339670
+INFO:root:			rpn_cls: 0.0029, rpn_box: 0.0019, rcnn_cls: 0.0123, rcnn_box 0.0388,reg_loss 2.9503, 
+INFO:root:[session 51][epoch 12][iter   60/  61] loss: 3.1211, lr: 2.24e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.137326
+INFO:root:			rpn_cls: 0.0254, rpn_box: 0.0666, rcnn_cls: 0.0580, rcnn_box 0.1206,reg_loss 2.9312, 
+INFO:root:number  12 epoch 's map: 0.6924
+INFO:root:[session 51][epoch 13][iter    0/  61] loss: 3.2198, lr: 2.17e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.322837
+INFO:root:			rpn_cls: 0.0093, rpn_box: 0.0192, rcnn_cls: 0.1235, rcnn_box 0.1383,reg_loss 2.9295, 
+INFO:root:[session 51][epoch 13][iter   10/  61] loss: 3.1356, lr: 2.17e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.311235
+INFO:root:			rpn_cls: 0.0035, rpn_box: 0.0029, rcnn_cls: 0.0725, rcnn_box 0.0221,reg_loss 2.9112, 
+INFO:root:[session 51][epoch 13][iter   20/  61] loss: 3.1002, lr: 2.17e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.239889
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0032, rcnn_cls: 0.0521, rcnn_box 0.0349,reg_loss 2.8937, 
+INFO:root:[session 51][epoch 13][iter   30/  61] loss: 3.1085, lr: 2.17e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.142966
+INFO:root:			rpn_cls: 0.0243, rpn_box: 0.0142, rcnn_cls: 0.0860, rcnn_box 0.0627,reg_loss 2.8758, 
+INFO:root:[session 51][epoch 13][iter   40/  61] loss: 3.0170, lr: 2.17e-04
+INFO:root:			fg/bg=(10/118), time cost: 2.942958
+INFO:root:			rpn_cls: 0.0193, rpn_box: 0.0039, rcnn_cls: 0.0269, rcnn_box 0.0200,reg_loss 2.8581, 
+INFO:root:[session 51][epoch 13][iter   50/  61] loss: 3.0337, lr: 2.17e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.111470
+INFO:root:			rpn_cls: 0.0089, rpn_box: 0.0092, rcnn_cls: 0.0728, rcnn_box 0.0215,reg_loss 2.8405, 
+INFO:root:[session 51][epoch 13][iter   60/  61] loss: 2.9917, lr: 2.17e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.101020
+INFO:root:			rpn_cls: 0.0039, rpn_box: 0.0045, rcnn_cls: 0.0276, rcnn_box 0.0120,reg_loss 2.8229, 
+INFO:root:number  13 epoch 's map: 0.7385
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_13_60.pth
+INFO:root:[session 51][epoch 14][iter    0/  61] loss: 2.9832, lr: 2.09e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.334384
+INFO:root:			rpn_cls: 0.0135, rpn_box: 0.0121, rcnn_cls: 0.0635, rcnn_box 0.0731,reg_loss 2.8211, 
+INFO:root:[session 51][epoch 14][iter   10/  61] loss: 2.9473, lr: 2.09e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.299180
+INFO:root:			rpn_cls: 0.0016, rpn_box: 0.0024, rcnn_cls: 0.0830, rcnn_box 0.0295,reg_loss 2.8047, 
+INFO:root:[session 51][epoch 14][iter   20/  61] loss: 2.9416, lr: 2.09e-04
+INFO:root:			fg/bg=(13/115), time cost: 3.102346
+INFO:root:			rpn_cls: 0.0005, rpn_box: 0.0067, rcnn_cls: 0.0904, rcnn_box 0.0369,reg_loss 2.7878, 
+INFO:root:[session 51][epoch 14][iter   30/  61] loss: 2.9644, lr: 2.09e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.204628
+INFO:root:			rpn_cls: 0.0041, rpn_box: 0.0258, rcnn_cls: 0.1805, rcnn_box 0.1660,reg_loss 2.7725, 
+INFO:root:[session 51][epoch 14][iter   40/  61] loss: 2.9365, lr: 2.09e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.161226
+INFO:root:			rpn_cls: 0.0025, rpn_box: 0.0394, rcnn_cls: 0.0707, rcnn_box 0.0547,reg_loss 2.7574, 
+INFO:root:[session 51][epoch 14][iter   50/  61] loss: 2.9040, lr: 2.09e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.191544
+INFO:root:			rpn_cls: 0.0008, rpn_box: 0.0028, rcnn_cls: 0.0368, rcnn_box 0.0164,reg_loss 2.7427, 
+INFO:root:[session 51][epoch 14][iter   60/  61] loss: 2.9401, lr: 2.09e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.048042
+INFO:root:			rpn_cls: 0.0089, rpn_box: 0.0221, rcnn_cls: 0.1572, rcnn_box 0.1687,reg_loss 2.7278, 
+INFO:root:number  14 epoch 's map: 0.7325
+INFO:root:[session 51][epoch 15][iter    0/  61] loss: 2.9971, lr: 2.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.311142
+INFO:root:			rpn_cls: 0.0025, rpn_box: 0.0159, rcnn_cls: 0.1287, rcnn_box 0.1235,reg_loss 2.7265, 
+INFO:root:[session 51][epoch 15][iter   10/  61] loss: 2.9164, lr: 2.00e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.207557
+INFO:root:			rpn_cls: 0.0203, rpn_box: 0.0111, rcnn_cls: 0.1186, rcnn_box 0.0777,reg_loss 2.7134, 
+INFO:root:[session 51][epoch 15][iter   20/  61] loss: 2.7977, lr: 2.00e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.145710
+INFO:root:			rpn_cls: 0.0200, rpn_box: 0.0048, rcnn_cls: 0.0869, rcnn_box 0.0632,reg_loss 2.6984, 
+INFO:root:[session 51][epoch 15][iter   30/  61] loss: 2.8180, lr: 2.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.175115
+INFO:root:			rpn_cls: 0.0152, rpn_box: 0.0471, rcnn_cls: 0.1037, rcnn_box 0.0881,reg_loss 2.6832, 
+INFO:root:[session 51][epoch 15][iter   40/  61] loss: 2.8541, lr: 2.00e-04
+INFO:root:			fg/bg=(21/107), time cost: 3.142124
+INFO:root:			rpn_cls: 0.0078, rpn_box: 0.0401, rcnn_cls: 0.2490, rcnn_box 0.1896,reg_loss 2.6687, 
+INFO:root:[session 51][epoch 15][iter   50/  61] loss: 2.8809, lr: 2.00e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.248093
+INFO:root:			rpn_cls: 0.0191, rpn_box: 0.0076, rcnn_cls: 0.0490, rcnn_box 0.0479,reg_loss 2.6555, 
+INFO:root:[session 51][epoch 15][iter   60/  61] loss: 2.8245, lr: 2.00e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.319191
+INFO:root:			rpn_cls: 0.0007, rpn_box: 0.0063, rcnn_cls: 0.0186, rcnn_box 0.0111,reg_loss 2.6421, 
+INFO:root:number  15 epoch 's map: 0.7318
+INFO:root:[session 51][epoch 16][iter    0/  61] loss: 2.8619, lr: 1.91e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.324816
+INFO:root:			rpn_cls: 0.0094, rpn_box: 0.0359, rcnn_cls: 0.0587, rcnn_box 0.1169,reg_loss 2.6410, 
+INFO:root:[session 51][epoch 16][iter   10/  61] loss: 2.7606, lr: 1.91e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.081176
+INFO:root:			rpn_cls: 0.0040, rpn_box: 0.0212, rcnn_cls: 0.1015, rcnn_box 0.1575,reg_loss 2.6286, 
+INFO:root:[session 51][epoch 16][iter   20/  61] loss: 2.8561, lr: 1.91e-04
+INFO:root:			fg/bg=(4/124), time cost: 3.109730
+INFO:root:			rpn_cls: 0.0018, rpn_box: 0.0077, rcnn_cls: 0.2473, rcnn_box 0.0045,reg_loss 2.6159, 
+INFO:root:[session 51][epoch 16][iter   30/  61] loss: 2.8590, lr: 1.91e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.066647
+INFO:root:			rpn_cls: 0.0013, rpn_box: 0.0687, rcnn_cls: 0.1235, rcnn_box 0.0605,reg_loss 2.6048, 
+INFO:root:[session 51][epoch 16][iter   40/  61] loss: 2.7880, lr: 1.91e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.215008
+INFO:root:			rpn_cls: 0.0020, rpn_box: 0.0142, rcnn_cls: 0.0415, rcnn_box 0.0151,reg_loss 2.5927, 
+INFO:root:[session 51][epoch 16][iter   50/  61] loss: 2.7384, lr: 1.91e-04
+INFO:root:			fg/bg=(31/97), time cost: 3.260148
+INFO:root:			rpn_cls: 0.0050, rpn_box: 0.0088, rcnn_cls: 0.1746, rcnn_box 0.0648,reg_loss 2.5819, 
+INFO:root:[session 51][epoch 16][iter   60/  61] loss: 2.7660, lr: 1.91e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.105154
+INFO:root:			rpn_cls: 0.0022, rpn_box: 0.0036, rcnn_cls: 0.1488, rcnn_box 0.0265,reg_loss 2.5720, 
+INFO:root:number  16 epoch 's map: 0.7289
+INFO:root:[session 51][epoch 17][iter    0/  61] loss: 2.6288, lr: 1.80e-04
+INFO:root:			fg/bg=(9/119), time cost: 0.351507
+INFO:root:			rpn_cls: 0.0197, rpn_box: 0.0039, rcnn_cls: 0.0245, rcnn_box 0.0100,reg_loss 2.5707, 
+INFO:root:[session 51][epoch 17][iter   10/  61] loss: 2.7650, lr: 1.80e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.054166
+INFO:root:			rpn_cls: 0.0110, rpn_box: 0.0103, rcnn_cls: 0.0360, rcnn_box 0.0211,reg_loss 2.5590, 
+INFO:root:[session 51][epoch 17][iter   20/  61] loss: 2.7476, lr: 1.80e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.201911
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0031, rcnn_cls: 0.0118, rcnn_box 0.0207,reg_loss 2.5474, 
+INFO:root:[session 51][epoch 17][iter   30/  61] loss: 2.6646, lr: 1.80e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.093743
+INFO:root:			rpn_cls: 0.0272, rpn_box: 0.0270, rcnn_cls: 0.0479, rcnn_box 0.0409,reg_loss 2.5344, 
+INFO:root:[session 51][epoch 17][iter   40/  61] loss: 2.6760, lr: 1.80e-04
+INFO:root:			fg/bg=(26/102), time cost: 3.170860
+INFO:root:			rpn_cls: 0.0086, rpn_box: 0.0323, rcnn_cls: 0.2177, rcnn_box 0.2205,reg_loss 2.5211, 
+INFO:root:[session 51][epoch 17][iter   50/  61] loss: 2.6715, lr: 1.80e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.167490
+INFO:root:			rpn_cls: 0.0092, rpn_box: 0.0251, rcnn_cls: 0.0481, rcnn_box 0.0438,reg_loss 2.5102, 
+INFO:root:[session 51][epoch 17][iter   60/  61] loss: 2.5987, lr: 1.80e-04
+INFO:root:			fg/bg=(32/96), time cost: 2.978657
+INFO:root:			rpn_cls: 0.0208, rpn_box: 0.0164, rcnn_cls: 0.0564, rcnn_box 0.0626,reg_loss 2.4990, 
+INFO:root:number  17 epoch 's map: 0.7411
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_17_60.pth
+INFO:root:[session 51][epoch 18][iter    0/  61] loss: 2.5657, lr: 1.69e-04
+INFO:root:			fg/bg=(11/117), time cost: 0.315850
+INFO:root:			rpn_cls: 0.0032, rpn_box: 0.0019, rcnn_cls: 0.0542, rcnn_box 0.0085,reg_loss 2.4979, 
+INFO:root:[session 51][epoch 18][iter   10/  61] loss: 2.5950, lr: 1.69e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.187348
+INFO:root:			rpn_cls: 0.0047, rpn_box: 0.0085, rcnn_cls: 0.0373, rcnn_box 0.0369,reg_loss 2.4869, 
+INFO:root:[session 51][epoch 18][iter   20/  61] loss: 2.6103, lr: 1.69e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.001853
+INFO:root:			rpn_cls: 0.0447, rpn_box: 0.0441, rcnn_cls: 0.0509, rcnn_box 0.0682,reg_loss 2.4765, 
+INFO:root:[session 51][epoch 18][iter   30/  61] loss: 2.6173, lr: 1.69e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.277536
+INFO:root:			rpn_cls: 0.0240, rpn_box: 0.0204, rcnn_cls: 0.0319, rcnn_box 0.1603,reg_loss 2.4661, 
+INFO:root:[session 51][epoch 18][iter   40/  61] loss: 2.5758, lr: 1.69e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.275725
+INFO:root:			rpn_cls: 0.0190, rpn_box: 0.0268, rcnn_cls: 0.0176, rcnn_box 0.1126,reg_loss 2.4562, 
+INFO:root:[session 51][epoch 18][iter   50/  61] loss: 2.5723, lr: 1.69e-04
+INFO:root:			fg/bg=(16/112), time cost: 3.007552
+INFO:root:			rpn_cls: 0.0002, rpn_box: 0.0008, rcnn_cls: 0.0590, rcnn_box 0.0385,reg_loss 2.4473, 
+INFO:root:[session 51][epoch 18][iter   60/  61] loss: 2.5960, lr: 1.69e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.042507
+INFO:root:			rpn_cls: 0.0034, rpn_box: 0.0115, rcnn_cls: 0.0744, rcnn_box 0.0623,reg_loss 2.4380, 
+INFO:root:number  18 epoch 's map: 0.7331
+INFO:root:[session 51][epoch 19][iter    0/  61] loss: 2.5160, lr: 1.57e-04
+INFO:root:			fg/bg=(16/112), time cost: 0.322450
+INFO:root:			rpn_cls: 0.0012, rpn_box: 0.0058, rcnn_cls: 0.0303, rcnn_box 0.0415,reg_loss 2.4372, 
+INFO:root:[session 51][epoch 19][iter   10/  61] loss: 2.5931, lr: 1.57e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.146680
+INFO:root:			rpn_cls: 0.0029, rpn_box: 0.0358, rcnn_cls: 0.0589, rcnn_box 0.0436,reg_loss 2.4289, 
+INFO:root:[session 51][epoch 19][iter   20/  61] loss: 2.5772, lr: 1.57e-04
+INFO:root:			fg/bg=(11/117), time cost: 3.228951
+INFO:root:			rpn_cls: 0.0030, rpn_box: 0.0024, rcnn_cls: 0.0361, rcnn_box 0.0209,reg_loss 2.4200, 
+INFO:root:[session 51][epoch 19][iter   30/  61] loss: 2.5586, lr: 1.57e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.242973
+INFO:root:			rpn_cls: 0.0207, rpn_box: 0.0115, rcnn_cls: 0.0421, rcnn_box 0.0360,reg_loss 2.4111, 
+INFO:root:[session 51][epoch 19][iter   40/  61] loss: 2.5820, lr: 1.57e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.107779
+INFO:root:			rpn_cls: 0.0168, rpn_box: 0.0182, rcnn_cls: 0.0704, rcnn_box 0.0776,reg_loss 2.4015, 
+INFO:root:[session 51][epoch 19][iter   50/  61] loss: 2.5357, lr: 1.57e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.201961
+INFO:root:			rpn_cls: 0.0005, rpn_box: 0.0024, rcnn_cls: 0.0142, rcnn_box 0.0244,reg_loss 2.3925, 
+INFO:root:[session 51][epoch 19][iter   60/  61] loss: 2.5102, lr: 1.57e-04
+INFO:root:			fg/bg=(10/118), time cost: 3.151843
+INFO:root:			rpn_cls: 0.0013, rpn_box: 0.0020, rcnn_cls: 0.0554, rcnn_box 0.0120,reg_loss 2.3835, 
+INFO:root:number  19 epoch 's map: 0.7397
+INFO:root:[session 51][epoch 20][iter    0/  61] loss: 2.5830, lr: 1.45e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.342792
+INFO:root:			rpn_cls: 0.0117, rpn_box: 0.0437, rcnn_cls: 0.0920, rcnn_box 0.0530,reg_loss 2.3828, 
+INFO:root:[session 51][epoch 20][iter   10/  61] loss: 2.5548, lr: 1.45e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.113482
+INFO:root:			rpn_cls: 0.0098, rpn_box: 0.0721, rcnn_cls: 0.1184, rcnn_box 0.0881,reg_loss 2.3749, 
+INFO:root:[session 51][epoch 20][iter   20/  61] loss: 2.5407, lr: 1.45e-04
+INFO:root:			fg/bg=(15/113), time cost: 3.103568
+INFO:root:			rpn_cls: 0.0277, rpn_box: 0.0193, rcnn_cls: 0.0442, rcnn_box 0.1355,reg_loss 2.3668, 
+INFO:root:[session 51][epoch 20][iter   30/  61] loss: 2.4840, lr: 1.45e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.110830
+INFO:root:			rpn_cls: 0.0010, rpn_box: 0.0053, rcnn_cls: 0.0143, rcnn_box 0.0308,reg_loss 2.3587, 
+INFO:root:[session 51][epoch 20][iter   40/  61] loss: 2.4775, lr: 1.45e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.042314
+INFO:root:			rpn_cls: 0.0112, rpn_box: 0.0165, rcnn_cls: 0.1340, rcnn_box 0.1355,reg_loss 2.3503, 
+INFO:root:[session 51][epoch 20][iter   50/  61] loss: 2.4401, lr: 1.45e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.158428
+INFO:root:			rpn_cls: 0.0004, rpn_box: 0.0051, rcnn_cls: 0.0377, rcnn_box 0.0824,reg_loss 2.3421, 
+INFO:root:[session 51][epoch 20][iter   60/  61] loss: 2.4310, lr: 1.45e-04
+INFO:root:			fg/bg=(16/112), time cost: 2.973497
+INFO:root:			rpn_cls: 0.0008, rpn_box: 0.0057, rcnn_cls: 0.0395, rcnn_box 0.0409,reg_loss 2.3340, 
+INFO:root:number  20 epoch 's map: 0.7396
+INFO:root:[session 51][epoch 21][iter    0/  61] loss: 2.6538, lr: 1.33e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.304032
+INFO:root:			rpn_cls: 0.0075, rpn_box: 0.0435, rcnn_cls: 0.2028, rcnn_box 0.0670,reg_loss 2.3331, 
+INFO:root:[session 51][epoch 21][iter   10/  61] loss: 2.4345, lr: 1.33e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.371809
+INFO:root:			rpn_cls: 0.0085, rpn_box: 0.0006, rcnn_cls: 0.0209, rcnn_box 0.0058,reg_loss 2.3257, 
+INFO:root:[session 51][epoch 21][iter   20/  61] loss: 2.4084, lr: 1.33e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.238094
+INFO:root:			rpn_cls: 0.0091, rpn_box: 0.0100, rcnn_cls: 0.0402, rcnn_box 0.0492,reg_loss 2.3185, 
+INFO:root:[session 51][epoch 21][iter   30/  61] loss: 2.4295, lr: 1.33e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.081145
+INFO:root:			rpn_cls: 0.0079, rpn_box: 0.0211, rcnn_cls: 0.0921, rcnn_box 0.0776,reg_loss 2.3117, 
+INFO:root:[session 51][epoch 21][iter   40/  61] loss: 2.4089, lr: 1.33e-04
+INFO:root:			fg/bg=(13/115), time cost: 2.975278
+INFO:root:			rpn_cls: 0.0007, rpn_box: 0.0022, rcnn_cls: 0.0265, rcnn_box 0.0100,reg_loss 2.3047, 
+INFO:root:[session 51][epoch 21][iter   50/  61] loss: 2.4481, lr: 1.33e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.185164
+INFO:root:			rpn_cls: 0.0194, rpn_box: 0.0100, rcnn_cls: 0.0508, rcnn_box 0.0611,reg_loss 2.2991, 
+INFO:root:[session 51][epoch 21][iter   60/  61] loss: 2.4790, lr: 1.33e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.085967
+INFO:root:			rpn_cls: 0.0137, rpn_box: 0.0482, rcnn_cls: 0.0848, rcnn_box 0.1909,reg_loss 2.2922, 
+INFO:root:number  21 epoch 's map: 0.7553
+INFO:root:save model: ./model_save/res50/EP_detect/fpn_51_21_60.pth
+INFO:root:[session 51][epoch 22][iter    0/  61] loss: 2.4507, lr: 1.20e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.305604
+INFO:root:			rpn_cls: 0.0019, rpn_box: 0.0137, rcnn_cls: 0.0983, rcnn_box 0.0455,reg_loss 2.2913, 
+INFO:root:[session 51][epoch 22][iter   10/  61] loss: 2.3968, lr: 1.20e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.218777
+INFO:root:			rpn_cls: 0.0004, rpn_box: 0.0002, rcnn_cls: 0.0413, rcnn_box 0.0027,reg_loss 2.2848, 
+INFO:root:[session 51][epoch 22][iter   20/  61] loss: 2.3851, lr: 1.20e-04
+INFO:root:			fg/bg=(20/108), time cost: 3.064847
+INFO:root:			rpn_cls: 0.0056, rpn_box: 0.0029, rcnn_cls: 0.0352, rcnn_box 0.0170,reg_loss 2.2783, 
+INFO:root:[session 51][epoch 22][iter   30/  61] loss: 2.3922, lr: 1.20e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.073753
+INFO:root:			rpn_cls: 0.0093, rpn_box: 0.0387, rcnn_cls: 0.1105, rcnn_box 0.0428,reg_loss 2.2715, 
+INFO:root:[session 51][epoch 22][iter   40/  61] loss: 2.4020, lr: 1.20e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.151479
+INFO:root:			rpn_cls: 0.0345, rpn_box: 0.0114, rcnn_cls: 0.0883, rcnn_box 0.1077,reg_loss 2.2656, 
+INFO:root:[session 51][epoch 22][iter   50/  61] loss: 2.3661, lr: 1.20e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.207135
+INFO:root:			rpn_cls: 0.0015, rpn_box: 0.0103, rcnn_cls: 0.0601, rcnn_box 0.0670,reg_loss 2.2599, 
+INFO:root:[session 51][epoch 22][iter   60/  61] loss: 2.4195, lr: 1.20e-04
+INFO:root:			fg/bg=(12/116), time cost: 3.174539
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0020, rcnn_cls: 0.0336, rcnn_box 0.0091,reg_loss 2.2537, 
+INFO:root:number  22 epoch 's map: 0.7475
+INFO:root:[session 51][epoch 23][iter    0/  61] loss: 2.3807, lr: 1.07e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.369340
+INFO:root:			rpn_cls: 0.0031, rpn_box: 0.0146, rcnn_cls: 0.0331, rcnn_box 0.0766,reg_loss 2.2532, 
+INFO:root:[session 51][epoch 23][iter   10/  61] loss: 2.3334, lr: 1.07e-04
+INFO:root:			fg/bg=(14/114), time cost: 3.268658
+INFO:root:			rpn_cls: 0.0031, rpn_box: 0.0065, rcnn_cls: 0.0415, rcnn_box 0.0177,reg_loss 2.2477, 
+INFO:root:[session 51][epoch 23][iter   20/  61] loss: 2.3557, lr: 1.07e-04
+INFO:root:			fg/bg=(8/120), time cost: 3.177098
+INFO:root:			rpn_cls: 0.0007, rpn_box: 0.0038, rcnn_cls: 0.0524, rcnn_box 0.0878,reg_loss 2.2423, 
+INFO:root:[session 51][epoch 23][iter   30/  61] loss: 2.3590, lr: 1.07e-04
+INFO:root:			fg/bg=(19/109), time cost: 3.167943
+INFO:root:			rpn_cls: 0.0008, rpn_box: 0.0013, rcnn_cls: 0.0779, rcnn_box 0.0145,reg_loss 2.2362, 
+INFO:root:[session 51][epoch 23][iter   40/  61] loss: 2.3440, lr: 1.07e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.216275
+INFO:root:			rpn_cls: 0.0017, rpn_box: 0.0082, rcnn_cls: 0.0388, rcnn_box 0.0486,reg_loss 2.2305, 
+INFO:root:[session 51][epoch 23][iter   50/  61] loss: 2.3829, lr: 1.07e-04
+INFO:root:			fg/bg=(32/96), time cost: 3.540522
+INFO:root:			rpn_cls: 0.0043, rpn_box: 0.0138, rcnn_cls: 0.0659, rcnn_box 0.0967,reg_loss 2.2260, 
+INFO:root:[session 51][epoch 23][iter   60/  61] loss: 2.3262, lr: 1.07e-04
+INFO:root:			fg/bg=(7/121), time cost: 3.403142
+INFO:root:			rpn_cls: 0.0020, rpn_box: 0.0121, rcnn_cls: 0.0275, rcnn_box 0.0066,reg_loss 2.2211, 
+INFO:root:number  23 epoch 's map: 0.6892
+INFO:root:[session 51][epoch 24][iter    0/  61] loss: 2.2972, lr: 9.51e-05
+INFO:root:			fg/bg=(7/121), time cost: 0.372060
+INFO:root:			rpn_cls: 0.0060, rpn_box: 0.0077, rcnn_cls: 0.0428, rcnn_box 0.0202,reg_loss 2.2206, 
+INFO:root:[session 51][epoch 24][iter   10/  61] loss: 2.3320, lr: 9.51e-05
+INFO:root:			fg/bg=(32/96), time cost: 4.056593
+INFO:root:			rpn_cls: 0.0024, rpn_box: 0.0157, rcnn_cls: 0.1111, rcnn_box 0.0807,reg_loss 2.2156, 
+INFO:root:[session 51][epoch 24][iter   20/  61] loss: 2.2877, lr: 9.51e-05
+INFO:root:			fg/bg=(8/120), time cost: 3.755736
+INFO:root:			rpn_cls: 0.0053, rpn_box: 0.0009, rcnn_cls: 0.0245, rcnn_box 0.0212,reg_loss 2.2100, 
+INFO:root:[session 51][epoch 24][iter   30/  61] loss: 2.2827, lr: 9.51e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.864685
+INFO:root:			rpn_cls: 0.0008, rpn_box: 0.0056, rcnn_cls: 0.0517, rcnn_box 0.0344,reg_loss 2.2047, 
+INFO:root:[session 51][epoch 24][iter   40/  61] loss: 2.3257, lr: 9.51e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.912325
+INFO:root:			rpn_cls: 0.0001, rpn_box: 0.0001, rcnn_cls: 0.1997, rcnn_box 0.0068,reg_loss 2.2000, 
+INFO:root:[session 51][epoch 24][iter   50/  61] loss: 2.3600, lr: 9.51e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.854702
+INFO:root:			rpn_cls: 0.0170, rpn_box: 0.0017, rcnn_cls: 0.0450, rcnn_box 0.0188,reg_loss 2.1984, 
+INFO:root:[session 51][epoch 24][iter   60/  61] loss: 2.3340, lr: 9.51e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.940711
+INFO:root:			rpn_cls: 0.0107, rpn_box: 0.0335, rcnn_cls: 0.0348, rcnn_box 0.0278,reg_loss 2.1944, 
+INFO:root:number  24 epoch 's map: 0.7479
+INFO:root:[session 51][epoch 25][iter    0/  61] loss: 2.2677, lr: 8.29e-05
+INFO:root:			fg/bg=(10/118), time cost: 0.399848
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0003, rcnn_cls: 0.0632, rcnn_box 0.0100,reg_loss 2.1939, 
+INFO:root:[session 51][epoch 25][iter   10/  61] loss: 2.2912, lr: 8.29e-05
+INFO:root:			fg/bg=(10/118), time cost: 3.803975
+INFO:root:			rpn_cls: 0.0005, rpn_box: 0.0006, rcnn_cls: 0.0297, rcnn_box 0.0034,reg_loss 2.1890, 
+INFO:root:[session 51][epoch 25][iter   20/  61] loss: 2.2586, lr: 8.29e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.834637
+INFO:root:			rpn_cls: 0.0005, rpn_box: 0.0025, rcnn_cls: 0.0370, rcnn_box 0.0299,reg_loss 2.1841, 
+INFO:root:[session 51][epoch 25][iter   30/  61] loss: 2.2893, lr: 8.29e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.999193
+INFO:root:			rpn_cls: 0.0040, rpn_box: 0.0125, rcnn_cls: 0.0279, rcnn_box 0.0453,reg_loss 2.1795, 
+INFO:root:[session 51][epoch 25][iter   40/  61] loss: 2.2744, lr: 8.29e-05
+INFO:root:			fg/bg=(32/96), time cost: 4.052904
+INFO:root:			rpn_cls: 0.0134, rpn_box: 0.0305, rcnn_cls: 0.0778, rcnn_box 0.0515,reg_loss 2.1752, 
+INFO:root:[session 51][epoch 25][iter   50/  61] loss: 2.3007, lr: 8.29e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.958828
+INFO:root:			rpn_cls: 0.0011, rpn_box: 0.0026, rcnn_cls: 0.0764, rcnn_box 0.0040,reg_loss 2.1706, 
+INFO:root:[session 51][epoch 25][iter   60/  61] loss: 2.2604, lr: 8.29e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.830600
+INFO:root:			rpn_cls: 0.0030, rpn_box: 0.0158, rcnn_cls: 0.0463, rcnn_box 0.0449,reg_loss 2.1670, 
+INFO:root:number  25 epoch 's map: 0.7406
+INFO:root:[session 51][epoch 26][iter    0/  61] loss: 2.2210, lr: 7.12e-05
+INFO:root:			fg/bg=(9/119), time cost: 0.421585
+INFO:root:			rpn_cls: 0.0011, rpn_box: 0.0007, rcnn_cls: 0.0446, rcnn_box 0.0080,reg_loss 2.1665, 
+INFO:root:[session 51][epoch 26][iter   10/  61] loss: 2.2846, lr: 7.12e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.927071
+INFO:root:			rpn_cls: 0.0208, rpn_box: 0.0288, rcnn_cls: 0.1624, rcnn_box 0.0545,reg_loss 2.1631, 
+INFO:root:[session 51][epoch 26][iter   20/  61] loss: 2.2584, lr: 7.12e-05
+INFO:root:			fg/bg=(12/116), time cost: 4.053229
+INFO:root:			rpn_cls: 0.0001, rpn_box: 0.0005, rcnn_cls: 0.0316, rcnn_box 0.0050,reg_loss 2.1601, 
+INFO:root:[session 51][epoch 26][iter   30/  61] loss: 2.2447, lr: 7.12e-05
+INFO:root:			fg/bg=(7/121), time cost: 4.076042
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0026, rcnn_cls: 0.0070, rcnn_box 0.0152,reg_loss 2.1565, 
+INFO:root:[session 51][epoch 26][iter   40/  61] loss: 2.2080, lr: 7.12e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.882383
+INFO:root:			rpn_cls: 0.0052, rpn_box: 0.0067, rcnn_cls: 0.0124, rcnn_box 0.0348,reg_loss 2.1528, 
+INFO:root:[session 51][epoch 26][iter   50/  61] loss: 2.2211, lr: 7.12e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.950530
+INFO:root:			rpn_cls: 0.0002, rpn_box: 0.0023, rcnn_cls: 0.0160, rcnn_box 0.0125,reg_loss 2.1490, 
+INFO:root:[session 51][epoch 26][iter   60/  61] loss: 2.2634, lr: 7.12e-05
+INFO:root:			fg/bg=(32/96), time cost: 4.112817
+INFO:root:			rpn_cls: 0.0043, rpn_box: 0.0105, rcnn_cls: 0.0523, rcnn_box 0.0142,reg_loss 2.1455, 
+INFO:root:number  26 epoch 's map: 0.7233
+INFO:root:[session 51][epoch 27][iter    0/  61] loss: 2.2028, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 0.398370
+INFO:root:			rpn_cls: 0.0027, rpn_box: 0.0081, rcnn_cls: 0.0324, rcnn_box 0.0144,reg_loss 2.1451, 
+INFO:root:[session 51][epoch 27][iter   10/  61] loss: 2.2386, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 4.044902
+INFO:root:			rpn_cls: 0.0061, rpn_box: 0.0283, rcnn_cls: 0.0549, rcnn_box 0.0572,reg_loss 2.1420, 
+INFO:root:[session 51][epoch 27][iter   20/  61] loss: 2.1943, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.877028
+INFO:root:			rpn_cls: 0.0036, rpn_box: 0.0256, rcnn_cls: 0.0386, rcnn_box 0.0623,reg_loss 2.1388, 
+INFO:root:[session 51][epoch 27][iter   30/  61] loss: 2.2187, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.840048
+INFO:root:			rpn_cls: 0.0012, rpn_box: 0.0114, rcnn_cls: 0.0763, rcnn_box 0.1259,reg_loss 2.1362, 
+INFO:root:[session 51][epoch 27][iter   40/  61] loss: 2.2156, lr: 6.00e-05
+INFO:root:			fg/bg=(9/119), time cost: 3.900609
+INFO:root:			rpn_cls: 0.0006, rpn_box: 0.0009, rcnn_cls: 0.0073, rcnn_box 0.0048,reg_loss 2.1336, 
+INFO:root:[session 51][epoch 27][iter   50/  61] loss: 2.2185, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.857970
+INFO:root:			rpn_cls: 0.0019, rpn_box: 0.0144, rcnn_cls: 0.0702, rcnn_box 0.0570,reg_loss 2.1306, 
+INFO:root:[session 51][epoch 27][iter   60/  61] loss: 2.1933, lr: 6.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.949129
+INFO:root:			rpn_cls: 0.0006, rpn_box: 0.0034, rcnn_cls: 0.0310, rcnn_box 0.0210,reg_loss 2.1275, 
+INFO:root:number  27 epoch 's map: 0.7188
+INFO:root:[session 51][epoch 28][iter    0/  61] loss: 2.1436, lr: 4.95e-05
+INFO:root:			fg/bg=(10/118), time cost: 0.365831
+INFO:root:			rpn_cls: 0.0018, rpn_box: 0.0018, rcnn_cls: 0.0071, rcnn_box 0.0056,reg_loss 2.1272, 
+INFO:root:[session 51][epoch 28][iter   10/  61] loss: 2.1709, lr: 4.95e-05
+INFO:root:			fg/bg=(5/123), time cost: 4.040839
+INFO:root:			rpn_cls: 0.0004, rpn_box: 0.0063, rcnn_cls: 0.0083, rcnn_box 0.0121,reg_loss 2.1245, 
+INFO:root:[session 51][epoch 28][iter   20/  61] loss: 2.2172, lr: 4.95e-05
+INFO:root:			fg/bg=(23/105), time cost: 4.004991
+INFO:root:			rpn_cls: 0.0009, rpn_box: 0.0013, rcnn_cls: 0.0450, rcnn_box 0.0118,reg_loss 2.1219, 
+INFO:root:[session 51][epoch 28][iter   30/  61] loss: 2.1982, lr: 4.95e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.174739
+INFO:root:			rpn_cls: 0.0119, rpn_box: 0.0209, rcnn_cls: 0.0390, rcnn_box 0.0526,reg_loss 2.1194, 
+INFO:root:[session 51][epoch 28][iter   40/  61] loss: 2.1673, lr: 4.95e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.068505
+INFO:root:			rpn_cls: 0.0109, rpn_box: 0.0012, rcnn_cls: 0.0233, rcnn_box 0.0039,reg_loss 2.1169, 
+INFO:root:[session 51][epoch 28][iter   50/  61] loss: 2.1775, lr: 4.95e-05
+INFO:root:			fg/bg=(32/96), time cost: 2.977638
+INFO:root:			rpn_cls: 0.0014, rpn_box: 0.0038, rcnn_cls: 0.0374, rcnn_box 0.0151,reg_loss 2.1144, 
+INFO:root:[session 51][epoch 28][iter   60/  61] loss: 2.2147, lr: 4.95e-05
+INFO:root:			fg/bg=(17/111), time cost: 2.987561
+INFO:root:			rpn_cls: 0.0039, rpn_box: 0.0132, rcnn_cls: 0.0998, rcnn_box 0.1216,reg_loss 2.1120, 
+INFO:root:number  28 epoch 's map: 0.6763
+INFO:root:[session 51][epoch 29][iter    0/  61] loss: 2.2513, lr: 3.97e-05
+INFO:root:			fg/bg=(32/96), time cost: 0.345156
+INFO:root:			rpn_cls: 0.0014, rpn_box: 0.0067, rcnn_cls: 0.0976, rcnn_box 0.0337,reg_loss 2.1118, 
+INFO:root:[session 51][epoch 29][iter   10/  61] loss: 2.1766, lr: 3.97e-05
+INFO:root:			fg/bg=(6/122), time cost: 3.210222
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0041, rcnn_cls: 0.0309, rcnn_box 0.0527,reg_loss 2.1101, 
+INFO:root:[session 51][epoch 29][iter   20/  61] loss: 2.1553, lr: 3.97e-05
+INFO:root:			fg/bg=(17/111), time cost: 3.288752
+INFO:root:			rpn_cls: 0.0026, rpn_box: 0.0150, rcnn_cls: 0.0405, rcnn_box 0.0981,reg_loss 2.1079, 
+INFO:root:[session 51][epoch 29][iter   30/  61] loss: 2.1866, lr: 3.97e-05
+INFO:root:			fg/bg=(11/117), time cost: 3.118083
+INFO:root:			rpn_cls: 0.0068, rpn_box: 0.0010, rcnn_cls: 0.0054, rcnn_box 0.0024,reg_loss 2.1060, 
+INFO:root:[session 51][epoch 29][iter   40/  61] loss: 2.1695, lr: 3.97e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.018566
+INFO:root:			rpn_cls: 0.0003, rpn_box: 0.0005, rcnn_cls: 0.0127, rcnn_box 0.0088,reg_loss 2.1041, 
+INFO:root:[session 51][epoch 29][iter   50/  61] loss: 2.1681, lr: 3.97e-05
+INFO:root:			fg/bg=(13/115), time cost: 3.112695
+INFO:root:			rpn_cls: 0.0004, rpn_box: 0.0005, rcnn_cls: 0.0053, rcnn_box 0.0036,reg_loss 2.1022, 
+INFO:root:[session 51][epoch 29][iter   60/  61] loss: 2.1674, lr: 3.97e-05
+INFO:root:			fg/bg=(32/96), time cost: 3.237024
+INFO:root:			rpn_cls: 0.0035, rpn_box: 0.0184, rcnn_cls: 0.0151, rcnn_box 0.0365,reg_loss 2.1001, 
+INFO:root:number  29 epoch 's map: 0.7126
